@@ -1,0 +1,46 @@
+/* sans: ['"Haas Grot Disp Web"', "sans-serif"],
+serif: ["Lyon Display Medium Italic", "serif"],
+text: ['"Haas Grot Text Web"', "sans-serif"], */
+
+.hHero {
+  height: 100vh;
+  background-color: black;
+}
+
+.sectionHero {
+  @apply flex flex-col justify-center relative h-[800px];
+}
+
+.bgWrap {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  z-index: -1;
+  top: 0;
+}
+
+.heroImg {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    linear-gradient(97.27deg, rgba(0, 0, 0, 0) 8.57%, rgba(0, 0, 0, 0) 98.75%);
+  background-size: cover;
+}
+
+.heroImg.dark {
+  background: linear-gradient(
+      360deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0) 34.53%
+    ),
+    linear-gradient(
+      360deg,
+      rgba(255, 255, 255, 0) 1.22%,
+      rgba(255, 255, 255, 0) 74.34%,
+      rgba(255, 255, 255, 0) 97.86%
+    );
+  background-size: cover;
+}

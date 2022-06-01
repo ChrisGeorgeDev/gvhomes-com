@@ -1,8 +1,12 @@
 import Head from "next/head";
 import Image from "next/image";
+import Button from "../components/Button";
 import LandingHero from "../components/Hero/LandingHero";
 import ServiceTabs from "../components/ServiceTabs";
 import styles from "../styles/Home.module.css";
+import Link from "next/link";
+import Footer from "../components/Footer";
+import Services from "../components/Services";
 
 export default function Home() {
   return (
@@ -16,7 +20,7 @@ export default function Home() {
         image="/img/hero/welcome_couch.jpg"
         imagePortrait="/img/comm/landing-portrait.jpg"
         style="text-blue-ggDark flex-col"
-        contrast=""
+        height="h-[100vh]"
       ></LandingHero>
 
       <main id="main" className="mb-auto">
@@ -33,11 +37,17 @@ export default function Home() {
               thoughtfully integrated into the fabric of the surrounding
               community.
             </p>
+
+            <Link href="/cows">
+              <a>
+                <Button>ABOUT GABLE VIEW</Button>
+              </a>
+            </Link>
           </div>
         </section>
 
         <section>
-          <div className="mb-[125px]">
+          <div className="py-[125px] bg-gray-50">
             <div className="flex flex-col lg:flex-row ">
               <div className=" flex flex-col lg:text-upright justify-end w-7/12 ">
                 <div className="ml-20 leading-none lg:leading-tight">
@@ -57,7 +67,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="mb-[125px]">
+        <section className="mb-[125px] bg-gray-50 py-16">
           <div className="md:container md:mx-auto border-b  ">
             <div className="container">
               <h2 className="h2">What we do</h2>
@@ -65,41 +75,60 @@ export default function Home() {
           </div>
           <ServiceTabs />
         </section>
+
+        <section>
+          <div className="mb-[125px]">
+            <div className="flex flex-col lg:flex-row-reverse ">
+              <div className=" flex flex-col lg:text-upright justify-end w-7/12 ">
+                <div className="ml-20 leading-none lg:leading-tight">
+                  <span className="text-8xl  block font-bold">Elevated</span>
+                  <span className="text-8xl  uppercase  block font-thin">
+                    Living
+                  </span>
+                  <span className="text-8xl  uppercase block font-thin">
+                    Experiences
+                  </span>
+                </div>
+              </div>
+              <div className="grid justify-items-end  ">
+                <img className="self-end" src="/img/kitchen_2.jpg" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div className="container mx-auto px-5 sectionp">
+            <p>
+              At Gable View Homes, we are inspired to build houses and
+              communities you'll be proud to call home.
+            </p>
+
+            <p>
+              As a boutique developer with 25 years of experience, our vision
+              remains a home that is inviting, desirable, affordable and
+              thoughtfully integrated into the fabric of the surrounding
+              community.
+            </p>
+
+            <Link href="/cows">
+              <a>
+                <Button>ABOUT GABLE VIEW</Button>
+              </a>
+            </Link>
+          </div>
+        </section>
+        <section className="mb-[125px] bg-gray-50 py-16">
+          <div className="md:container md:mx-auto border-b  ">
+            <div className="container">
+              <h2 className="h2">What we do</h2>
+            </div>
+          </div>
+          <Services />
+        </section>
       </main>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{" "}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-
-        <div className="fixed bottom-0 right-0 p-6 w-8 h-8 bg-white border flex justify-center items-center opacity-75">
-          <div className="xs:block sm:hidden md:hidden lg:hidden xl:hidden 2xl:hidden">
-            XS
-          </div>
-          <div className="hidden sm:block xs:hidden md:hidden lg:hidden xl:hidden 2xl:hidden">
-            SM
-          </div>
-          <div className="hidden sm:hidden md:block lg:hidden xl:hidden 2xl:hidden">
-            MD
-          </div>
-          <div className="hidden sm:hidden md:hidden lg:block xl:hidden 2xl:hidden">
-            LG
-          </div>
-          <div className="hidden sm:hidden md:hidden lg:hidden xl:block 2xl:hidden">
-            XL
-          </div>
-          <div className="hidden sm:hidden md:hidden lg:hidden xl:hidden 2xl:block">
-            2XL
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

@@ -12,7 +12,7 @@ export default function LandingHero(props) {
       {/* <MainNav /> */}
 
       <div
-        className={`${styles.hHero} ${props.contrast} overflow-hidden  bg-blue-ggDark flex flex-col justify-end   ${styles.heroImg}`}
+        className={`${styles.hHero} ${props.height} overflow-hidden  bg-blue-ggDark flex flex-col justify-end   ${styles.heroImg}`}
       >
         {/* IMAGE÷\ */}
         <div className={`${styles.bgWrap} `}>

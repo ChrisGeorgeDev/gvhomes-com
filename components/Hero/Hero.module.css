@@ -3,7 +3,6 @@ serif: ["Lyon Display Medium Italic", "serif"],
 text: ['"Haas Grot Text Web"', "sans-serif"], */
 
 .hHero {
-  height: 100vh;
   background-color: black;
 }
 

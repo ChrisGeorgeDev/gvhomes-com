@@ -3,7 +3,7 @@ import { Fragment } from "react";
 
 export default function Services() {
   return (
-    <div className=" container  pt-16">
+    <div className=" container  ">
       <div className="mx-auto w-full   ">
         <Disclosure as="div" className="mt-2 border-b border-black">
           {({ open }) => (

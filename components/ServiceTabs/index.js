@@ -64,7 +64,7 @@ export default function ServiceTabs() {
           </Tab.List>
         </div>
       </div>
-      <Tab.Panels className={`container mx-auto mt-[64px] `}>
+      <Tab.Panels className={`container mx-auto my-[64px] `}>
         <Tab.Panel className={``}>
           <h2 className="h2">Real Estate Development</h2>
 
@@ -108,5 +108,7 @@ export default function ServiceTabs() {
         </Tab.Panel>
       </Tab.Panels>
     </Tab.Group>
+
+    
   );
 }

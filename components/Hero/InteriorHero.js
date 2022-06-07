@@ -4,21 +4,15 @@ import styles from "../Hero/Hero.module.css";
 
 // import { getServerSideProps } from "../../pagzes/communities";
 
-export default function LandingHero(props) {
+export default function InteriorHero(props) {
   let isDesktop = useMediaQuery("(min-width: 900px)");
   let portraitImage = props.imagePortrait;
   return (
     <>
-      {/* <MainNav /> */}
-
-
-
-      <div className="h-[100vh] relative bg-black overflow-hidden  bg-blue-ggDark flex flex-col justify-center  "
+   <div className="h-[80vh] relative bg-black overflow-hidden  bg-blue-ggDark flex flex-col justify-center "
       >
-        {/* IMAGE÷\ */}
-        {/* <div className={`${styles.bgWrp} flex justify-center `}> */}
-        
-         {isDesktop && (
+
+{isDesktop && (
             // <picture className=" ">
        
 
@@ -26,7 +20,7 @@ export default function LandingHero(props) {
             alt={props.alt}
             src={props.image}
             priority="true"
-            className="object-cover absolute z-[1] object-center  w-full h-full"
+            className={`object-cover absolute z-[1]  ${props.desktopPosition} w-full h-full `}
             />
           )}
 
@@ -42,12 +36,14 @@ export default function LandingHero(props) {
               />
           )}
 
-        <div className={`"flex container relative z-[4] ${styles.light} "`}>
-          <div className={`w-12/12 relative z-[2]  mx-auto mb-6  `}>{props.children}</div>
+
+<div className={`"flex container "`}>
+          <div className={`w-12/12 relative z-[2] mx-auto mb-6  `}>{props.children}</div>
         </div>
 
-      </div>
-      {/* </div> */}
+</div>
+
+
     </>
   );
 }
@@ -70,3 +66,11 @@ export default function LandingHero(props) {
 //         </div>
 
 // </div>
+
+
+
+
+
+
+
+

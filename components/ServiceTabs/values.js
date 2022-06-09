@@ -1,7 +1,7 @@
 import { Tab } from "@headlessui/react";
 import { Fragment } from "react";
 
-export default function ServiceTabs() {
+export default function ValuesTabs() {
   return (
     <Tab.Group>
       <div className=" relative ">
@@ -29,24 +29,12 @@ export default function ServiceTabs() {
                       : " text-black text-center outline-none tabhover border-b border-r border-[#010101] py-6 font-semibold  w-full"
                   }
                 >
-                  <span className={ selected ? "text-7xl  mx-auto " : "text-7xl mx-auto ease-in-out duration-300 opacity-40 hover:opacity-100 "}>2</span>
+                  <span className={ selected ? "text-7xl  mx-auto " : "text-7xl mx-auto ease-in-out duration-300 opacity-40 hover:opacity-100 "}>2 </span>
                 </button>
               )}
             </Tab>
 
-            <Tab as={Fragment}>
-              {({ selected }) => (
-                <button
-                  className={
-                    selected
-                      ? " w-full is-active tabhover border-b border-r border-[#010101] outline-none py-6  text-black text-center font-semibold"
-                      : " text-black text-center outline-none tabhover border-b border-r border-[#010101]  py-6 font-semibold  w-full"
-                  }
-                >
-                  <span className={ selected ? "text-7xl  mx-auto " : "text-7xl mx-auto ease-in-out duration-300 opacity-40 hover:opacity-100 "}>3</span>
-                </button>
-              )}
-            </Tab>
+  
 
             <Tab as={Fragment}>
               {({ selected }) => (
@@ -57,7 +45,7 @@ export default function ServiceTabs() {
                       : " text-black text-center outline-none tabhover border-b border-[#010101]  py-6 font-semibold  w-full"
                   }
                 >
-                  <span className={ selected ? "text-7xl  mx-auto " : "text-7xl mx-auto ease-in-out duration-300 opacity-40 hover:opacity-100 "}>4 </span>
+                  <span className={ selected ? "text-7xl  mx-auto " : "text-7xl mx-auto ease-in-out duration-300 opacity-40 hover:opacity-100 "}>3 </span>
                 </button>
               )}
             </Tab>
@@ -96,16 +84,7 @@ export default function ServiceTabs() {
           </p>
         </Tab.Panel>
 
-        <Tab.Panel className={``}>
-          <h2 className="h2">
-            The Fourth <br /> Service
-          </h2>
-
-          <p className="text-xl max-w-[730px] font-light">
-            Gable View Homes is a full-service real estate development firm
-            specializing in new construction residential projects.
-          </p>
-        </Tab.Panel>
+   
       </Tab.Panels>
     </Tab.Group>
 

@@ -69,7 +69,8 @@ useEffect(() => {
    
 <header className={`${ lastScrollY == 0 ? "fadeHov nav" : " nav"  }  ${ show ? "" : "navScroll"  }`}>
   <div className="px-[24px] lg:px-[48px] xl:px-[96px] mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-    <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+<Link href="/">
+<a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
     <svg
               width="231"
               height="33"
@@ -131,22 +132,23 @@ useEffect(() => {
               />
             </svg>
     </a>
+</Link>
     <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
 
-<Link href="/">
+<Link href="/about">
 <a className="mr-5 tracking-[.15em] text-black border-b-2 border-transparent hover:text-gray-600 hover:border-b-2 hover:border-black">ABOUT</a>
 </Link>
-<Link href="/">
+<Link href="/services">
 
 <a className="mr-5 tracking-[.15em] text-black border-b-2 border-transparent hover:text-gray-600 hover:border-b-2 hover:border-black">SERVICES</a>
 </Link>
 
-<Link href="/">
+<Link href="/home-buying-process">
 
 <a className="mr-5 tracking-[.15em] text-black border-b-2 border-transparent hover:text-gray-600 hover:border-b-2 hover:border-black">RESOURCES</a>
 </Link>
 
-<Link href="/">
+<Link href="/contact">
 
 <a className="mr-5 tracking-[.15em] text-black border-b-2 border-transparent hover:text-gray-600 hover:border-b-2 hover:border-black">CONTACTS</a>
 

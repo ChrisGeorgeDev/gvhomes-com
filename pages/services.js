@@ -40,7 +40,7 @@ export default function Home() {
 
 
                 <h1 className="text-center drop-shadow-md  text-8xl leading-[1.2em] font-bold block text-white">
-                    About Us
+                    Our Services
                 </h1>
 
 
@@ -71,7 +71,7 @@ export default function Home() {
                             <div>
 
                                 <h3>Areas of expertise</h3>
-                                <ul>
+                                <ul className="text-lg  list-disc list-inside leading-[1.4em]">
                                     <li> Site selection</li>
                                     <li>Acquisition</li>
                                     <li>Securing funding</li>
@@ -124,7 +124,7 @@ export default function Home() {
                             <div>
 
                                 <h3>Areas of expertise</h3>
-                                <ul>
+                                <ul className="text-lg  list-disc list-inside leading-[1.4em]">
                                     <li>Pre-construction services</li>
                                     <li>Construction Services</li>
                                     <li>Post-Construction Services</li>
@@ -165,7 +165,7 @@ export default function Home() {
                             <div>
 
                                 <h3>Areas of expertise</h3>
-                                <ul>
+                                <ul className="text-lg  list-disc list-inside leading-[1.4em]">
                                     <li>    Advisory</li>
                                     <li>Project Planning</li>
                                     <li>Communications</li>
@@ -206,7 +206,7 @@ export default function Home() {
                             <div>
 
                                 <h3>Areas of expertise</h3>
-                                <ul>
+                                <ul className="text-lg  list-disc list-inside leading-[1.4em]">
                                     <li>    Preliminary Planning</li>
                                     <li>Concept and Design </li>
                                     <li>Development</li>

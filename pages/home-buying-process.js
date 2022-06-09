@@ -88,7 +88,7 @@ Over the various stages of the homebuilding process, our team will connect and w
                 <img className="self-end" src="/img/finishes.jpg" />
               </div>
             </div>
-            <div className="container mx-auto px-5 sectionp">
+            <div className="container mx-auto px-5 pt-20 sectionp">
               <h2>The Process</h2>
             <Services />
             </div>

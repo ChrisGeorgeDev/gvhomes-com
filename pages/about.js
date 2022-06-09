@@ -10,6 +10,8 @@ import Services from "../components/Services";
 import { NextSeo } from "next-seo";
 import Navbar from "../components/MainNav";
 import InteriorHero from "../components/Hero/InteriorHero";
+import CommunityTabs from "../components/ServiceTabs/communities";
+import ValuesTabs from "../components/ServiceTabs/values";
 
 export default function Home() {
   return (
@@ -81,7 +83,7 @@ development.
                 </div>
               </div>
               <div className="flex justify-items-end  ">
-                <img className="self-end" src="/img/kitchen_2.jpg" />
+                <img className="self-end" src="/img/gvh-living.jpg" />
               </div>
             </div>
           </div>
@@ -120,7 +122,7 @@ and customer service.
 
         
           </div>
-              <ServiceTabs />
+            <ValuesTabs/>
 
       
             </div>
@@ -134,15 +136,15 @@ and customer service.
             <div className="flex flex-col lg:flex-row-reverse ">
               <div className=" flex flex-col lg:text-upright justify-start w-7/12 2xl:w-4/12 ">
                 <div className="ml-20 leading-none lg:leading-tight">
-                  <span className="text-8xl  block font-bold">Featured</span>
+                  <span className="text-8xl  block font-bold">Current</span>
                   <span className="text-8xl  uppercase  block font-thin">
-                    Community
+                    Communities
                   </span>
             
                 </div>
               </div>
               <div className="grid justify-items-end  ">
-                <img className="self-end" src="/img/kc-exterior.jpg" />
+                <img className="self-end" src="/img/suite-d-kitchen.jpg" />
               </div>
             </div>
           </div>
@@ -179,26 +181,15 @@ and customer service.
                 </div>
               </div>
               <div className="flex justify-items-end  ">
-                <img className="self-end" src="/img/kc-suite-e.jpg" />
+                <img className="self-end" src="/img/livingroom.jpg" />
               </div>
             </div>
 
-            <ServiceTabs />
+            <CommunityTabs/>
 
           </div>
 
         </section>
-
-
-        {/* <section className="mb-[125px] bg-gray-50 py-16">
-          <div className="md:container md:mx-auto border-b  ">
-            <div className="container">
-              <h2 className="h2">What we do</h2>
-            </div>
-          </div>
-          <Services />
-        </section> */}
-
 
       </main>
 

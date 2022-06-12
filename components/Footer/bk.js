@@ -5,9 +5,8 @@ export default function Footer(props) {
   return (
     <footer className="text-gray-600 body-font">
       {/* <hr></hr> */}
-      <div className=" py-12 mx-auto container ">
-    <div className="xl:grid xl:grid-cols-3 xl:gap-8">
-    <div className="w-64 flex-shrink-0  text-left">
+      <div className="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+        <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
           <a className="flex title-font font-bold items-center md:justify-start justify-center text-gray-900">
             <svg
               width="231"
@@ -131,9 +130,8 @@ export default function Footer(props) {
             </a>
           </span>
         </div>
-      <div className="grid grid-cols-2 gap-8 mt-12 xl:mt-0 xl:col-span-2">
-        <div className="md:grid md:grid-cols-2 md:gap-8">
-        <div className=" w-full ">
+        <div className="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+          <div className="lg:w-1/4 md:w-1/2 w-full px-4">
             <h2 className="font-bold text-gray-900 tracking-widest text-sm mb-3">
               ABOUT
             </h2>
@@ -152,7 +150,7 @@ export default function Footer(props) {
               </li>
             </nav>
           </div>
-          <div className=" w-full ">
+          <div className="lg:w-1/4 md:w-1/2 w-full px-4">
             <h2 className="title-font font-bold text-gray-900 tracking-widest text-sm mb-3">
               SERVICES
             </h2>
@@ -171,11 +169,9 @@ export default function Footer(props) {
               </li>
             </nav>
           </div>
-        </div>
-        <div className="md:grid md:grid-cols-2 md:gap-8">
-        <div className=" w-full ">
+          <div className="lg:w-1/4 md:w-1/2 w-full px-4">
             <h2 className="title-font font-bold text-gray-900 tracking-widest text-sm mb-3">
-              SERVICES
+              RESOURCES
             </h2>
             <nav className="list-none space-y-2 mb-10">
               <li>
@@ -192,9 +188,9 @@ export default function Footer(props) {
               </li>
             </nav>
           </div>
-          <div className=" w-full ">
+          <div className="lg:w-1/4 md:w-1/2 w-full px-4">
             <h2 className="title-font font-bold text-gray-900 tracking-widest text-sm mb-3">
-              SERVICES
+              CONTACTS
             </h2>
             <nav className="list-none space-y-2 mb-10">
               <li>
@@ -213,10 +209,6 @@ export default function Footer(props) {
           </div>
         </div>
       </div>
-    </div>
-  </div>
-
-
       <div className=" border-t border-gray-200">
         <div className="container mx-auto py-4 px-5 flex flex-wrap justify-between flex-col sm:flex-row">
           <p className="text-gray-500 text-sm text-center sm:text-left">

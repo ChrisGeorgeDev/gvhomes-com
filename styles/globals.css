@@ -217,6 +217,7 @@ body {
 div > .sectionp {
   @apply my-[60px];
 }
+
 .sectionp > p:first-of-type {
   font-weight: 700;
   color: #000;
@@ -226,6 +227,11 @@ div > .sectionp {
 .sectionp  p {
   font-weight: 300;
   @apply text-xl max-w-[730px] mb-[1em] ;
+}
+
+.prosep p {
+  font-weight: 300;
+  @apply text-lg max-w-prose mb-[1em] ;
 }
 
 .sectionp > p {
@@ -410,9 +416,10 @@ div > .sectionp {
   left: 100%;
   user-select: none;
   /* background-color: inherit; */
-  background-color: #FFF;
+  background-color: rgba(255,255,255,1);
   box-shadow: inset -1px 1px black;
   transition: background-color 0.3s ease, padding 0.2s ease;
+  z-index: -999999;
 }
 
 .disclosureTitle {

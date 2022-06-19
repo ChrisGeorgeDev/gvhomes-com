@@ -80,9 +80,37 @@ export default function Home() {
           </div>
         </section>
 
-        <section>
-          <div className="py-[125px] bg-gray-50">
+        <section className="py-[125px] container bg-gray-50">
             <div className="flex flex-col lg:flex-row ">
+              
+              <div className=" flex flex-col lg:text-upright justify-end w-7/12 2xl:w-full ">
+                <div className="ml-20 leading-none lg:leading-tight">
+                  <span className="text-8xl  block font-bold">Elevated</span>
+                  <span className="text-8xl  uppercase  block font-thin">
+                    Living
+                  </span>
+                  <span className="text-8xl  uppercase block font-thin">
+                    Experiences
+                  </span>
+                </div>
+              </div>
+
+              <div className="2xl:w-full relative overflow-visible ">
+                <div className="flex">
+                <img className="w-[69vw]" src="/img/kitchen_2.jpg" />
+                </div>
+                
+              </div>
+
+            </div>
+        </section>
+
+
+
+        <section>
+          <div className="py-[125px] container bg-gray-50">
+            <div className="flex flex-col lg:flex-row ">
+              
               <div className=" flex flex-col lg:text-upright justify-end w-7/12 2xl:w-4/12 ">
                 <div className="ml-20 leading-none lg:leading-tight">
                   <span className="text-8xl  block font-bold">Elevated</span>
@@ -94,12 +122,16 @@ export default function Home() {
                   </span>
                 </div>
               </div>
-              <div className="flex justify-items-end  ">
+
+              <div className="flex justify-items-end 2xl:w-8/12  ">
                 <img className="self-end" src="/img/kitchen_2.jpg" />
               </div>
+
             </div>
           </div>
         </section>
+
+
 
         <section className="mb-[125px] bg-gray-50 py-16">
           <div className="md:container md:mx-auto  ">

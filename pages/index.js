@@ -46,7 +46,7 @@ export default function Home() {
             </h1>
           </div>
 
-          <Link href="/cows">
+          <Link href="/about">
             <a>
               <Button>ABOUT GABLE VIEW</Button>
             </a>
@@ -72,7 +72,7 @@ export default function Home() {
               community.
             </p>
 
-            <Link href="/cows">
+            <Link href="/about">
               <a>
                 <Button>WHO WE ARE</Button>
               </a>
@@ -80,35 +80,8 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="py-[125px] container bg-gray-50">
-            <div className="flex flex-col lg:flex-row ">
-              
-              <div className=" flex flex-col lg:text-upright justify-end w-7/12 2xl:w-full ">
-                <div className="ml-20 leading-none lg:leading-tight">
-                  <span className="text-8xl  block font-bold">Elevated</span>
-                  <span className="text-8xl  uppercase  block font-thin">
-                    Living
-                  </span>
-                  <span className="text-8xl  uppercase block font-thin">
-                    Experiences
-                  </span>
-                </div>
-              </div>
-
-              <div className="2xl:w-full relative overflow-visible ">
-                <div className="flex">
-                <img className="w-[69vw]" src="/img/kitchen_2.jpg" />
-                </div>
-                
-              </div>
-
-            </div>
-        </section>
-
-
-
         <section>
-          <div className="py-[125px] container bg-gray-50">
+          <div className="py-[125px]  bg-gray-50">
             <div className="flex flex-col lg:flex-row ">
               
               <div className=" flex flex-col lg:text-upright justify-end w-7/12 2xl:w-4/12 ">
@@ -138,8 +111,11 @@ export default function Home() {
             <div className="container">
               <h2 className="h2  ">Our Services</h2>
               <ServiceTabs />
-
-              <Link href="/cows">
+              <p className="text-xl max-w-[730px] font-light mb-6">
+            Gable View Homes is a full-service real estate development firm
+            specializing in new construction residential projects.
+          </p>
+              <Link href="/services">
               <a>
                 <Button>WHAT WE DO</Button>
               </a>
@@ -179,11 +155,11 @@ export default function Home() {
             Gable View Homes is pleased to announce our expansion into the Town of Milton with our newest development, The Residences on Kennedy Circle.
             </p>
 
-            <Link href="/cows">
-              <a>
+        
+              <a href="https://kennedycirclecondo.com/" target="_blank" rel="noreferrer">
                 <Button>VISIT PROJECT SITE</Button>
               </a>
-            </Link>
+         
           </div>
         </section>
 

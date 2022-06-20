@@ -67,45 +67,55 @@ export default function CommunityTabs() {
       </div>
       <Tab.Panels className={`container mx-auto my-[64px] `}>
         <Tab.Panel className={``}>
-          <h2 className="h2">Real Estate Development</h2>
+          <h2 className="h2">Notting Hill</h2>
 
           <p className="text-xl max-w-[730px] font-light">
-            Gable View Homes is a full-service real estate development firm
-            specializing in new construction residential projects.
+      <ul className="ml-6 list-outside list-disc space-y-2">
+      <li>Inspired Contemporary townhome lifestyle</li>
+           <li>Our newest community located in the heart of Cambridge, Ontario, consisting of 96 3-storey townhouses</li>
+      </ul>
           </p>
         </Tab.Panel>
 
         <Tab.Panel className={``}>
           <h2 className="h2">
-            The Second <br /> Service
+          Aspen Villas
           </h2>
-
           <p className="text-xl max-w-[730px] font-light">
-            Gable View Homes is a full-service real estate development firm
-            specializing in new construction residential projects.
-          </p>
+
+          <ul className="ml-6 list-outside list-disc space-y-2">
+      <li>Modern bungalow living</li>
+      <li>Located in Oakbank, Alberta, Aspen Villas is a neighbourhood made up of 25 condominium bungalow homes.</li>
+      </ul>
+      </p>
         </Tab.Panel>
 
         <Tab.Panel className={``}>
           <h2 className="h2">
-            The Third <br /> Service
+          Riverbend Estates
           </h2>
-
           <p className="text-xl max-w-[730px] font-light">
-            Gable View Homes is a full-service real estate development firm
-            specializing in new construction residential projects.
-          </p>
+
+          <ul className="ml-6 list-outside list-disc space-y-2">
+      <li>A collection of Thoughtfully Designed 2-Storey Bungalows. </li>
+      <li>Nestled near St. Adolphe, just south of Winnipeg, Riverbend Estates comprises 25 stunning bungalows.</li>
+      </ul>
+</p>
+
         </Tab.Panel>
 
         <Tab.Panel className={``}>
           <h2 className="h2">
-            The Fourth <br /> Service
+          Waterside Place
           </h2>
-
           <p className="text-xl max-w-[730px] font-light">
-            Gable View Homes is a full-service real estate development firm
-            specializing in new construction residential projects.
-          </p>
+
+          <ul className="ml-6 list-outside list-disc space-y-2">
+      <li>Stylish semi-detached homes </li>
+<li>Located in the south east corner of Winnipeg, Waterside Place is a neighbourhood made up of 30 perfect bungalows nestled on a peaceful cul-de-sac.</li>
+
+      </ul>
+      </p>
         </Tab.Panel>
       </Tab.Panels>
     </Tab.Group>

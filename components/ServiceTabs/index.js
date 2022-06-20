@@ -68,43 +68,30 @@ export default function ServiceTabs() {
         <Tab.Panel className={``}>
           <h2 className="h2">Real Estate Development</h2>
 
-          <p className="text-xl max-w-[730px] font-light">
-            Gable View Homes is a full-service real estate development firm
-            specializing in new construction residential projects.
-          </p>
+   
         </Tab.Panel>
 
         <Tab.Panel className={``}>
           <h2 className="h2">
-            The Second <br /> Service
+          	Project and Construction Management
           </h2>
 
-          <p className="text-xl max-w-[730px] font-light">
-            Gable View Homes is a full-service real estate development firm
-            specializing in new construction residential projects.
-          </p>
+ 
         </Tab.Panel>
 
         <Tab.Panel className={``}>
           <h2 className="h2">
-            The Third <br /> Service
+       	Full-Service Build + Marketing
           </h2>
 
-          <p className="text-xl max-w-[730px] font-light">
-            Gable View Homes is a full-service real estate development firm
-            specializing in new construction residential projects.
-          </p>
         </Tab.Panel>
 
         <Tab.Panel className={``}>
           <h2 className="h2">
-            The Fourth <br /> Service
+     Custom Homes
           </h2>
 
-          <p className="text-xl max-w-[730px] font-light">
-            Gable View Homes is a full-service real estate development firm
-            specializing in new construction residential projects.
-          </p>
+   
         </Tab.Panel>
       </Tab.Panels>
     </Tab.Group>

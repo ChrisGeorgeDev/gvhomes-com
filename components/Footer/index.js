@@ -217,8 +217,8 @@ export default function Footer(props) {
   </div>
 
 
-      <div className=" border-t border-gray-200">
-        <div className="container mx-auto py-4 px-5 flex flex-wrap justify-between flex-col sm:flex-row">
+      <div className=" border-t bg-black border-gray-200">
+        <div className="container mx-auto py-4  flex flex-wrap justify-between flex-col sm:flex-row">
           <p className="text-gray-500 text-sm text-center sm:text-left">
             © 2022 Gable View Homes
           </p>

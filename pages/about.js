@@ -35,7 +35,7 @@ export default function Home() {
 
       <InteriorHero
         image="/img/hero/about-hero.jpg"
-        imagePortrait="/img/comm/landing-portrait.jpg"
+        imagePortrait="/img/hero/about-hero.jpg"
         desktopPosition="object-top"
         style="text-blue-ggDark flex-col" >
 

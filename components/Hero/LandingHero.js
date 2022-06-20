@@ -33,11 +33,13 @@ export default function LandingHero(props) {
           {!isDesktop && (
                      <img
                 alt={props.alt}
-                src={
-                  portraitImage == "undefined"
-                    ? props.image
-                    : props.imagePortrait
-                }
+                // src={
+                //   portraitImage == "undefined"
+                //     ? props.image
+                //     : props.imagePortrait
+                // }
+                src={props.image}
+
                 className="object-cover absolute z-[1]  w-full h-full"
               />
           )}

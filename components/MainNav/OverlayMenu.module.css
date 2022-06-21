@@ -1,0 +1,47 @@
+.halfsie {
+    max-width: 1000px;
+  }
+
+  .menuGroup1 {
+    line-height: 1.2em;
+  }
+
+  .closeNav {
+      position: absolute;
+      right: 20px;
+  
+  }
+
+  @media (max-width: 1260px) {
+    .halfsie {
+        max-width: 80%;
+      }
+    
+  }
+
+
+
+  @media (max-width: 930px) {
+    .halfsie {
+        max-width: 89%;
+      }
+    
+  }
+
+
+
+
+  @media (max-width: 800px) {
+    .halfsie {
+        max-width: 95%;
+      }
+    
+  }
+
+
+  @media (max-width: 767px) {
+    .halfsie {
+        max-width: 100%;
+      }
+    
+  }

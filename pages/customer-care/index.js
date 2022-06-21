@@ -1,14 +1,12 @@
 import Head from "next/head";
-import Button from "../components/Button";
-import LandingHero from "../components/Hero/LandingHero";
-import ServiceTabs from "../components/ServiceTabs";
-import styles from "../styles/Home.module.css";
+import Button from "../../components/Button";
 import Link from "next/link";
-import Footer from "../components/Footer";
-import Services from "../components/Services";
+import Footer from "../../components/Footer";
+import Services from "../../components/Services";
 import { NextSeo } from "next-seo";
-import Navbar from "../components/MainNav";
-import InteriorHero from "../components/Hero/InteriorHero";
+import Navbar from "../../components/MainNav";
+import InteriorHero from "../../components/Hero/InteriorHero";
+
 
 export default function Home() {
   return (
@@ -39,7 +37,7 @@ export default function Home() {
 
 
             <h1 className="text-center drop-shadow-md  text-8xl leading-[1.2em] font-bold block text-white">
-        Home Buying Process
+        Customer Care
             </h1>
    
 
@@ -87,7 +85,7 @@ Over the various stages of the homebuilding process, our team will connect and w
                 <img className="self-end" src="/img/finishes.jpg" />
               </div>
             </div>
-            <div className="container mx-auto px-5 pt-20 sectionp">
+            <div className="lg:container mx-auto px-5 pt-20 sectionp">
               <h2>The Process</h2>
             <Services />
             </div>
@@ -119,10 +117,7 @@ been constructed.
 
           <div className="container mx-auto px-5 sectionp">
             <p>
-            We thank you for joining our family 
-and very much look forward to working 
-with you to shape and create your
- vision for your new home.
+            Thank you for joining our family, we look forward to welcoming you home.
             </p>
             </div>
         </section>

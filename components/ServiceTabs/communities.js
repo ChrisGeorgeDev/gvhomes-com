@@ -6,7 +6,7 @@ export default function CommunityTabs() {
     <Tab.Group>
       <div className=" relative ">
         <div className="w-full flex  md:container md:mx-auto">
-          <Tab.List className="flex justify-between text-center w-full md:container ">
+          <Tab.List className="grid grid-cols-2 md:flex justify-between text-center w-full md:container ">
             <Tab as={Fragment}>
               {({ selected }) => (
                 <button
@@ -17,7 +17,7 @@ export default function CommunityTabs() {
                   }
                 >
                 
-                  <img className={ selected ? "max-h-[186px]  mx-auto " : "max-h-[186px] mx-auto ease-in-out duration-300 opacity-40 hover:opacity-100 "} src="/img/nottinghill-logo.png"/>
+                  <img className={ selected ? "max-h-[120px] lg:max-h-[186px]  mx-auto " : "max-h-[120px] lg:max-h-[186px] mx-auto ease-in-out duration-300 opacity-40 hover:opacity-100 "} src="/img/nottinghill-logo.png"/>
                 </button>
               )}
             </Tab>
@@ -27,10 +27,10 @@ export default function CommunityTabs() {
                   className={
                     selected
                       ? " w-full is-active tabhover border-b border-r border-[#010101] outline-none py-6  text-black text-center font-semibold"
-                      : " text-black text-center outline-none tabhover border-b border-r border-[#010101] py-6 font-semibold  w-full"
+                      : " text-black text-center outline-none tabhover border-b md:border-r border-[#010101] py-6 font-semibold  w-full"
                   }
                 >
-                  <img className={ selected ? "max-h-[186px]  mx-auto " : "max-h-[186px] mx-auto ease-in-out duration-300 opacity-40 hover:opacity-100 "} src="/img/aspenvillas-logo.png"/>
+                  <img className={ selected ? "max-h-[120px] lg:max-h-[186px]  mx-auto " : "max-h-[120px] lg:max-h-[186px] mx-auto ease-in-out duration-300 opacity-40 hover:opacity-100 "} src="/img/aspenvillas-logo.png"/>
                 </button>
               )}
             </Tab>
@@ -44,7 +44,7 @@ export default function CommunityTabs() {
                       : " text-black text-center outline-none tabhover border-b border-r border-[#010101]  py-6 font-semibold  w-full"
                   }
                 >
-                  <img className={ selected ? "max-h-[186px]  mx-auto " : "max-h-[186px] mx-auto ease-in-out duration-300 opacity-40 hover:opacity-100 "} src="/img/riverbendestates-logo.png"/>
+                  <img className={ selected ? "max-h-[120px] lg:max-h-[186px]  mx-auto " : "max-h-[120px] lg:max-h-[186px] mx-auto ease-in-out duration-300 opacity-40 hover:opacity-100 "} src="/img/riverbendestates-logo.png"/>
                 </button>
               )}
             </Tab>
@@ -58,7 +58,7 @@ export default function CommunityTabs() {
                       : " text-black text-center outline-none tabhover border-b border-[#010101]  py-6 font-semibold  w-full"
                   }
                 >
-                  <img className={ selected ? "max-h-[186px]  mx-auto " : "max-h-[186px] mx-auto ease-in-out duration-300 opacity-40 hover:opacity-100 "} src="/img/watersideplace-logo.png"/>
+                  <img className={ selected ? "max-h-[120px] lg:max-h-[186px]  mx-auto " : "max-h-[120px] lg:max-h-[186px] mx-auto ease-in-out duration-300 opacity-40 hover:opacity-100 "} src="/img/watersideplace-logo.png"/>
                 </button>
               )}
             </Tab>

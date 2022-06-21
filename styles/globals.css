@@ -186,7 +186,9 @@
 
 html,
 body {
-  @apply text-[12px] md:text-[12px] lg:text-[12px] xl:text-[14px] 2xl:text-[16px];
+  /* @apply text-[12px] md:text-[12px] lg:text-[12px] xl:text-[14px] 2xl:text-[16px]; */
+
+  @apply text-[16px]  2xl:text-[18px];
 }
 
 body {
@@ -205,9 +207,9 @@ body {
 }
 
 .h2 {
-  @apply text-3xl;
-  @apply mb-[56px];
-  font-weight: 700;
+  @apply text-2xl;
+  @apply mb-[16px];
+  font-weight: 500;
   color: #000;
 }
  .sectionp {
@@ -219,14 +221,14 @@ div > .sectionp {
 }
 
 .sectionp > p:first-of-type {
-  font-weight: 700;
+  font-weight: 500;
   color: #000;
-  @apply text-3xl max-w-[730px] leading-[1.1] mb-[56px];
+  @apply text-2xl lg:text-3xl max-w-[930px] leading-[1.1] mb-[46px];
 }
 
 .sectionp  p {
   font-weight: 300;
-  @apply text-xl max-w-[730px] mb-[1em] ;
+  @apply text-xl max-w-[930px] mb-[1em] ;
 }
 
 .prosep p {
@@ -235,7 +237,7 @@ div > .sectionp {
 }
 
 .sectionp > p {
-  @apply mb-[60px];
+  @apply mb-[20px];
 }
 
 .sectionp h3 {
@@ -244,7 +246,7 @@ div > .sectionp {
   @apply text-xl max-w-[730px] mb-[.5em];}
 
 .sectionp > h2 {
-  @apply text-6xl leading-[1.1] max-w-[730px] font-bold block text-black mb-[60px];
+  @apply text-5xl md:text-6xl leading-[1.1] max-w-[800px] font-bold block text-black mb-[20px];
 }
 
 .sectionp > div > h2 {

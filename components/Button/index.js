@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Button(props) {
   return (
-    <div className="bar my-2">
+    <div className="bar mt-10 my-2">
       <img
         className=" arrow"
         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="

@@ -50,22 +50,22 @@ export default function Home() {
 
 
                 <section className="border-b">
-                    <div className="container mx-auto px-5 sectionp  justify-between flex flex-col lg:flex-row gap-2 lg:gap-24">
+                    <div className="2xl:container mx-auto px-5 2xl:px-0 sectionp  justify-between flex flex-col xl:flex-row gap-2 xl:gap-5">
 
 
-                       <div className="w-full lg:w-1/3">
+                       <div className="w-full xl:w-[300px]">
                        <h2>Get in touch</h2>
 
 
                        </div>
 
-                        <div className="grid w-full lg:w-2/3 grid-cols-1 md:grid-cols-2 gap-10">
+                        <div className="grid w-full xl:w-2/3 grid-cols-1 md:grid-cols-2 gap-10">
 
                             <div className="text-lg ">
                                 <span className=" font-medium text-black leading-[1.5] block mb-2">
                                     Sales
                                 </span>
-                                <span className=" flex items-center gap-3 leading-[1.5] ">
+                                <span className=" text-[20px]  flex items-center gap-3  leading-[1.5] ">
 
 
                                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -77,7 +77,7 @@ export default function Home() {
                                     </a>
                                 </span>
 
-                                <span className=" flex items-center gap-3 font-normal leading-[1.5] ">
+                                <span className=" text-[20px]  flex items-center gap-3 font-normal leading-[1.5] ">
                                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                                         <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                                         <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
@@ -91,7 +91,7 @@ export default function Home() {
                                 <span className=" font-medium text-black leading-[1.5] block mb-2">
                                  Design Centre
                                 </span>
-                                <span className=" flex items-center gap-3 leading-[1.5] ">
+                                <span className=" text-[20px]  flex items-center gap-3 leading-[1.5] ">
 
 
                                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -103,7 +103,7 @@ export default function Home() {
                                     </a>
                                 </span>
 
-                                <span className=" flex items-center gap-3 font-normal leading-[1.5] ">
+                                <span className=" text-[20px]  flex items-center gap-3 font-normal leading-[1.5] ">
                                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                                         <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                                         <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
@@ -114,11 +114,11 @@ export default function Home() {
                             </div>
 
 
-                            <div className="text-lg ">
+                            <div className="text-lg md:col-span-2 xl:col-span-2 2xl:col-span-1">
                                 <span className=" font-medium text-black leading-[1.5] block mb-2">
                                     Warranty
                                 </span>
-                                <span className=" flex items-center gap-3 leading-[1.5] ">
+                                <span className=" text-[20px] flex items-center gap-3 leading-[1.5] ">
 
 
                                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -130,7 +130,7 @@ export default function Home() {
                                     </a>
                                 </span>
 
-                                <span className=" flex items-center gap-3 font-normal leading-[1.5] ">
+                                <span className="text-[20px]  flex items-center gap-3 font-normal leading-[1.5] ">
                                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                                         <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                                         <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
@@ -146,7 +146,7 @@ export default function Home() {
                                 <span className=" font-medium text-black leading-[1.5] block mb-2">
                                     Customer Care
                                 </span>
-                                <span className=" flex items-center gap-3 leading-[1.5] ">
+                                <span className=" text-[20px] flex items-center gap-3 leading-[1.5] ">
 
 
                                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -158,7 +158,7 @@ export default function Home() {
                                     </a>
                                 </span>
 
-                                <span className=" flex items-center gap-3 font-normal leading-[1.5] ">
+                                <span className=" text-[20px] flex items-center gap-3 font-normal leading-[1.5] ">
                                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                                         <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                                         <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
@@ -185,16 +185,16 @@ export default function Home() {
                     </div>
                 </section>
                 <section className="border-b">
-                    <div className="container mx-auto px-5 sectionp  justify-between flex flex-col lg:flex-row gap-2 lg:gap-24">
+                    <div className="2xl:container mx-auto px-5 2xl:px-0 sectionp  justify-between flex flex-col xl:flex-row gap-2 xl:gap-10">
 
 
-                    <div className="w-full lg:w-1/3">
+                    <div className="w-full xl:w-[300px]">
                   <h2>General inquiries</h2>
 
                   </div>
 
 
-                        <div className="grid w-full lg:w-2/3 grid-cols-1 md:grid-cols-2 gap-10">
+                        <div className="grid w-full xl:w-2/3 grid-cols-1 md:grid-cols-2 gap-10">
 
                             <div className="text-lg ">
                                 <span className=" font-medium text-black leading-[1.5] block mb-2">
@@ -207,7 +207,7 @@ export default function Home() {
                                 Burlington, ON<br/>  L7L 6B2
                                 </span>
                             
-                                <span className=" flex items-center gap-3 leading-[1.5] ">
+                                <span className="text-[20px]  flex items-center gap-3 leading-[1.5] ">
 
 
                                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -219,7 +219,7 @@ export default function Home() {
                                     </a>
                                 </span>
 
-                                <span className=" flex items-center gap-3 font-normal leading-[1.5] ">
+                                <span className=" text-[20px]  flex items-center gap-3 font-normal leading-[1.5] ">
                                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                                         <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                                         <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />

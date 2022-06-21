@@ -9,6 +9,8 @@ import Services from "../components/Services";
 import { NextSeo } from "next-seo";
 import Navbar from "../components/MainNav";
 import InteriorHero from "../components/Hero/InteriorHero";
+import SeparatorLeft from "../components/Separator/TextLeft";
+import SeparatorRight from "../components/Separator/TextRight";
 
 export default function Home() {
   return (
@@ -79,29 +81,13 @@ export default function Home() {
           </div>
         </section>
 
-        <section>
-          <div className="py-[125px]  bg-gray-50">
-            <div className="flex flex-col lg:flex-row ">
-              
-              <div className=" flex flex-col lg:text-upright justify-end w-7/12 2xl:w-4/12 ">
-                <div className="ml-20 leading-none lg:leading-tight">
-                  <span className="text-8xl  block font-bold">Elevated</span>
-                  <span className="text-8xl  uppercase  block font-thin">
-                    Living
-                  </span>
-                  <span className="text-8xl  uppercase block font-thin">
-                    Experiences
-                  </span>
-                </div>
-              </div>
+ 
 
-              <div className="flex justify-items-end 2xl:w-8/12  ">
-                <img className="self-end" src="/img/kitchen_2.jpg" />
-              </div>
-
-            </div>
-          </div>
-        </section>
+        <SeparatorLeft
+          bold="Elevated"
+          thin=" Living <br/> Experiences"
+          image="/img/kitchen_2.jpg"
+        />
 
 
 
@@ -125,24 +111,14 @@ export default function Home() {
           
         </section>
 
-        <section>
-          <div className="mb-[125px]">
-            <div className="flex flex-col lg:flex-row-reverse ">
-              <div className=" flex flex-col lg:text-upright justify-start w-7/12 2xl:w-4/12 ">
-                <div className="ml-20 leading-none lg:leading-tight">
-                  <span className="text-8xl  block font-bold">Featured</span>
-                  <span className="text-8xl  uppercase  block font-thin">
-                    Community
-                  </span>
-            
-                </div>
-              </div>
-              <div className="grid justify-items-end  ">
-                <img className="self-end" src="/img/kc-exterior.jpg" />
-              </div>
-            </div>
-          </div>
-        </section>
+
+
+        <SeparatorRight
+          bold="Featured"
+          thin=" Community"
+          image="/img/kc-exterior.jpg"
+        />
+
 
         <section>
           <div className="container mx-auto px-5 sectionp">
@@ -163,28 +139,16 @@ export default function Home() {
         </section>
 
 
-        <section>
-          <div className="py-[125px] bg-gray-50">
-            <div className="flex flex-col lg:flex-row ">
-              <div className=" flex flex-col lg:text-upright justify-end w-7/12 2xl:w-4/12 ">
-                <div className="ml-20 leading-none lg:leading-tight">
-                  <span className="text-8xl  block font-bold">Inspired</span>
-                  <span className="text-8xl  uppercase  block font-thin">
-                    Design for
-                  </span>
-                  <span className="text-8xl  uppercase block font-thin">
-                   Modern Living
-                  </span>
-                </div>
-              </div>
-              <div className="flex justify-items-end  ">
-                <img className="self-end" src="/img/kc-suite-e.jpg" />
-              </div>
-            </div>
-          </div>
-        </section>
+ 
 
+        <div className="pb-[125px] bg-gray-50">
 
+        <SeparatorLeft
+          bold="Inspired"
+          thin="Design for <br/> Modern Living"
+          image="/img/kc-suite-e.jpg"
+        />
+</div>
 
 
 

@@ -37,7 +37,7 @@ export default function Home() {
         style="text-blue-ggDark flex-col" >
 
 
-            <h1 className="text-center drop-shadow-md  text-8xl leading-[1.2em] font-bold block text-white">
+<h1 className="text-center drop-shadow-md text-5xl lg:text-8xl leading-[1.2em] font-bold block text-white">
         Customer Care
             </h1>
    
@@ -49,7 +49,7 @@ export default function Home() {
         <section>
           <div className="container mx-auto px-5 sectionp">
               <h2>Thank you for
-choosing us.</h2>
+choosing&nbsp;us.</h2>
             <p>
             The Gable View Homes
 experienced team of sales 

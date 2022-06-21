@@ -36,7 +36,7 @@ export default function Home() {
 
             <ResourcesHero>
                 <span className="montserrat">COMMUNITY RESOURCES</span>
-                  <h1 className="text-left w-7/12 2xl:w-6/12   text-6xl leading-[1.2em] font-bold block text-black">
+                  <h1 className="text-left w-full lg:w-7/12 2xl:w-6/12   text-3xl lg:text-6xl  leading-[1.2em] font-bold block text-black">
                     The Residences on Kennedy Circle
                 </h1>
             </ResourcesHero>

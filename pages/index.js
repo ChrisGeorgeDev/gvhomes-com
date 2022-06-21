@@ -81,14 +81,15 @@ export default function Home() {
           </div>
         </section>
 
- 
+        <div className=" bg-gray-50">
+
 
         <SeparatorLeft
           bold="Elevated"
           thin=" Living <br/> Experiences"
           image="/img/kitchen_2.jpg"
         />
-
+</div>
 
 
         <section className="mb-[125px] bg-gray-50 py-16">

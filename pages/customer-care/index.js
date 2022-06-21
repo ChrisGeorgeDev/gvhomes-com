@@ -6,6 +6,7 @@ import Services from "../../components/Services";
 import { NextSeo } from "next-seo";
 import Navbar from "../../components/MainNav";
 import InteriorHero from "../../components/Hero/InteriorHero";
+import SeparatorLeft from "../../components/Separator/TextLeft";
 
 
 export default function Home() {
@@ -71,20 +72,17 @@ Over the various stages of the homebuilding process, our team will connect and w
 
         <section className="bg-gray-50">
           <div className="py-[125px] ">
-            <div className="flex flex-col lg:flex-row ">
-              <div className=" flex flex-col lg:text-upright justify-end w-7/12 2xl:w-4/12 ">
-                <div className="ml-20 leading-none lg:leading-tight">
-                  <span className="text-8xl  block font-bold">Your journey</span>
-                  <span className="text-8xl  uppercase  block font-thin">
-                   Starts here
-                  </span>
-              
-                </div>
-              </div>
-              <div className="flex justify-items-end  ">
-                <img className="self-end" src="/img/finishes.jpg" />
-              </div>
-            </div>
+  
+
+<SeparatorLeft 
+image="/img/finishes.jpg"
+thin=" Starts here"
+bold="Your journey"
+/>
+
+
+
+
             <div className="lg:container mx-auto px-5 pt-20 sectionp">
               <h2>The Process</h2>
             <Services />

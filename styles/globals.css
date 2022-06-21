@@ -246,7 +246,7 @@ div > .sectionp {
   @apply text-xl max-w-[730px] mb-[.5em];}
 
 .sectionp > h2 {
-  @apply text-5xl md:text-6xl leading-[1.1] max-w-[800px] font-bold block text-black mb-[20px];
+  @apply text-4xl md:text-5xl lg:text-6xl leading-[1.1] max-w-[800px] font-bold block text-black mb-[20px];
 }
 
 .sectionp > div > h2 {

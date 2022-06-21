@@ -35,15 +35,15 @@ export default function Home() {
       <LandingHero
         image="/img/hero/welcome_couch.jpg"
         imagePortrait="/img/comm/landing-portrait.jpg"
-        style="text-blue-ggDark flex-col"
+        style="text-blue-ggDark flex-col "
         height="h-[100vh]"
       >
 
-        <div className="flex flex-col">
-          <div className="w-1/2">
+        <div className="flex px-5 flex-col">
+          <div className=" w-full lg:w-1/2">
             <h1>
-              <span className="text-8xl leading-[1.2em] font-bold block text-white">Spaces</span>
-              <span className="text-8xl leading-[1.2em] font-thin text-white">DESIGNED FOR&nbsp;LIFE</span>
+              <span className="text-5xl lg:text-8xl leading-[1.2em] font-bold block text-white">Spaces</span>
+              <span className="text-5xl lg:text-8xl leading-[1.2em] font-thin text-white">DESIGNED FOR&nbsp;LIFE</span>
             </h1>
           </div>
 
@@ -93,7 +93,7 @@ export default function Home() {
 
         <section className="mb-[125px] bg-gray-50 py-16">
           <div className="md:container md:mx-auto  ">
-            <div className="container">
+            <div className="container px-5">
               <h2 className="h2  ">Our Services</h2>
               <ServiceTabs />
               <p className="text-xl max-w-[730px] font-light mb-6">

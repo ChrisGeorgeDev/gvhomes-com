@@ -73,7 +73,7 @@ const Navbar = (props) => {
         show ? "" : "navScroll"
       }`}
     >
-      <div className="px-[24px] lg:px-[48px] xl:px-[96px] mx-auto flex flex-wrap p-5 flex-col md:flex-row justify-between items-center">
+      <div className="px-[24px] lg:px-[48px] xl:px-[96px] mx-auto flex flex-wrap p-5 flex-row justify-between items-center">
         <Link href="/">
           <a className="flex  title-font relative font-medium items-center text-gray-900 mb-4 z-50 md:mb-0">
             <svg

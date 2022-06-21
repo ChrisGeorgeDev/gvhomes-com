@@ -8,6 +8,7 @@ import Services from "../../components/Services";
 import { NextSeo } from "next-seo";
 import Navbar from "../../components/MainNav";
 import InteriorHero from "../../components/Hero/InteriorHero";
+import SeparatorLeft from "../../components/Separator/TextLeft";
 
 export default function Home() {
   return (
@@ -36,7 +37,7 @@ export default function Home() {
         desktopPosition="object-bottom"
         style="text-blue-ggDark flex-col"
       >
-        <h1 className="text-center drop-shadow-md  text-8xl leading-[1.2em] font-bold block text-white">
+                <h1 className="text-center drop-shadow-md text-5xl lg:text-8xl leading-[1.2em] font-bold block text-white">
          Notting Hill Towns
         </h1>
       </InteriorHero>
@@ -72,19 +73,14 @@ export default function Home() {
         <section className="bg-gray-50">
           <div className="py-[125px] ">
        
-            <div className="flex flex-col lg:flex-row ">
-              <div className=" flex flex-col lg:text-upright justify-end w-7/12 2xl:w-4/12 ">
-                <div className="ml-20 leading-none lg:leading-tight">
-                  <span className="text-8xl  block font-bold">2 Bed</span>
-                  <span className="text-8xl  uppercase  block font-thin">
-                    plus Den
-                  </span>
-                </div>
-              </div>
-              <div className="flex justify-items-end  ">
-                <img className="self-end" src="/img/the-ashlar.jpg" />
-              </div>
-            </div>
+        
+
+            <SeparatorLeft
+            image="/img/the-ashlar.jpg"
+            thin="plus Den"
+            bold="2 Bed"
+            />
+              
 
             <div className="flex flex-col md:flex-col px-5  container mt-24 gap-6">
               <div className="container mx-auto ">
@@ -138,7 +134,7 @@ export default function Home() {
 Notting Hill Towns <br/>
 123 Full Address Lane <br/>
 Cambridge, ON <br/> <br/>
-<a href="https://goo.gl/maps/zD5BiHHfQDeS9JNA6" className="hover:font-medium pt-2  border-b-2 pb-[4px]">Get Driving Directions</a>
+<a href="https://goo.gl/maps/zD5BiHHfQDeS9JNA6" className="hover:font-medium pt-2 text-lg   border-b-2 pb-[4px]">Get Driving Directions</a>
 
 
 </p>
@@ -147,12 +143,12 @@ Cambridge, ON <br/> <br/>
 
               <p>
 
-           <span className="font-bold block font-san mb-1">
+           <span className="font-bold block mt-10 text-lg font-san mb-1">
            BY APPOINTMENT ONLY 
            </span>
               
        
-              <span className=" flex items-center gap-3 leading-[1.5] ">
+              <span className=" flex text-lg items-center gap-3 leading-[1.5] ">
 
 
 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -164,7 +160,7 @@ Cambridge, ON <br/> <br/>
 </a>
 </span>
 
-<span className=" flex items-center gap-3 font-normal leading-[1.5] ">
+<span className=" flex text-lg  items-center gap-3 font-normal leading-[1.5] ">
 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
     <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
     <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />

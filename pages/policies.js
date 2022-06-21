@@ -35,7 +35,7 @@ export default function PrivacyPolicy() {
 
 
             <PageHero>
-                  <h1 className="text-left w-7/12 2xl:w-6/12   text-6xl leading-[1.2em] font-bold block text-black">
+            <h1 className="text-left w-7/12 2xl:w-6/12 text-4xl  lg:text-6xl leading-[1.2em] font-bold block text-black">
                     Privacy Policy
                 </h1>
             </PageHero>

@@ -52,12 +52,12 @@ export default function ValuesTabs() {
           </Tab.List>
         </div>
       </div>
-      <Tab.Panels className={`container px-20 mx-auto my-[64px] `}>
+      <Tab.Panels className={`container px-5 lg:px-20 mx-auto my-[64px] `}>
         <Tab.Panel className={``}>
           <h2 className="h2">Our Standard</h2>
 
           <p className="text-xl max-w-[730px] font-light">
-          We’ve built our reputation on quality so you can trust your home will be thoughtfully designed, impeccably crafted, and appointed with the finest finishes. We achieve these standards by working with proven architects, talented designers, and subcontractors/tradespeople.
+          We’ve built our reputation on quality so you can trust your home will be thoughtfully designed, impeccably crafted, and appointed with the finest finishes. We achieve these standards by working with proven architects, talented designers, and subcontractors / tradespeople.
           </p>
         </Tab.Panel>
 

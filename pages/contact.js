@@ -38,7 +38,7 @@ export default function Home() {
                 style="text-blue-ggDark flex-col" >
 
 
-                <h1 className="text-center drop-shadow-md  text-8xl leading-[1.2em] font-bold block text-white">
+                <h1 className="text-center drop-shadow-md text-5xl lg:text-8xl leading-[1.2em] font-bold block text-white">
                     Contact Us
                 </h1>
 

@@ -48,7 +48,7 @@ export default function OverlayMenu({ open, setOpen, title, children }) {
                 // leaveFrom="opacity-100"
                 // leaveTo="opacity-0"
               >
-                <div className="absolute hidden sm:hidden md:block z-30 closeMe top-0 right-0 mr-8 pt-4 pl-2 flex sm:-ml-10 sm:pr-4">
+                <div className="absolute   z-30 closeMe top-0 right-0 mr-8 pt-4 pl-2 flex sm:-ml-10 sm:pr-4">
                   <button
                     className={`${styles.closeButton} text-black hover:text-gray absolute top-[30px] right-[10px] focus:outline-none transform duration-200 focus:scale-110 `}
                     onClick={() => setOpen(false)}

@@ -71,7 +71,6 @@ Over the various stages of the homebuilding process, our team will connect and w
         </section>
 
         <section className="bg-gray-50">
-          <div className="py-[125px] ">
   
 
 <SeparatorLeft 
@@ -83,11 +82,10 @@ bold="Your journey"
 
 
 
-            <div className="lg:container mx-auto px-5 pt-20 sectionp">
+            <div className="lg:container mx-auto px-5  sectionp">
               <h2>The Process</h2>
             <Services />
             </div>
-          </div>
         </section>
            
 

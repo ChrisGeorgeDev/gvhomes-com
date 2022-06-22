@@ -50,7 +50,7 @@ export default function OverlayMenu({ open, setOpen, title, children }) {
               >
                 <div className="absolute   z-30 closeMe top-0 right-0 mr-8 pt-4 pl-2 flex sm:-ml-10 sm:pr-4">
                   <button
-                    className={`${styles.closeButton} text-black hover:text-gray absolute top-[30px] right-[10px] focus:outline-none transform duration-200 focus:scale-110 `}
+                    className={`${styles.closeButton} text-black hover:text-gray absolute top-[11px] right-[-9px] focus:outline-none transform duration-200 focus:scale-110 `}
                     onClick={() => setOpen(false)}
                   >
                     <span className="sr-only">Close panel</span>
@@ -62,13 +62,9 @@ export default function OverlayMenu({ open, setOpen, title, children }) {
                   </button>
                 </div>
               </Transition.Child>
-              <div className="h-full flex flex-col pb-6 dur bg-white shadow-xl overflow-y-auto">
-                <div className="px-4 sm:px-6">
-                  <Dialog.Title className="text-lg hidden  font-medium text-gray-900">
-                    {title}
-                  </Dialog.Title>
-                </div>
-                <div className="mt-6 relative  items-center flex-1 px-4 sm:px-6">
+              <div className="h-full flex flex-col dur bg-white shadow-xl overflow-y-auto">
+           
+                <div className=" relative  items-center flex-1  pt-[14px] px-[24px]">
                   {/* Replace with your content */}
                   {children}
                   {/* /End replace */}

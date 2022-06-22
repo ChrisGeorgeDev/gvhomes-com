@@ -63,7 +63,7 @@ export default function Home() {
 
               <div>
                 <h3>Areas of expertise</h3>
-                <ul className="text-lg  list-disc list-outside leading-[1.4em]">
+                <ul className="text-lg ml-[.9em] list-disc list-outside leading-[1.4em]">
                   <li> Site selection</li>
                   <li>Acquisition</li>
                   <li>Securing funding</li>
@@ -96,7 +96,7 @@ export default function Home() {
 
               <div>
                 <h3>Areas of expertise</h3>
-                <ul className="text-lg  list-disc list-outside leading-[1.4em]">
+                <ul className="text-lg ml-[.9em] list-disc list-outside leading-[1.4em]">
                   <li>Pre-construction services</li>
                   <li>Construction Services</li>
                   <li>Post-Construction Services</li>
@@ -128,7 +128,7 @@ export default function Home() {
 
               <div>
                 <h3>Areas of expertise</h3>
-                <ul className="text-lg  list-disc list-outside leading-[1.4em]">
+                <ul className="text-lg ml-[.9em] list-disc list-outside leading-[1.4em]">
                   <li> Advisory</li>
                   <li>Project Planning</li>
                   <li>Communications</li>
@@ -161,7 +161,7 @@ export default function Home() {
               </p>
               <div>
                 <h3>Areas of expertise</h3>
-                <ul className="text-lg  list-disc list-outside leading-[1.4em]">
+                <ul className="text-lg ml-[.9em] list-disc list-outside leading-[1.4em]">
                   <li> Preliminary Planning</li>
                   <li>Concept and Design </li>
                   <li>Development</li>

@@ -25,7 +25,7 @@ export default function Home() {
               url: "https://greatgulfstrapi.blob.core.windows.net/greatgulf/assets/customer_care_1_40fb605ae6.jpg",
               width: 2500,
               height: 1111,
-            }
+            },
           ],
         }}
       />
@@ -38,12 +38,15 @@ export default function Home() {
         style="text-blue-ggDark flex-col "
         height="h-[100vh]"
       >
-
         <div className="flex px-5 flex-col">
           <div className=" w-full lg:w-1/2">
             <h1>
-              <span className="text-5xl lg:text-8xl leading-[1.2em] font-bold block text-white">Spaces</span>
-              <span className="text-5xl lg:text-8xl leading-[1.2em] font-thin text-white">DESIGNED FOR&nbsp;LIFE</span>
+              <span className="text-5xl lg:text-8xl leading-[1.2em] font-bold block text-white">
+                Spaces
+              </span>
+              <span className="text-5xl lg:text-8xl leading-[1.2em] font-thin text-white">
+                DESIGNED FOR&nbsp;LIFE
+              </span>
             </h1>
           </div>
 
@@ -52,13 +55,11 @@ export default function Home() {
               <Button>ABOUT GABLE VIEW</Button>
             </a>
           </Link>
-
         </div>
-
       </LandingHero>
 
-
       <main id="main" className="mb-auto">
+      
         <section>
           <div className="container mx-auto px-5 sectionp">
             <p>
@@ -81,78 +82,68 @@ export default function Home() {
           </div>
         </section>
 
-        <div className=" bg-gray-50">
+      
 
-
+        <section className=" bg-gray-50 flex flex-col gap-20">
         <SeparatorLeft
-          bold="Elevated"
-          thin=" Living <br/> Experiences"
-          image="/img/kitchen_2.jpg"
-        />
-</div>
-
-
-        <section className="mb-[125px] bg-gray-50 py-16">
+            bold="Elevated"
+            thin=" Living <br/> Experiences"
+            image="/img/kitchen_2.jpg"
+          />
           <div className="md:container md:mx-auto  ">
             <div className="container px-5">
-              <h2 className="h2  ">Our Services</h2>
+              <div className="sectionp">
+              <h2 className="">Our Services</h2>
+
+              </div>
               <ServiceTabs />
-              <p className="text-xl max-w-[730px] font-light mb-6">
-            Gable View Homes is a full-service real estate development firm
-            specializing in new construction residential projects.
-          </p>
+              <p className="text-xl max-w-[730px] font-normal mb-6">
+                Gable View Homes is a full-service real estate development firm
+                specializing in new construction residential projects.
+              </p>
               <Link href="/services">
-              <a>
-                <Button>WHAT WE DO</Button>
-              </a>
-            </Link>
+                <a>
+                  <Button>WHAT WE DO</Button>
+                </a>
+              </Link>
             </div>
           </div>
-      
-          
         </section>
 
+     
 
-
+        <section>
         <SeparatorRight
           bold="Featured"
           thin=" Community"
           image="/img/kc-exterior.jpg"
         />
-
-
-        <section>
           <div className="container mx-auto px-5 sectionp">
-            <p>
-            The Residences on Kennedy Circle 
-            </p>
+            <p>The Residences on Kennedy&nbsp;Circle</p>
 
             <p>
-            Gable View Homes is pleased to announce our expansion into the Town of Milton with our newest development, The Residences on Kennedy Circle.
+              Gable View Homes is pleased to announce our expansion into the
+              Town of Milton with our newest development, The Residences on
+              Kennedy Circle.
             </p>
 
-        
-              <a href="https://kennedycirclecondo.com/" target="_blank" rel="noreferrer">
-                <Button>VISIT PROJECT SITE</Button>
-              </a>
-         
+            <a
+              href="https://kennedycirclecondo.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Button>VISIT PROJECT SITE</Button>
+            </a>
           </div>
         </section>
 
-
- 
-
-        <div className="pb-[125px] bg-gray-50">
-
-        <SeparatorLeft
-          bold="Inspired"
-          thin="Design for <br/> Modern Living"
-          image="/img/kc-suite-e.jpg"
-        />
-</div>
-
-
-
+        <section className=" bg-gray-50">
+          <SeparatorLeft
+            bold="Inspired"
+            thin="Design for <br/> Modern Living"
+            image="/img/kc-suite-e.jpg"
+          />
+        </section>
       </main>
 
       <Footer />

@@ -3,8 +3,7 @@ import React from "react";
 
 export default function SeparatorLeft(props) {
   return (
-    <section>
-    <div className="py-[75px] lg:py-[125px] ">
+    <>
       <div className="flex flex-col lg:flex-row ">
         <div className=" flex flex-col lg:text-upright justify-end w-full md:w-7/12 2xl:w-4/12 ">
           <div className="ml-10 lg:ml-20 leading-none lg:leading-tight">
@@ -16,8 +15,7 @@ export default function SeparatorLeft(props) {
           <img className="self-end" src={props.image} />
         </div>
       </div>
-    </div>
-  </section>
+  </>
     
   );
 }

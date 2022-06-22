@@ -50,7 +50,7 @@ export default function Home() {
 
 
                 <section className="border-b">
-                    <div className="2xl:container mx-auto px-5 2xl:px-0 sectionp  justify-between flex flex-col xl:flex-row gap-2 xl:gap-5">
+                    <div className="2xl:container  px-5 2xl:px-0 sectionp  justify-between flex flex-col xl:flex-row gap-2 xl:gap-5">
 
 
                        <div className="w-full xl:w-[300px]">
@@ -82,7 +82,7 @@ export default function Home() {
                                         <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                                         <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                                     </svg>
-                                    sales@gableviewhomes.com
+                                   <a href="mailto:sales@gableviewhomes.com">Email Sales</a>
                                 </span>
 
                             </div>
@@ -108,13 +108,13 @@ export default function Home() {
                                         <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                                         <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                                     </svg>
-                                    decor@gableviewhomes.com
+                                   <a href="mailto:decor@gableviewhomes.com">Email Design Centre</a>
                                 </span>
 
                             </div>
 
 
-                            <div className="text-lg md:col-span-2 xl:col-span-2 2xl:col-span-1">
+                            <div className="text-lg   2xl:col-span-1">
                                 <span className=" font-medium text-black leading-[1.5] block mb-2">
                                     Warranty
                                 </span>
@@ -135,7 +135,7 @@ export default function Home() {
                                         <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                                         <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                                     </svg>
-                                    warrantyservice@gableviewhomes.com
+                                 <a href="mailto:warrantyservice@gableviewhomes.com">Email Warranty Department</a>
                                 </span>
 
                             </div>
@@ -163,7 +163,7 @@ export default function Home() {
                                         <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                                         <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                                     </svg>
-                                    info@gableviewhomes.com
+                                 <a href="mailto:info@gableviewhomes.com">Email Customer Care</a>
                                 </span>
 
                             </div>
@@ -185,7 +185,7 @@ export default function Home() {
                     </div>
                 </section>
                 <section className="border-b">
-                    <div className="2xl:container mx-auto px-5 2xl:px-0 sectionp  justify-between flex flex-col xl:flex-row gap-2 xl:gap-10">
+                    <div className="2xl:container  px-5 2xl:px-0 sectionp  justify-between flex flex-col xl:flex-row gap-2 xl:gap-10">
 
 
                     <div className="w-full xl:w-[300px]">

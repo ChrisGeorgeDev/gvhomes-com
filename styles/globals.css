@@ -189,6 +189,10 @@ body {
   /* @apply text-[12px] md:text-[12px] lg:text-[12px] xl:text-[14px] 2xl:text-[16px]; */
 
   @apply text-[16px]  2xl:text-[18px];
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
 }
 
 body {
@@ -209,25 +213,45 @@ body {
 .h2 {
   @apply text-2xl;
   @apply mb-[16px];
-  font-weight: 500;
+  font-weight: 600;
   color: #000;
 }
- .sectionp {
-  @apply my-[125px];
+
+.h2.title {
+  @apply text-2xl;
+  @apply mb-[16px];
+  font-weight: 700;
+  color: #000;
 }
+
+ section {
+  @apply py-[125px];
+  @apply flex flex-col gap-20;
+}
+
+
 
 div > .sectionp {
   @apply my-[60px];
 }
 
 .sectionp > p:first-of-type {
-  font-weight: 500;
+  font-weight: 600;
   color: #000;
-  @apply text-2xl lg:text-3xl max-w-[930px] leading-[1.1] mb-[46px];
+  @apply text-2xl lg:text-3xl max-w-[930px] tracking-[-.04em]  leading-[1.1] mb-[46px];
 }
 
+ .sectionp > h2 + p:first-of-type {
+  font-weight: 500;
+
+  color: rgb(102,102,102);
+
+}
+
+
 .sectionp  p {
-  font-weight: 300;
+  font-weight: 400;
+  color: rgb(102,102,102);
   @apply text-xl max-w-[930px] mb-[1em] ;
 }
 
@@ -427,16 +451,17 @@ div > .sectionp {
 .disclosureTitle {
   font-weight: 700;
   color: #000;
-  @apply py-5 text-3xl;
+  @apply py-5 text-2xl;
   @apply flex w-full;
 }
 .disclosureText {
   font-weight: 300;
-  @apply text-xl pb-5 pl-11;
+  @apply text-lg max-w-[90%] pb-5 pl-11;
 }
 
 .dTitle {
   text-align: left;
+  @appl
 }
 
 .disclosureTitle > .dTitle:before {

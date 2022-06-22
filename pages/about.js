@@ -62,6 +62,7 @@ export default function Home() {
             </p>
           </div>
         </section>
+
         <section className=" bg-gray-50 ">
 
         <SeparatorLeft
@@ -84,9 +85,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="mb-[125px] bg-gray-50 py-16">
-          <div className="md:container md:mx-auto  ">
-            <div className="container">
+        <section className=" bg-gray-50 ">
               <div className="container mx-auto px-5  sectionp">
                 <h2>Our values</h2>
                 <p>
@@ -96,27 +95,28 @@ export default function Home() {
 
                 <p>
                   From contemporary townhomes to innovative condominiums, our
-                  mission to create outstanding spaces is guided by our three
-                  core values.
+                  mission to create outstanding spaces is guided by our <strong>three
+                  core values</strong>.
                   {/*             
                     is to adhere to our core values of creating outstanding spaces through design and craftsmanship and to deliver homes with quality, innovation 
                     and customer service.              */}
                 </p>
-              </div>
+              <div >
               <ValuesTabs />
-            </div>
+              </div>
           </div>
         </section>
 
+  
+
+        <section>
         <SeparatorRight
           bold="Current"
           thin="Communities"
           image="/img/suite-d-kitchen.jpg"
         />
-
-        <section>
           <div className="container mx-auto px-5 sectionp">
-            <p>The Residences on Kennedy Circle</p>
+            <p>The Residences on Kennedy&nbsp;Circle</p>
 
             <p>
               The Residences on Kennedy Circle is the product of our vision to
@@ -134,13 +134,14 @@ export default function Home() {
           </div>
         </section>
 
-        <section>
-          <div className="pb-[125px] bg-gray-50">
-            <SeparatorLeft
+        <section className="bg-gray-50">
+        <SeparatorLeft
               bold="Past"
               thin="Communities"
               image="/img/livingroom.jpg"
             />
+          <div className="container mx-auto px-5 ">
+       
             <div className="container px-5 pt-[40px]">
               <h2 className="h2  ">Highlights from Our Growing Portfolio</h2>
 

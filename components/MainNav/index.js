@@ -73,15 +73,15 @@ const Navbar = (props) => {
         show ? "" : "navScroll"
       }`}
     >
-      <div className="px-[24px] lg:px-[48px] xl:px-[96px] mx-auto flex flex-wrap p-5 flex-row justify-between items-center">
+      <div className="px-[24px] py-[14px] lg:px-[48px] xl:px-[96px] mx-auto flex flex-wrap p-5 flex-row justify-between items-center">
         <Link href="/">
-          <a className="flex  title-font relative font-medium items-center text-gray-900 mb-4 z-50 md:mb-0">
+          <a className="flex  title-font relative font-medium items-center text-gray-900  z-50 md:mb-0">
             <svg
-              width="231"
-              height="33"
+        
               viewBox="0 0 231 33"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              className="w-[179px] h-[auto] md:w-[231px]"
             >
               <path
                 d="M54.0736 19.328H56.8961V25.6775C56.0698 26.3303 55.1044 26.829 54.0041 27.1777C52.9037 27.5264 51.7706 27.7007 50.6048 27.7007C48.9686 27.7007 47.4918 27.348 46.1747 26.6425C44.8575 25.937 43.8267 24.9639 43.074 23.7191C42.3254 22.4744 41.9491 21.0715 41.9491 19.5105C41.9491 17.9495 42.3254 16.5466 43.074 15.3019C43.8226 14.0571 44.8616 13.084 46.1829 12.3785C47.5082 11.6731 48.9931 11.3203 50.6498 11.3203C51.9956 11.3203 53.2228 11.5393 54.3231 11.9812C55.4235 12.4231 56.3521 13.0678 57.1007 13.9152L55.219 15.7357C53.9959 14.5234 52.5192 13.9152 50.7889 13.9152C49.6558 13.9152 48.6495 14.1504 47.77 14.6207C46.8905 15.091 46.1992 15.7519 45.7043 16.5993C45.2052 17.4508 44.9598 18.4198 44.9598 19.5105C44.9598 20.5728 45.2093 21.5297 45.7043 22.3771C46.2033 23.2285 46.8905 23.8935 47.77 24.38C48.6495 24.8666 49.6476 25.1098 50.7643 25.1098C52.0201 25.1098 53.1205 24.8382 54.0695 24.2908V19.328H54.0736Z"
@@ -146,8 +146,7 @@ const Navbar = (props) => {
               className="flex items-center   lg:pr-0    hover:text-white hover:border-white"
             >
               <svg
-                width="36"
-                height="36"
+             className="w-[30px] h-[30px]"
                 viewBox="0 0 36 36"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -188,7 +187,7 @@ const Navbar = (props) => {
         </nav>
       </div>
 
-      <OverlayMenu open={open} setOpen={setOpen} title="Item Details">
+      <OverlayMenu open={open} setOpen={setOpen} >
         <nav
           className={`${ovstyle.closeNav} flex items-center  container mx-auto justify-end flex-wrap py-2`}
         >
@@ -213,12 +212,11 @@ const Navbar = (props) => {
           </div>
         </nav>
 
-        <div className=" pt-16 md:pt-0  flex h-full flex-col items-center justify-center">
+        <div className=" pt-14 relative md:pt-0  flex h-full flex-col items-center justify-center">
         <Link href="/">
-          <a className="flex  title-font absolute top-0 left-[20px] font-medium items-center text-gray-900 mb-4 z-50 md:mb-0">
+          <a className="flex  title-font absolute top-0 left-[0px] font-medium items-center text-gray-900 z-50 md:mb-0">
             <svg
-              width="231"
-              height="33"
+            className="w-[179px] h-[auto] lg:w-[231px]"
               viewBox="0 0 231 33"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -288,24 +286,24 @@ const Navbar = (props) => {
 
 
             <Link href="/about">
-            <a className="text-2xl font-bold py-2 tracking-[.15em] text-black border-b-2 border-transparent hover:text-gray-600  ">
+            <a className="text-xl font-bold py-2 tracking-[.15em] text-black border-b-2 border-transparent hover:text-gray-600  ">
               ABOUT
             </a>
           </Link>
           <Link href="/services">
-            <a className="text-2xl font-bold py-2 tracking-[.15em] text-black border-b-2 border-transparent hover:text-gray-600  ">
+            <a className="text-xl font-bold py-2 tracking-[.15em] text-black border-b-2 border-transparent hover:text-gray-600  ">
               SERVICES
             </a>
           </Link>
 
           <Link href="/customer-care">
-            <a className="text-2xl font-bold py-2 tracking-[.15em] text-black border-b-2 border-transparent hover:text-gray-600  ">
+            <a className="text-xl font-bold py-2 tracking-[.15em] text-black border-b-2 border-transparent hover:text-gray-600  ">
               CUSTOMER CARE
             </a>
           </Link>
 
           <Link href="/contact">
-            <a className="text-2xl font-bold py-2 tracking-[.15em] text-black border-b-2 border-transparent hover:text-gray-600  ">
+            <a className="text-xl font-bold py-2 tracking-[.15em] text-black border-b-2 border-transparent hover:text-gray-600  ">
               CONTACT
             </a>
           </Link>

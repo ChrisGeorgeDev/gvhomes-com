@@ -9,7 +9,7 @@ export default function ResourcesHero(props) {
   let portraitImage = props.imagePortrait;
   return (
     <>
-   <div className="h-[600px] relative bg-white overflow-hidden border-b bg-blue-ggDark flex flex-col justify-center "
+   <div className="h-[400px] lg:h-[600px] relative bg-white overflow-hidden border-b bg-blue-ggDark flex flex-col justify-center "
       >
 
 

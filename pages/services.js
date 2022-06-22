@@ -42,7 +42,7 @@ export default function Home() {
       </InteriorHero>
 
       <main id="main" className="mb-auto">
-        <section className="border-b">
+      <section id="real-estate-development" className="border-b">
           <div className="container mx-auto px-5 sectionp">
             <h2>Real Estate Development</h2>
             <p>
@@ -77,7 +77,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="border-b">
+        <section id="construction-management" className="border-b">
           <div className="container mx-auto px-5 sectionp">
             <h2>Project & Construction Management</h2>
             <p>
@@ -108,7 +108,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="border-b">
+        <section id="full-service-marketing" className="border-b">
           <div className="container mx-auto px-5 sectionp">
             <h2>Full-service Marketing</h2>
             <p>
@@ -142,7 +142,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="border-b">
+        <section id="custom-homes" className="border-b">
           <div className="container mx-auto px-5 sectionp">
             <h2>Custom Homes</h2>
             <p>

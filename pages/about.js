@@ -40,13 +40,12 @@ export default function Home() {
         desktopPosition="object-top"
         style="text-blue-ggDark flex-col"
       >
-                <h1 className="text-center drop-shadow-md text-5xl lg:text-8xl leading-[1.2em] font-bold block text-white">
+        <h1 className="text-center drop-shadow-md text-5xl lg:text-8xl leading-[1.2em] font-bold block text-white">
           About Us
         </h1>
       </InteriorHero>
 
       <main id="main" className="mb-auto">
-      
         <section>
           <div className="container mx-auto px-5 sectionp">
             <h2>Who we are</h2>
@@ -64,17 +63,15 @@ export default function Home() {
         </section>
 
         <section className=" bg-gray-50 ">
-
-        <SeparatorLeft
-          bold="Spaces"
-          thin="Designed <br/> For Life"
-          image="/img/gvh-living.jpg"
-        />
+          <SeparatorLeft
+            bold="Spaces"
+            thin="Designed <br/> For Life"
+            image="/img/gvh-living.jpg"
+          />
         </section>
 
         <section>
           <div className="container mx-auto px-5 sectionp">
-  
             <p>
               With over 25 years of experience, Gable View Homes' seasoned team
               provides the vision and execution expertise to create outstanding
@@ -85,36 +82,34 @@ export default function Home() {
           </div>
         </section>
 
-        <section className=" bg-gray-50 ">
-              <div className="container mx-auto px-5  sectionp">
-                <h2>Our values</h2>
-                <p>
-                  Our work is guided by passion and drive to reshape the way we
-                  build homes and communities.
-                </p>
+        <section id="our-values" className=" bg-gray-50 ">
+          <div className="container mx-auto px-5  sectionp">
+            <h2>Our values</h2>
+            <p>
+              Our work is guided by passion and drive to reshape the way we
+              build homes and communities.
+            </p>
 
-                <p>
-                  From contemporary townhomes to innovative condominiums, our
-                  mission to create outstanding spaces is guided by our <strong>three
-                  core values</strong>.
-                  {/*             
+            <p>
+              From contemporary townhomes to innovative condominiums, our
+              mission to create outstanding spaces is guided by our{" "}
+              <strong>three core values</strong>.
+              {/*             
                     is to adhere to our core values of creating outstanding spaces through design and craftsmanship and to deliver homes with quality, innovation 
                     and customer service.              */}
-                </p>
-              <div >
+            </p>
+            <div>
               <ValuesTabs />
-              </div>
+            </div>
           </div>
         </section>
 
-  
-
-        <section>
-        <SeparatorRight
-          bold="Current"
-          thin="Communities"
-          image="/img/suite-d-kitchen.jpg"
-        />
+        <section id="current-communities">
+          <SeparatorRight
+            bold="Current"
+            thin="Communities"
+            image="/img/suite-d-kitchen.jpg"
+          />
           <div className="container mx-auto px-5 sectionp">
             <p>The Residences on Kennedy&nbsp;Circle</p>
 
@@ -126,22 +121,23 @@ export default function Home() {
               style like no other condominium in the area.{" "}
             </p>
 
-           
-              <a href="https://kennedycirclecondo.com" target="_blank" rel="noreferrer">
-                <Button>VISIT PROJECT SITE</Button>
-              </a>
-          
+            <a
+              href="https://kennedycirclecondo.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Button>VISIT PROJECT SITE</Button>
+            </a>
           </div>
         </section>
 
-        <section className="bg-gray-50">
-        <SeparatorLeft
-              bold="Past"
-              thin="Communities"
-              image="/img/livingroom.jpg"
-            />
+        <section id="past-communities" className="bg-gray-50">
+          <SeparatorLeft
+            bold="Past"
+            thin="Communities"
+            image="/img/livingroom.jpg"
+          />
           <div className="container mx-auto px-5 ">
-       
             <div className="container px-5 pt-[40px]">
               <h2 className="h2  ">Highlights from Our Growing Portfolio</h2>
 

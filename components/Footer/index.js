@@ -176,7 +176,7 @@ export default function Footer(props) {
                 </h2>
                 <nav className="list-none space-y-2 mb-10">
                   <li>
-                    <Link href="/services">
+                    <Link href="/services#real-estate-development">
                       <a className="text-gray-600 hover:text-gray-800">
                         Real Estate Development
                       </a>
@@ -184,7 +184,7 @@ export default function Footer(props) {
                   </li>
 
                   <li>
-                    <Link href="/services#contstruction-management">
+                    <Link href="/services#construction-management">
                       <a className="text-gray-600 hover:text-gray-800">
                         Project Management
                       </a>
@@ -199,7 +199,7 @@ export default function Footer(props) {
                   </li>
 
                   <li>
-                    <Link href="/services#fcustom-homes">
+                    <Link href="/services#custom-homes">
                       <a className="text-gray-600 hover:text-gray-800">
                         Custom Homes
                       </a>
@@ -211,20 +211,27 @@ export default function Footer(props) {
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div className=" w-full ">
                 <h2 className="title-font font-bold text-gray-900 tracking-widest text-sm mb-3">
-                  SERVICES
+                  CUSTOMER CARE
                 </h2>
                 <nav className="list-none space-y-2 mb-10">
                   <li>
-                    <Link href="/customer-care/index#the-home-buying-process">
+                    <Link href="/customer-care/#the-home-buying-process">
                       <a className="text-gray-600 hover:text-gray-800">
                         The Home buying process
                       </a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/customer-care/index#home-owner-guide">
+                    <Link href="/customer-care/#home-owner-guide">
                       <a className="text-gray-600 hover:text-gray-800">
                         New Homeowner Guide
+                      </a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/login">
+                      <a className="text-gray-600 hover:text-gray-800">
+                        Community Resource Demo
                       </a>
                     </Link>
                   </li>
@@ -312,7 +319,7 @@ export default function Footer(props) {
         <div className="hidden sm:hidden md:hidden lg:hidden xl:hidden 2xl:block">
           2XL
         </div>
-      </div>
+      </div> 
     </footer>
   );
 }

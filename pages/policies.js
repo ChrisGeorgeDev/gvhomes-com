@@ -35,7 +35,7 @@ export default function PrivacyPolicy() {
 
 
             <PageHero>
-            <h1 className="text-left w-7/12 2xl:w-6/12 text-4xl  lg:text-6xl leading-[1.2em] font-bold block text-black">
+            <h1 className="text-left px-5 w-7/12 2xl:w-6/12 text-4xl  lg:text-6xl leading-[1.2em] font-bold block text-black">
                     Privacy Policy
                 </h1>
             </PageHero>
@@ -53,7 +53,7 @@ export default function PrivacyPolicy() {
 
 
 
-<div className="py-10 container gap-5 flex w-full ">
+<div className="py-10 container px-5 gap-5 flex w-full ">
 
 <div className="container mx-auto  prosep">
 <p>Your privacy is important to us at Gable View Homes. This policy has been prepared by Gable View Homes (“Gable View”, “Gable View Homes”, “we”, “us”, “our”). The following outlines our policies as it relates to the collection and handling of your personal information by Gable Views. Reference to “Gable View” shall include employees, agents, successors, assigns and websites and through other interactions with consumers of Gable View Homes.</p>

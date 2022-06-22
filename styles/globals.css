@@ -238,7 +238,8 @@ div > .sectionp {
 .sectionp > p:first-of-type {
   font-weight: 600;
   color: #000;
-  @apply text-2xl lg:text-3xl max-w-[930px] tracking-[-.04em]  leading-[1.1] mb-[46px];
+  line-height: 1.1em!important;
+  @apply text-2xl lg:text-3xl max-w-[930px] tracking-[-.04em]   mb-[46px];
 }
 
  .sectionp > h2 + p:first-of-type {
@@ -461,7 +462,6 @@ div > .sectionp {
 
 .dTitle {
   text-align: left;
-  @appl
 }
 
 .disclosureTitle > .dTitle:before {

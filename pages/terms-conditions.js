@@ -35,7 +35,7 @@ export default function Home() {
 
 
             <PageHero>
-                  <h1 className="text-left w-7/12 2xl:w-6/12 text-4xl  lg:text-6xl leading-[1.2em] font-bold block text-black">
+                  <h1 className="text-left px-5 w-7/12 2xl:w-6/12 text-4xl  lg:text-6xl leading-[1.2em] font-bold block text-black">
                     Terms & Conditions
                 </h1>
             </PageHero>
@@ -53,7 +53,7 @@ export default function Home() {
 
 
 
-<div className="py-10 container gap-5 flex w-full ">
+<div className="py-10 container px-5 gap-5 flex w-full ">
 
 <div className="container mx-auto  prosep">
 <p><strong>Terms and Conditions</strong></p>

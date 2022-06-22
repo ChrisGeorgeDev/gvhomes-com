@@ -70,7 +70,7 @@ Over the various stages of the homebuilding process, our team will connect and w
           </div>
         </section>
 
-        <section className="bg-gray-50">
+        <section id="the-home-buying-process" className="bg-gray-50">
   
 
 <SeparatorLeft 
@@ -89,7 +89,7 @@ bold="Your journey"
         </section>
            
 
-        <section className="border-b">
+        <section id="home-owner-guide" className="border-b">
           <div className="container mx-auto px-5 sectionp">
 <h2>Resources</h2>
             <p>

@@ -52,7 +52,7 @@ export default function ValuesTabs() {
           </Tab.List>
         </div>
       </div>
-      <Tab.Panels className={`container p-5  lg:px-20 mx-auto mt-[64px] `}>
+      <Tab.Panels className={`container pt-5   mx-auto mt-[64px] `}>
         <Tab.Panel className={``}>
           <h2 className="h2">Our Standard</h2>
 

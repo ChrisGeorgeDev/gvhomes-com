@@ -71,7 +71,7 @@ export default function Home() {
         </section>
 
         <section className="bg-gray-50">
-          <div className="py-[125px] ">
+        
        
         
 
@@ -85,7 +85,7 @@ export default function Home() {
             <div className="flex flex-col md:flex-col px-5  container mt-24 gap-6">
               <div className="container mx-auto ">
                 <h2 className="text-6xl leading-[1.1] max-w-[730px] font-bold block text-black lg:mb-[10px]">
-                    <span className="block text-lg text-[#757575] mb-2">AVAILABLE FLOORPLAN</span>
+                    <span className="block font-[500] text-sm text-[#757575] mb-2"> FLOORPLAN</span>
                     The Ashlar
                     </h2>
               </div>
@@ -100,7 +100,7 @@ export default function Home() {
                 </div>
 
                 <div className="  px-5 ">
-                <h3 className="text-[1.4rem] font-sans font-bold">FEATURES AT A GLANCE</h3>
+                <h3 className="text-[1.4rem] font-sans font-[500]">FEATURES AT A GLANCE</h3>
                   <ul className="list-disc ml-4 list-outside text-[1.4rem] mb-10">
                     <li>21’ Lot</li>
                     <li>Back-to-back-townhomes</li>
@@ -117,69 +117,71 @@ export default function Home() {
                 </div>
 
 
-              </div>
             </div>
           </div>
         </section>
 
-        <section  className="border-b py-16">
+        <section  className="border-b ">
           <div className="flex flex-col gap-10 2xl:gap-20 lg:flex-row container">
             <div className="w-12/12 lg:w-6/12 px-5 sectionp">
               <p>
                 Find out just how spacious and functional 1,400 square feet can
-                be, contact sales to <a  className="hover:text-[#757575] pt-2  border-b-2 pb-[4px]" href="#contact-sales">book your tour today</a>.
+                be, contact sales to <a  className="hover:text-[#757575] pt-2  border-b-2 lg:border-b-0 pb-[4px]" href="#contact-sales">book your tour today</a>.
               </p>
 
-<p>
+
+              <p>
+
+<span className="font-[500] block mt-10 text-lg font-san mb-1">
+BY APPOINTMENT ONLY 
+</span>
+   
+
+   <span className=" flex text-lg items-center gap-3 leading-[1.5] ">
+
+
+<svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+<path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+</svg>
+
+<a href="tel:905.336.8953" >
+905.336.8953 x1
+</a>
+</span>
+
+<span className=" flex text-lg  items-center gap-3 font-normal leading-[1.5] ">
+<svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+<path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+<path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+</svg>
+sales@gableviewhomes.com
+</span>
+   </p>
+
+<span className="text-lg ">
 Notting Hill Towns <br/>
 123 Full Address Lane <br/>
 Cambridge, ON <br/> <br/>
 <a href="https://goo.gl/maps/zD5BiHHfQDeS9JNA6" className="hover:font-medium pt-2 text-lg   border-b-2 pb-[4px]">Get Driving Directions</a>
 
 
-</p>
+</span>
 
 
 
-              <p>
-
-           <span className="font-bold block mt-10 text-lg font-san mb-1">
-           BY APPOINTMENT ONLY 
-           </span>
-              
        
-              <span className=" flex text-lg items-center gap-3 leading-[1.5] ">
-
-
-<svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
-</svg>
-
-<a href="tel:905.336.8953" >
-    905.336.8953 x1
-</a>
-</span>
-
-<span className=" flex text-lg  items-center gap-3 font-normal leading-[1.5] ">
-<svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-</svg>
-sales@gableviewhomes.com
-</span>
-              </p>
             </div>
 
-            <div id="contact-sales" className="w- 12/12 lg:w-6/12 bg-white rounded-lg p-8 flex flex-col  mt-10 md:mt-0 relative z-10 shadow-md">
+            <div id="contact-sales" className="w- 12/12 mt-[60px] lg:w-6/12 bg-white rounded-lg  flex flex-col  relative z-10 ">
               <div className="flex flex-col text-center w-full mb-12">
-                <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
+                <h1 className="sm:text-3xl text-2xl font-bold title-font mb-4 text-gray-900">
               Rental Inquiry
                 </h1>
-                <p className="w-full mx-auto leading-relaxed text-base">
+                {/* <p className="w-full mx-auto leading-relaxed text-base">
                   Please provide your information below and one of our team
                   members will follow up with you to coordinate an appointment
                   with you!
-                </p>
+                </p> */}
               </div>
 
               <div className="w-full mx-auto">
@@ -247,6 +249,25 @@ sales@gableviewhomes.com
                       ></textarea>
                     </div>
                   </div>
+
+                  <div class=" hidden">
+                <div class="mt-2 p-2">
+                  <div>
+                    <label class="inline-flex items-center">
+                      <input type="checkbox" className="
+                          border-gray-300
+                          text-black
+                          shadow-sm
+                          focus:border-indigo-300
+                          focus:ring
+                          focus:ring-offset-0
+                          focus:ring-indigo-200
+                          focus:ring-opacity-50"/>
+                      <span class="ml-2">Email me news and special offers</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
                   <div className="p-2 w-full">
                     <button className=" mx-auto w-full text-center text-white bg-black border-[1px] border-black py-6 px-8 focus:outline-none hover:bg-white hover:text-black  text-lg font-sans uppercase">
                       Schedule tour

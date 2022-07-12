@@ -79,6 +79,7 @@ export default function Home() {
             image="/img/the-ashlar.jpg"
             thin="plus Den"
             bold="2 Bed"
+            svgtext="/img/svg/2bd-02.svg"
             />
               
 

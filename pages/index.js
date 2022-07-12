@@ -151,6 +151,21 @@ size="max-w-[75%]"
             svgtext="/img/svg/simplified-process.svg"
             image="/img/kc-suite-e.jpg"
           />
+                 <div className="container mx-auto px-5 sectionp">
+            <p>We make buying a new home easy.</p>
+
+            <p>
+            The Gable View Homes experienced team of sales 
+agents, interior designers, service coordinators and tradespeople  are here to make the process of building your home as seamless and efficient as possible.
+            </p>
+
+            <Link href="/customer-care/home-buying-process">
+
+            <a>
+            <Button>FIND OUT HOW</Button>
+            </a>
+            </Link>
+          </div>
         </section>
       </main>
 

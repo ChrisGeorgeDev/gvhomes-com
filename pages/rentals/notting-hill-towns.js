@@ -109,7 +109,7 @@ export default function Home() {
                     <li>1400 sq.ft</li>
                   </ul>
 
-                  <Link href="/cows">
+                  <Link href="/#placeholder">
                     <a>
                       <Button>DOWNLOAD FLOORPLAN</Button>
                     </a>

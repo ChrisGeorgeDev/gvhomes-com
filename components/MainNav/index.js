@@ -231,9 +231,9 @@ const Navbar = (props) => {
             </a>
           </Link>
 
-          <Link href="/customer-care">
+          <Link href="/customer-care/home-buying-process">
             <a className="text-xl font-bold py-2 tracking-[.15em] text-black border-b-2 border-transparent hover:text-gray-600  ">
-              CUSTOMER CARE
+              HOME BUYING PROCESS
             </a>
           </Link>
 

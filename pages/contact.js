@@ -42,7 +42,7 @@ export default function Home() {
       </InteriorHero>
 
       <main id="main" className="mb-auto">
-        <section className="border-b">
+        <section className="border-b border-black">
           <div className="2xl:container  px-5 2xl:px-0 sectionp  justify-between flex flex-col xl:flex-row gap-2 xl:gap-5">
             <div className="w-full xl:w-[300px]">
               <h2>Get in touch</h2>

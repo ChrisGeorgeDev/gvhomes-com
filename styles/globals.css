@@ -177,7 +177,28 @@
 }
 
 
+/* montserrat-500 - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-weight: 500;
+  src: url('/fonts/montserrat-v24-latin-500.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('/fonts/montserrat-v24-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/fonts/montserrat-v24-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/fonts/montserrat-v24-latin-500.woff') format('woff'), /* Modern Browsers */
+       url('/fonts/montserrat-v24-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/fonts/montserrat-v24-latin-500.svg#Montserrat') format('svg'); /* Legacy iOS */
+}
 
+@font-face {
+  font-family: 'Soleil Light';
+  font-weight: 500;
+  font-weight: 500;
+  src: url("/fonts/Soleil-Light.eot");
+  src: url("/fonts/Soleil-Light.eot?#iefix") format("embedded-opentype") ,url("/fonts/Soleil-Light.woff") format("woff"), url("/fonts/Soleil-Light.woff2") format("woff2");
+  font-display: swap;
+}
 
 
 @tailwind base;
@@ -188,7 +209,7 @@ html,
 body {
   /* @apply text-[12px] md:text-[12px] lg:text-[12px] xl:text-[14px] 2xl:text-[16px]; */
 
-  @apply text-[16px]  2xl:text-[18px];
+  @apply text-[16px]  ;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -201,9 +222,29 @@ body {
   color: #414042;
 }
 
-#main {
+
+
+@media (-webkit-device-pixel-ratio: 1.25) {
+
+  html,
+body {
+
+  @apply text-[12px]  ;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
 }
 
+.container {
+  max-width: 80%;
+}
+/* wi
+/* * {
+  transform: scale(.999);
+} */
+
+}
 
 .montserrat {
   font-family: "Montserrat";
@@ -236,25 +277,64 @@ div > .sectionp {
 }
 
 .sectionp > p:first-of-type {
-  font-weight: 600;
+  font-weight: 800;
   color: #000;
   line-height: 1.1em!important;
-  @apply text-2xl lg:text-3xl max-w-[930px] tracking-[-.04em]   mb-[46px];
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  @apply text-2xl lg:text-3xl max-w-[930px] tracking-[-.04em]   mb-[1.78em];
+}
+
+.leadp .sectionp > p:first-of-type {
+  font-weight: 800;
+  color: #000;
+  line-height: 1.1em!important;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  @apply text-2xl lg:text-3xl max-w-[800px]  tracking-[-.04em]   mb-[1.78em];
+}
+
+.leadp .sectionp > p {
+  font-weight: 800;
+  color: #000;
+  line-height: 1.1em!important;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  @apply text-2xl lg:text-3xl max-w-[800px]  tracking-[-.04em]   mb-[1.78em];
+}
+
+
+.resources > .tabhover:first-of-type {
+  @apply border-l
 }
 
  .sectionp > h2 + p:first-of-type {
-  font-weight: 500;
+  font-weight: 800;
 
-  color: rgb(102,102,102);
+  color: #000;
 
 }
 
 
 .sectionp  p {
   font-weight: 400;
-  color: rgb(102,102,102);
+  font-family: 'Soleil Light';
+  color: #414042;
   @apply text-xl max-w-[930px] mb-[1em] ;
 }
+
+.leadp .sectionp  p {
+  font-weight: 400;
+  font-family: 'Soleil Light';
+  color: #414042;
+  @apply text-xl max-w-[800px] mb-[1em] ;
+}
+
+
+p.soleil  {
+  font-weight: 400;
+  font-family: 'Soleil Light';
+  color: #414042;
+  @apply text-xl max-w-[930px] mb-[1em] ;
+}
+
 
 .prosep p {
   font-weight: 300;
@@ -263,6 +343,7 @@ div > .sectionp {
 
 .sectionp > p {
   @apply mb-[20px];
+  
 }
 
 .sectionp h3 {
@@ -271,7 +352,8 @@ div > .sectionp {
   @apply text-xl max-w-[730px] mb-[.5em];}
 
 .sectionp > h2 {
-  @apply text-4xl md:text-5xl lg:text-6xl leading-[1.1] max-w-[800px] font-bold block text-black mb-[20px];
+  @apply text-4xl md:text-5xl lg:text-6xl  max-w-[800px] font-bold block text-black mb-[1em];
+  line-height: 1.2em
 }
 
 .sectionp > div > h2 {
@@ -286,6 +368,7 @@ div > .sectionp {
     @apply rotate-180 leading-[1.2]
   /* transform: var(--tw-transform); */;
   }
+
 }
 
 .tabhover {
@@ -457,7 +540,8 @@ div > .sectionp {
 }
 .disclosureText {
   font-weight: 300;
-  @apply text-lg max-w-[90%] pb-5 pl-11;
+  font-family: 'Soleil Light';
+  @apply text-xl max-w-[90%] pb-5 pl-11;
 }
 
 .dTitle {

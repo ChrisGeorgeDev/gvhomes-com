@@ -12,8 +12,8 @@ export default function ServiceTabs() {
                 <button
                   className={
                     selected
-                      ? " w-full is-active tabhover border-b border-r border-[#010101] outline-none py-6  text-black text-center font-semibold"
-                      : " text-black text-center border-b border-r border-[#010101] outline-none tabhover  py-6 font-semibold  w-full"
+                      ? " w-full is-active tabhover border-b border-r border-[#010101] outline-none py-6  text-black text-center font-bold"
+                      : " text-black text-center border-b border-r border-[#010101] outline-none tabhover  py-6 font-bold w-full"
                   }
                 >
                   <span className={ selected ? "text-7xl  mx-auto " : "text-7xl mx-auto ease-in-out duration-300 opacity-40 hover:opacity-100 "}>1 </span>
@@ -25,8 +25,8 @@ export default function ServiceTabs() {
                 <button
                   className={
                     selected
-                      ? " w-full is-active tabhover border-b border-r border-[#010101] outline-none py-6  text-black text-center font-semibold"
-                      : " text-black text-center outline-none tabhover border-b border-r border-[#010101] py-6 font-semibold  w-full"
+                      ? " w-full is-active tabhover border-b border-r border-[#010101] outline-none py-6  text-black text-center font-bold"
+                      : " text-black text-center outline-none tabhover border-b border-r border-[#010101] py-6 font-bold w-full"
                   }
                 >
                   <span className={ selected ? "text-7xl  mx-auto " : "text-7xl mx-auto ease-in-out duration-300 opacity-40 hover:opacity-100 "}>2</span>
@@ -39,8 +39,8 @@ export default function ServiceTabs() {
                 <button
                   className={
                     selected
-                      ? " w-full is-active tabhover border-b border-r border-[#010101] outline-none py-6  text-black text-center font-semibold"
-                      : " text-black text-center outline-none tabhover border-b border-r border-[#010101]  py-6 font-semibold  w-full"
+                      ? " w-full is-active tabhover border-b border-r border-[#010101] outline-none py-6  text-black text-center font-bold"
+                      : " text-black text-center outline-none tabhover border-b border-r border-[#010101]  py-6 font-bold w-full"
                   }
                 >
                   <span className={ selected ? "text-7xl  mx-auto " : "text-7xl mx-auto ease-in-out duration-300 opacity-40 hover:opacity-100 "}>3</span>
@@ -53,8 +53,8 @@ export default function ServiceTabs() {
                 <button
                   className={
                     selected
-                      ? " w-full is-active tabhover border-b  border-[#010101] outline-none py-6  text-black text-center font-semibold"
-                      : " text-black text-center outline-none tabhover border-b border-[#010101]  py-6 font-semibold  w-full"
+                      ? " w-full is-active tabhover border-b  border-[#010101] outline-none py-6  text-black text-center font-bold"
+                      : " text-black text-center outline-none tabhover border-b border-[#010101]  py-6 font-bold w-full"
                   }
                 >
                   <span className={ selected ? "text-7xl  mx-auto " : "text-7xl mx-auto ease-in-out duration-300 opacity-40 hover:opacity-100 "}>4 </span>

@@ -13,7 +13,7 @@ export default function LandingHero(props) {
 
 
 
-      <div className="h-[100vh] relative bg-black overflow-hidden  bg-blue-ggDark flex flex-col justify-center  "
+      <div className="h-[100vh] relative bg-black overflow-hidden  bg-blue-ggDark flex flex-col justify-end  "
       >
         {/* IMAGE÷\ */}
         {/* <div className={`${styles.bgWrp} flex justify-center `}> */}
@@ -45,7 +45,7 @@ export default function LandingHero(props) {
           )}
 
         <div className={`"flex container relative z-[4] ${styles.light} "`}>
-          <div className={`w-12/12 relative z-[2]  mx-auto mb-6  `}>{props.children}</div>
+          <div className={`w-12/12 relative z-[2]  mx-auto mb-20  `}>{props.children}</div>
         </div>
 
       </div>

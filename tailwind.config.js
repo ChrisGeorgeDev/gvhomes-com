@@ -50,7 +50,7 @@ module.exports = {
         "1.563rem", //25px
         {
           letterSpacing: "0.015625rem", //1%
-          lineHeight: "1.875rem", //1.375rem before
+          lineHeight: "1.36em", //1.375rem before
         },
       ],
       "2xl": [
@@ -101,7 +101,7 @@ module.exports = {
         "7.451rem",
         {
           letterSpacing: "0",
-        },
+        }, 
       ],
     },
     extend: {},

@@ -66,8 +66,10 @@ export default function Home() {
           <SeparatorLeft
             bold="Spaces"
             thin="Designed <br/> For Life"
+            svgtext="img/svg/spaces-designed-for-life.svg"
             image="/img/gvh-living.jpg"
           />
+
         </section>
 
         <section>
@@ -108,6 +110,8 @@ export default function Home() {
           <SeparatorRight
             bold="Current"
             thin="Communities"
+            svgtext="img/svg/current-communities.svg"
+            size="max-w-[75%]"
             image="/img/suite-d-kitchen.jpg"
           />
           <div className="container mx-auto px-5 sectionp">
@@ -135,6 +139,8 @@ export default function Home() {
           <SeparatorLeft
             bold="Past"
             thin="Communities"
+            svgtext="img/svg/past-communities.svg"
+            size="max-w-[75%]"
             image="/img/livingroom.jpg"
           />
           <div className="container mx-auto px-5 ">

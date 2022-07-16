@@ -77,7 +77,7 @@ const Navbar = (props) => {
         <Link href="/">
           <a className="flex  title-font relative font-medium items-center text-gray-900  z-50 md:mb-0">
             <svg
-        width="231"
+              width="231"
               viewBox="0 0 231 33"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -140,23 +140,27 @@ const Navbar = (props) => {
         </Link>
 
         <div className="block order-last lg:hidden">
-            <button
-              aria-label="Open Menu"
-              onClick={() => setOpen(true)}
-              className="flex items-center   lg:pr-0    hover:text-white hover:border-white"
+          <button
+            aria-label="Open Menu"
+            onClick={() => setOpen(true)}
+            className="flex items-center   lg:pr-0    hover:text-white hover:border-white"
+          >
+            <svg
+              width="10"
+              height="8"
+              className="w-[30px] h-auto"
+              viewBox="0 0 10 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
             >
-         <svg width="10" height="8" className="w-[30px] h-auto" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M0 1H10" stroke="black"/>
-<path d="M0 4H10" stroke="black"/>
-<path d="M0 7H10" stroke="black"/>
-</svg>
+              <path d="M0 1H10" stroke="black" />
+              <path d="M0 4H10" stroke="black" />
+              <path d="M0 7H10" stroke="black" />
+            </svg>
+          </button>
+        </div>
 
-            </button>
-          </div>
-
-        <nav className="md:ml-auto hidden lg:flex flex-wrap items-center text-base justify-center">
-      
-
+        <nav className="md:ml-auto hidden lg:flex flex-wrap items-center text-[14px] justify-center">
           <Link href="/about">
             <a className="mr-5 font-[500] tracking-[.15em] text-black border-b-2 border-transparent hover:text-gray-600  hover:border-black">
               ABOUT
@@ -170,7 +174,7 @@ const Navbar = (props) => {
 
           <Link href="/customer-care/home-buying-process">
             <a className="mr-5 font-[500] tracking-[.15em] text-black border-b-2 border-transparent hover:text-gray-600  hover:border-black">
-            HOME BUYING PROCESS
+              HOME BUYING PROCESS
             </a>
           </Link>
 
@@ -182,7 +186,7 @@ const Navbar = (props) => {
         </nav>
       </div>
 
-      <OverlayMenu open={open} setOpen={setOpen} >
+      <OverlayMenu open={open} setOpen={setOpen}>
         {/* <nav
           className={`${ovstyle.closeNav} flex items-center  container mx-auto justify-end flex-wrap py-2`}
         >
@@ -208,45 +212,34 @@ const Navbar = (props) => {
         </nav> */}
 
         <div className=" pt-14 relative md:pt-0  flex h-full flex-col ">
-       
- 
-
           <div className="menuGroup1 flex flex-col px-4 md:px-0 w-12/12 sm:w-9/12 md:w-2/3 lg:w-1/2 mb-5">
             {/* <h2 className="text-blue-ggLight  transition-colors duration-200 hover:text-blue-ggLight font-bold text-base uppercase pb-4">
                   Residential Demo
                 </h2> */}
 
-
-
-
-
             <Link href="/about">
-            <a className="text-xl font-bold py-2 tracking-[.15em] text-black border-b-2 border-transparent hover:text-gray-600  ">
-              ABOUT
-            </a>
-          </Link>
-          <Link href="/services">
-            <a className="text-xl font-bold py-2 tracking-[.15em] text-black border-b-2 border-transparent hover:text-gray-600  ">
-              SERVICES
-            </a>
-          </Link>
+              <a className="text-xl font-bold py-2 tracking-[.15em] text-black border-b-2 border-transparent hover:text-gray-600  ">
+                ABOUT
+              </a>
+            </Link>
+            <Link href="/services">
+              <a className="text-xl font-bold py-2 tracking-[.15em] text-black border-b-2 border-transparent hover:text-gray-600  ">
+                SERVICES
+              </a>
+            </Link>
 
-          <Link href="/customer-care/home-buying-process">
-            <a className="text-xl font-bold py-2 tracking-[.15em] text-black border-b-2 border-transparent hover:text-gray-600  ">
-              HOME BUYING PROCESS
-            </a>
-          </Link>
+            <Link href="/customer-care/home-buying-process">
+              <a className="text-xl font-bold py-2 tracking-[.15em] text-black border-b-2 border-transparent hover:text-gray-600  ">
+                HOME BUYING PROCESS
+              </a>
+            </Link>
 
-          <Link href="/contact">
-            <a className="text-xl font-bold py-2 tracking-[.15em] text-black border-b-2 border-transparent hover:text-gray-600  ">
-              CONTACT
-            </a>
-          </Link>
+            <Link href="/contact">
+              <a className="text-xl font-bold py-2 tracking-[.15em] text-black border-b-2 border-transparent hover:text-gray-600  ">
+                CONTACT
+              </a>
+            </Link>
           </div>
-
-
-
-
         </div>
       </OverlayMenu>
     </header>

@@ -13,39 +13,26 @@ import CommunityTabs from "../components/ServiceTabs/communities";
 import ValuesTabs from "../components/ServiceTabs/values";
 import SeparatorRight from "../components/Separator/TextRight";
 import SeparatorLeft from "../components/Separator/TextLeft";
+import Layout from "../components/Layout";
 
 export default function Home() {
   return (
     <div>
-      <NextSeo
+      <Layout
         title="About Gable View Homes"
-        description="Please don’t hesitate to contact us about our properties, their location or what we do. Simply fill out the form and we’ll get right back to you."
-        canonical="https://www.gableviewhomes.com/about"
-        openGraph={{
-          images: [
-            {
-              url: "https://greatgulfstrapi.blob.core.windows.net/greatgulf/assets/customer_care_1_40fb605ae6.jpg",
-              width: 2500,
-              height: 1111,
-            },
-          ],
-        }}
-      />
-
-      <Navbar />
-
-      <InteriorHero
-        image="/img/hero/about-hero.jpg"
-        imagePortrait="/img/hero/about-hero.jpg"
-        desktopPosition="object-top"
-        style="text-blue-ggDark flex-col"
+        description={`Ya get me - The next level`}
       >
-        <h1 className="text-center drop-shadow-md text-5xl lg:text-8xl leading-[1.2em] font-bold block text-white">
-          About Us
-        </h1>
-      </InteriorHero>
+        <InteriorHero
+          image="/img/hero/about-hero.jpg"
+          imagePortrait="/img/hero/about-hero.jpg"
+          desktopPosition="object-top"
+          style="text-blue-ggDark flex-col"
+        >
+          <h1 className="text-center drop-shadow-md text-5xl lg:text-8xl leading-[1.2em] font-bold block text-white">
+            About Us
+          </h1>
+        </InteriorHero>
 
-      <main id="main" className="mb-auto">
         <section>
           <div className="container mx-auto px-5 sectionp">
             <h2>Who we are</h2>
@@ -69,7 +56,6 @@ export default function Home() {
             svgtext="img/svg/spaces-designed-for-life.svg"
             image="/img/gvh-living.jpg"
           />
-
         </section>
 
         <section>
@@ -151,9 +137,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-      </main>
-
-      <Footer />
+      </Layout>
     </div>
   );
 }

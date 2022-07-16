@@ -10,35 +10,21 @@ import { NextSeo } from "next-seo";
 import Navbar from "../components/MainNav";
 import InteriorHero from "../components/Hero/InteriorHero";
 import ResourcesHero from "../components/Hero/resourcehero";
+import Layout from "../components/Layout";
 
 export default function Home() {
   return (
     <div>
-      <NextSeo
-        title="Our Services"
-        description="Please don’t hesitate to contact us about our properties, their location or what we do. Simply fill out the form and we’ll get right back to you."
-        canonical="https://www.gableviewhomes.com/about"
-        openGraph={{
-          images: [
-            {
-              url: "https://greatgulfstrapi.blob.core.windows.net/greatgulf/assets/customer_care_1_40fb605ae6.jpg",
-              width: 2500,
-              height: 1111,
-            },
-          ],
-        }}
-      />
-
-      <Navbar />
-
-      <ResourcesHero>
-        <span className="mb-4 block px-5">COMMUNITY RESOURCES</span>
-        <h1 className="text-left w-full px-5 lg:w-7/12 2xl:w-6/12  text-2xl md:text-3xl lg:text-6xl  leading-[1.2em] font-bold block text-black">
-          Residences on Kennedy&nbsp;Circle
-        </h1>
-      </ResourcesHero>
-
-      <main id="main" className="mb-auto">
+      <Layout
+        title=" Residences on Kennedy&nbsp;Circle COMMUNITY RESOURCES "
+        description={`Ya get me - The next level`}
+      >
+        <ResourcesHero>
+          <span className="mb-4 block px-5">COMMUNITY RESOURCES</span>
+          <h1 className="text-left w-full px-5 lg:w-7/12 2xl:w-6/12  text-2xl md:text-3xl lg:text-6xl  leading-[1.2em] font-bold block text-black">
+            Residences on Kennedy&nbsp;Circle
+          </h1>
+        </ResourcesHero>
         <section className="border-b pb-20 px-5 bg-gray-50 ">
           <div className="py-10 container gap-5 flex w-full border-b">
             <div className="">
@@ -155,9 +141,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-      </main>
-
-      <Footer />
+      </Layout>
     </div>
   );
 }

@@ -9,40 +9,23 @@ import Services from "../components/Services";
 import { NextSeo } from "next-seo";
 import Navbar from "../components/MainNav";
 import InteriorHero from "../components/Hero/InteriorHero";
+import Layout from "../components/Layout";
 
 export default function Home() {
   return (
     <div>
-      <NextSeo
-        title="Our Services"
-        description="Please don’t hesitate to contact us about our properties, their location or what we do. Simply fill out the form and we’ll get right back to you."
-        canonical="https://www.gableviewhomes.com/about"
-        openGraph={{
-          images: [
-            {
-              url: "https://greatgulfstrapi.blob.core.windows.net/greatgulf/assets/customer_care_1_40fb605ae6.jpg",
-              width: 2500,
-              height: 1111,
-            },
-          ],
-        }}
-      />
-
-      <Navbar />
-
-      <InteriorHero
-        image="/img/hero/services-hero.jpg"
-        imagePortrait="/img/comm/landing-portrait.jpg"
-        desktopPosition="object-top"
-        style="text-blue-ggDark flex-col"
-      >
-                <h1 className="text-center drop-shadow-md text-5xl lg:text-8xl leading-[1.2em] font-bold block text-white">
-          Our Services
-        </h1>
-      </InteriorHero>
-
-      <main id="main" className="mb-auto">
-      <section id="real-estate-development" className="border-b border-black">
+      <Layout title=" Our Services" description={`Ya get me - The next level`}>
+        <InteriorHero
+          image="/img/hero/services-hero.jpg"
+          imagePortrait="/img/comm/landing-portrait.jpg"
+          desktopPosition="object-top"
+          style="text-blue-ggDark flex-col"
+        >
+          <h1 className="text-center drop-shadow-md text-5xl lg:text-8xl leading-[1.2em] font-bold block text-white">
+            Our Services
+          </h1>
+        </InteriorHero>
+        <section id="real-estate-development" className="border-b border-black">
           <div className="container mx-auto px-5 sectionp">
             <h2>Real Estate Development</h2>
             <p>
@@ -77,7 +60,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="construction-management"  className="border-b border-black">
+        <section id="construction-management" className="border-b border-black">
           <div className="container mx-auto px-5 sectionp">
             <h2>Project & Construction Management</h2>
             <p>
@@ -108,7 +91,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="full-service-marketing"  className="border-b border-black">
+        <section id="full-service-marketing" className="border-b border-black">
           <div className="container mx-auto px-5 sectionp">
             <h2>Full-service Marketing</h2>
             <p>
@@ -142,7 +125,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="custom-homes"  className="border-b border-black">
+        <section id="custom-homes" className="border-b border-black">
           <div className="container mx-auto px-5 sectionp">
             <h2>Custom Homes</h2>
             <p>
@@ -174,9 +157,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-      </main>
-
-      <Footer />
+      </Layout>
     </div>
   );
 }

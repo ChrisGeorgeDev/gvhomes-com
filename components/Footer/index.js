@@ -70,11 +70,13 @@ export default function Footer(props) {
                 />
               </svg>
             </a>
-            <p className="my-2 text-sm text-white">
-              Spaces designed for life.
-            </p>
+            <p className="my-2 text-sm text-white">Spaces designed for life.</p>
             <span className="inline-flex sm:ml-auto sm:mt-2 gap-5 justify-center sm:justify-start">
-              <a className="text-white" href="https://www.facebook.com/Gableviewhomes/" target="_blank">
+              <a
+                className="text-white"
+                href="https://www.facebook.com/Gableviewhomes/"
+                target="_blank"
+              >
                 <svg
                   fill="currentColor"
                   stroke-linecap="round"
@@ -86,7 +88,11 @@ export default function Footer(props) {
                   <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
                 </svg>
               </a>
-              <a className="text-white" href="https://twitter.com/GableviewHomes/" target="_blank">
+              <a
+                className="text-white"
+                href="https://twitter.com/GableviewHomes/"
+                target="_blank"
+              >
                 <svg
                   fill="currentColor"
                   stroke-linecap="round"
@@ -98,7 +104,11 @@ export default function Footer(props) {
                   <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
                 </svg>
               </a>
-              <a className="text-white" href="https://www.facebook.com/Gableviewhomes/" target="_blank">
+              <a
+                className="text-white"
+                href="https://www.facebook.com/Gableviewhomes/"
+                target="_blank"
+              >
                 <svg
                   fill="none"
                   stroke="currentColor"
@@ -137,7 +147,7 @@ export default function Footer(props) {
                 <h2 className="font-bold text-white tracking-widest text-sm mb-3">
                   ABOUT
                 </h2>
-                <nav className="list-none font-light space-y-2 mb-10">
+                <nav className="list-none soleilT font-light space-y-2 mb-10">
                   <li>
                     <Link href="/about#our-values">
                       <a className="text-white hover:text-gray-800">
@@ -174,7 +184,7 @@ export default function Footer(props) {
                 <h2 className="title-font font-bold text-white tracking-widest text-sm mb-3">
                   SERVICES
                 </h2>
-                <nav className="list-none font-light space-y-2 mb-10">
+                <nav className="list-none soleilT font-light space-y-2 mb-10">
                   <li>
                     <Link href="/services#real-estate-development">
                       <a className="text-white hover:text-gray-800">
@@ -213,7 +223,7 @@ export default function Footer(props) {
                 <h2 className="title-font font-bold text-white tracking-widest text-sm mb-3">
                   CUSTOMER CARE
                 </h2>
-                <nav className="list-none font-light space-y-2 mb-10">
+                <nav className="list-none soleilT font-light space-y-2 mb-10">
                   <li>
                     <Link href="/customer-care/home-buying-process">
                       <a className="text-white hover:text-gray-800">
@@ -241,7 +251,7 @@ export default function Footer(props) {
                 <h2 className="title-font font-bold text-white tracking-widest text-sm mb-3">
                   CONTACT
                 </h2>
-                <nav className="list-none font-light space-y-2 mb-10">
+                <nav className="list-none soleilT font-light space-y-2 mb-10">
                   <li>
                     <Link href="/contact">
                       <a className="text-white hover:text-gray-800">Sales</a>
@@ -277,23 +287,19 @@ export default function Footer(props) {
 
       <div className=" border-t bg-black border-gray-200">
         <div className="container mx-auto py-4 px-5 flex flex-wrap justify-between flex-col sm:flex-row">
-          <p className="text-white text-sm text-left">
+          <p className="text-white soleilT text-sm text-left">
             © 2022 Gable View Homes
           </p>
 
-          <nav className="list-none gap-10 text-sm inline-flex ">
+          <nav className="list-none soleilT gap-10 text-sm inline-flex ">
             <li>
               <Link href="/terms-conditions">
-                <a className="text-white hover:text-gray-800">
-                  Terms of Use
-                </a>
+                <a className="text-white hover:text-gray-800">Terms of Use</a>
               </Link>
             </li>
             <li>
               <Link href="/policies">
-                <a className="text-white hover:text-gray-800">
-                  Privacy Policy
-                </a>
+                <a className="text-white hover:text-gray-800">Privacy Policy</a>
               </Link>
             </li>
           </nav>

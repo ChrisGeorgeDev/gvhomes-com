@@ -13,55 +13,33 @@ import SeparatorLeft from "../components/Separator/TextLeft";
 import SeparatorRight from "../components/Separator/TextRight";
 import ResourceTab from "../components/ResourceTab";
 import axios from "axios";
+import Layout from "../components/Layout";
 
-
-export default function Home({community}) {
+export default function Home({ community }) {
   // const questions = community.data[0].attributes.owner_resources;
 
   return (
     <div>
-      <NextSeo
-        title="Spaces designged for Life."
-        description="Please don’t hesitate to contact us about our properties, their location or what we do. Simply fill out the form and we’ll get right back to you."
-        canonical="https://www.gableviewhomes.com/contact"
-        openGraph={{
-          images: [
-            {
-              url: "https://greatgulfstrapi.blob.core.windows.net/greatgulf/assets/customer_care_1_40fb605ae6.jpg",
-              width: 2500,
-              height: 1111,
-            },
-          ],
-        }}
-      />
-
-      <Navbar />
-
-      <LandingHero
-        image="/img/hero/morning-coffee.jpg"
-        imagePortrait="/img/comm/landing-portrait.jpg"
-        style="text-blue-ggDark flex-col "
-        height="h-[100vh]"
-      >
-        <div className="flex px-5 content-end flex-col">
-          <div className=" w-full lg:w-1/2">
-            <h1>
-              <span className="text-5xl lg:text-8xl leading-[1.2em] font-bold block text-white">
-                Spaces
-              </span>
-              <span className="text-5xl lg:text-8xl leading-[1.2em] font-thin text-white">
-                DESIGNED FOR&nbsp;LIFE
-              </span>
-            </h1>
+      <Layout title=" Home" description={`Ya get me - The next level`}>
+        <LandingHero
+          image="/img/hero/morning-coffee.jpg"
+          imagePortrait="/img/comm/landing-portrait.jpg"
+          style="text-blue-ggDark flex-col "
+          height="h-[100vh]"
+        >
+          <div className="flex px-5 content-end flex-col">
+            <div className=" w-full lg:w-1/2">
+              <h1>
+                <span className="text-5xl lg:text-8xl leading-[1.2em] font-bold block text-white">
+                  Spaces
+                </span>
+                <span className="text-5xl lg:text-8xl leading-[1.2em] font-thin text-white">
+                  DESIGNED FOR&nbsp;LIFE
+                </span>
+              </h1>
+            </div>
           </div>
-
-       
-        </div>
-      </LandingHero>
-      {/* <ResourceTab  className="center" com={questions} /> */}
-
-      <main id="main" className="mb-auto">
-      
+        </LandingHero>
         <section className="leadp">
           <div className="container mx-auto px-5 sectionp ">
             <p className="max-w-[690px]">
@@ -70,7 +48,6 @@ export default function Home({community}) {
             </p>
 
             <p className="max-w-[800px]">
-
               As a boutique developer with 25 years of experience, our vision
               remains a home that is inviting, desirable, affordable and
               thoughtfully integrated into the fabric of the surrounding
@@ -85,10 +62,8 @@ export default function Home({community}) {
           </div>
         </section>
 
-      
-
         <section className=" bg-gray-50 flex flex-col gap-20">
-        <SeparatorLeft
+          <SeparatorLeft
             bold="Elevated"
             thin=" Living <br/> Experiences"
             svgtext="/img/svg/elevated-experiences.svg"
@@ -97,8 +72,7 @@ export default function Home({community}) {
           <div className="md:container md:mx-auto  ">
             <div className="container px-5">
               <div className="sectionp">
-              <h2 className="">Our Services</h2>
-
+                <h2 className="">Our Services</h2>
               </div>
               <ServiceTabs />
               <p className="text-xl soleil max-w-[730px] font-normal mb-6">
@@ -114,16 +88,14 @@ export default function Home({community}) {
           </div>
         </section>
 
-     
-
         <section className=" flex flex-col gap-20">
-        <SeparatorRight
-          bold="Featured"
-          thin=" Community"
-          svgtext="/img/svg/featured-community.svg"
-size="max-w-[75%]"
-          image="/img/kc-exterior.jpg"
-        />
+          <SeparatorRight
+            bold="Featured"
+            thin=" Community"
+            svgtext="/img/svg/featured-community.svg"
+            size="max-w-[75%]"
+            image="/img/kc-exterior.jpg"
+          />
           <div className="container mx-auto px-5 sectionp">
             <p>The Residences on Kennedy&nbsp;Circle</p>
 
@@ -144,36 +116,33 @@ size="max-w-[75%]"
         </section>
 
         <section className=" bg-gray-50">
-     
-              <SeparatorLeft
-           bold="Simplified"
-           thin="Home buying <br/> process"
+          <SeparatorLeft
+            bold="Simplified"
+            thin="Home buying <br/> process"
             svgtext="/img/svg/simplified-process.svg"
             image="/img/kc-suite-e.jpg"
           />
-                 <div className="container mx-auto px-5 sectionp">
+          <div className="container mx-auto px-5 sectionp">
             <p>We make buying a new home easy.</p>
 
             <p>
-            The Gable View Homes experienced team of sales 
-agents, interior designers, service coordinators and tradespeople  are here to make the process of building your home as seamless and efficient as possible.
+              The Gable View Homes experienced team of sales agents, interior
+              designers, service coordinators and tradespeople are here to make
+              the process of building your home as seamless and efficient as
+              possible.
             </p>
 
             <Link href="/customer-care/home-buying-process">
-
-            <a>
-            <Button>FIND OUT HOW</Button>
-            </a>
+              <a>
+                <Button>FIND OUT HOW</Button>
+              </a>
             </Link>
           </div>
         </section>
-      </main>
-
-      <Footer />
+      </Layout>
     </div>
   );
 }
-
 
 // Home.getInitialProps = async (ctx) => {
 //   try {
@@ -186,9 +155,6 @@ agents, interior designers, service coordinators and tradespeople  are here to m
 //   }
 // };
 
-
-
 // https://strapi-production-2269.up.railway.app/api/communities?populate[owner_resources][populate]=*&filters[name][$eq]=Notting%20Hill
-
 
 // "https://strapi-production-2269.up.railway.app/api/communities?populate=home_owner_resources&populate[1]=home_owner_resources.resource.download&populate[2]=home_owner_resources.resource.download.media&filters[name][$eq]=Notting%20Hill"

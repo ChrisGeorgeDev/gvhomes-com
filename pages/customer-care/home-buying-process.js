@@ -7,39 +7,27 @@ import { NextSeo } from "next-seo";
 import Navbar from "../../components/MainNav";
 import InteriorHero from "../../components/Hero/InteriorHero";
 import SeparatorLeft from "../../components/Separator/TextLeft";
+import Layout from "../../components/Layout";
 
 export default function Home() {
   return (
     <div>
-      <NextSeo
-        title="About Gable View Homes"
-        description="Please don’t hesitate to contact us about our properties, their location or what we do. Simply fill out the form and we’ll get right back to you."
-        canonical="https://www.gableviewhomes.com/about"
-        openGraph={{
-          images: [
-            {
-              url: "https://greatgulfstrapi.blob.core.windows.net/greatgulf/assets/customer_care_1_40fb605ae6.jpg",
-              width: 2500,
-              height: 1111,
-            },
-          ],
-        }}
-      />
-
-      <Navbar />
-
-      <InteriorHero
-        image="/img/hero/homebuyers-hero.jpg"
-        imagePortrait=""
-        desktopPosition="object-top"
-        style="text-blue-ggDark flex-col"
+      <Layout
+        title=" Home Buying Process"
+        description={`Ya get me - The next level`}
       >
-        <h1 className="text-center drop-shadow-md text-5xl lg:text-8xl leading-[1.2em] font-bold block text-white">
-          Home buying<br/> Process
-        </h1>
-      </InteriorHero>
+        <InteriorHero
+          image="/img/hero/homebuyers-hero.jpg"
+          imagePortrait=""
+          desktopPosition="object-top"
+          style="text-blue-ggDark flex-col"
+        >
+          <h1 className="text-center drop-shadow-md text-5xl lg:text-8xl leading-[1.2em] font-bold block text-white">
+            Home buying
+            <br /> Process
+          </h1>
+        </InteriorHero>
 
-      <main id="main" className="mb-auto">
         <section>
           <div className="container mx-auto px-5 sectionp">
             <h2>Thank you for choosing&nbsp;us.</h2>
@@ -67,7 +55,6 @@ export default function Home() {
             bold="Your journey"
             size="max-w-[75%]"
             svgtext="/img/svg/start-here.svg"
-
           />
 
           <div className="lg:container mx-auto px-5  sectionp">
@@ -104,9 +91,7 @@ export default function Home() {
             </p>
           </div>
         </section>
-      </main>
-
-      <Footer />
+      </Layout>
     </div>
   );
 }

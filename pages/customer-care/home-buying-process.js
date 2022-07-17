@@ -83,6 +83,26 @@ export default function Home() {
               </a>
             </Link>
           </div>
+          <div id="home-owner-resources" className="container mx-auto px-5 sectionp">
+            <p>
+           Community Resources
+            </p>
+
+            <div className="flex ">
+
+<Link href="/customer-care/owner-resources/notting-hill">
+<a className="w-1/4 bg-[url('/img/tile-notting-hill.jpg')] bg-cover bg-center ">
+
+<img className="w-1/2 mx-auto py-16 invert brightness-0 " src="/img/svg/NottingHill.svg" />
+
+
+</a>
+</Link>
+
+            </div>
+
+
+          </div>
 
           <div className="container mx-auto px-5 sectionp">
             <p>

@@ -239,9 +239,9 @@ export default function Footer(props) {
                     </Link>
                   </li>
                   <li>
-                    <Link href="/login">
+                    <Link href="/customer-care/home-buying-process#home-owner-resources">
                       <a className="text-white hover:text-gray-800">
-                        Community Resource Demo
+                        Home Owner Resources
                       </a>
                     </Link>
                   </li>

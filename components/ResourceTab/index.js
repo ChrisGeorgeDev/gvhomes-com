@@ -6,7 +6,7 @@ export default function ResourceTab(props) {
   });
   console.log(data);
   return (
-    <div className="w-full  px-2 py-16 sm:px-0  m-auto">
+    <div className="w-full  px-2 pb-16 sm:px-0  m-auto">
       {/* {props.com
         .filter((element) => element.category == "category_one")
         .map((x) => console.log(x))} */}

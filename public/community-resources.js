@@ -1,14 +1,6 @@
-import Head from "next/head";
-import Button from "../components/Button";
-import LandingHero from "../components/Hero/LandingHero";
-import ServiceTabs from "../components/ServiceTabs";
-import styles from "../styles/Home.module.css";
-import Link from "next/link";
-import Footer from "../components/Footer";
-import Services from "../components/Services";
+
 import { NextSeo } from "next-seo";
 import Navbar from "../components/MainNav";
-import InteriorHero from "../components/Hero/InteriorHero";
 import ResourcesHero from "../components/Hero/resourcehero";
 import ResourceTab from "../components/ResourceTab";
 
@@ -49,7 +41,6 @@ export default function Comm({community}) {
 
       </main>
 
-      <Footer />
     </div>
   );
 }
@@ -69,10 +60,28 @@ export default function Comm({community}) {
 //   }
 // };
 
+export const getStaticPaths = async () => {
+  const res = await fetch(
+    `https://strapi-production-2269.up.railway.app/api/communities`
+  );
+
+  const communities = await res.json();
+  // const articles = JSON.parse(JSON.stringify(content))
+console.log(communities.data)
+  return {
+    paths: communities.map((community) => ({
+      params: {
+        slug: community.slug,
+      },
+    })),
+    fallback: false,
+  };
+};
+
 
 export const getStaticProps = async () => {
     const res = await fetch(
-      `https://strapi-production-2269.up.railway.app/api/communities?populate[owner_resources][populate]=*&filters[name][$eq]=Notting%20Hill`
+      `https://strapi-production-2269.up.railway.app/api/communities?populate[owner_resources][populate]=*&filters[slug][$eq]=notting-hill`
     );
   
     const community = await res.json();

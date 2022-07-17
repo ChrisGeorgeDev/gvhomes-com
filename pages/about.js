@@ -49,7 +49,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className=" bg-gray-50 ">
+        <section className="bg-gray-50 ">
           <SeparatorLeft
             bold="Spaces"
             thin="Designed <br/> For Life"
@@ -65,7 +65,7 @@ export default function Home() {
               provides the vision and execution expertise to create outstanding
               new buildings and homes in the GTA and Canada. As we continue to
               grow and expand our portfolio, we aim to create extraordinary
-              designs and living environments.{" "}
+              designs and living environments.
             </p>
           </div>
         </section>

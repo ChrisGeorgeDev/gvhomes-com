@@ -6,7 +6,7 @@ import Navbar from "../components/MainNav";
 import Footer from "../components/Footer";
 import { AnimatePresence } from "framer-motion";
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps, router }) {
   return (
     <>
       <DefaultSeo {...SEO} />
@@ -17,10 +17,10 @@ function MyApp({ Component, pageProps }) {
       <Navbar />
       <AnimatePresence
         exitBeforeEnter
-        initial={false}
+        initial={true}
         onExitComplete={() => window.scrollTo(0, 0)}
       >
-        <Component {...pageProps} />
+        <Component key={router.route} {...pageProps} />
       </AnimatePresence>
 
       <Footer />

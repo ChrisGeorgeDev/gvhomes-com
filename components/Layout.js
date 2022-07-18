@@ -5,10 +5,10 @@ import { motion } from "framer-motion";
 const variants = {
   hidden: { opacity: 0, x: 0, y: 0 },
   enter: { opacity: 1, x: 0, y: 0 },
-  exit: { opacity: 0, x: 0, y: -100 },
+  exit: { opacity: 0, x: 0, y: 0 },
 };
 
-export default function Layout(props) {
+export default function Layout(props, router) {
   return (
     <div>
       <NextSeo
@@ -17,11 +17,12 @@ export default function Layout(props) {
         // openGraph={{ props.title, props.description }}
       />
       <motion.main
+        // key={router.route}
         initial="hidden"
         animate="enter"
         exit="exit"
         variants={variants}
-        transition={{ type: "linear" }}
+        transition={{ type: "ease", duration: .2 }}
         className="mb-auto"
       >
         {props.children}

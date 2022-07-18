@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 const imageAnim = {
   hidden: { opacity: 0, x: 0, y: 0 },
   enter: { opacity: 1, x: 0, y: 0 },
-  exit: { opacity: 0, x: 0, y: -100 },
+  exit: { opacity: 0, x: 0, y: 0 },
 };
 
 const childrenAnim = {
@@ -27,7 +27,7 @@ export default function LandingHero(props) {
         className="h-[100vh] relative bg-white overflow-hidden  bg-blue-ggDark flex flex-col justify-end  "
         initial="hidden"
         animate={"enter"}
-        transition={{ staggerChildren: 0.5 }}
+        transition={{ staggerChildren: .5 }}
       >
         {/* IMAGE÷\ */}
         {/* <div className={`${styles.bgWrp} flex justify-center `}> */}
@@ -40,7 +40,7 @@ export default function LandingHero(props) {
             src={props.image}
             className="object-cover absolute z-[1] object-center  w-full h-full"
             variants={imageAnim}
-            transition={{ type: "ease", duration: 1 }}
+            transition={{ type: "easeIn",  duration: 1 }}
           />
         )}
 
@@ -55,7 +55,7 @@ export default function LandingHero(props) {
             src={props.image}
             className="object-cover absolute z-[1]  w-full h-full"
             variants={imageAnim}
-            transition={{ type: "ease", duration: 1 }}
+            transition={{ type: "ease" }}
           />
         )}
 

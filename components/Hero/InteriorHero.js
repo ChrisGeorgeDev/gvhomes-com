@@ -24,7 +24,7 @@ export default function InteriorHero(props) {
     <>
       <motion.div
         className="h-[80vh] relative bg-white overflow-hidden  bg-blue-ggDark flex flex-col justify-center "
-        transition={{ staggerChildren: 0.8, staggerDirection: -1 }}
+        transition={{ staggerChildren: 0.5, staggerDirection: -1 }}
       >
         {isDesktop && (
           // <picture className=" ">

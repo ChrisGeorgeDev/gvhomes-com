@@ -49,7 +49,7 @@ export default function SeparatorLeft(props) {
         className="flex  gap-10 flex-col lg:flex-row"
         initial="hidden"
         whileInView={"enter"}
-        viewport={{ once: true, amount: 0.6 }}
+        viewport={{ once: true, amount: 0.5 }}
         transition={{ staggerChildren: 0.2, staggerDirection: -1 }}
       >
         <div className=" flex flex-col justify-end w-full lg:w-4/12 ">
@@ -57,7 +57,7 @@ export default function SeparatorLeft(props) {
             className="2xl:h-full hidden lg:block self-end "
             src={props.svgtext}
             variants={svgAnim}
-            transition={{ type: "ease", duration: 2 }}
+            transition={{ type: "ease", duration: 1 }}
           />
           <div className="ml-20 lg:hidden  lg:mr-0 text-left leading-none lg:leading-tight">
             <span
@@ -74,7 +74,7 @@ export default function SeparatorLeft(props) {
         <div className="flex justify-items-end">
           <motion.img
             variants={imageAnim}
-            transition={{ type: "ease", duration: 2 }}
+            transition={{ type: "ease", duration: 1 }}
             className="object-cover"
             src={props.image}
           />

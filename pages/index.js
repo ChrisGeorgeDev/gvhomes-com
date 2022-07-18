@@ -102,23 +102,36 @@ export default function Home({ community }) {
             svgtext="/img/svg/elevated-experiences.svg"
             image="/img/kitchen_2.jpg"
           />
-          <div className="md:container md:mx-auto  ">
+          <motion.div
+            className="md:container md:mx-auto "
+            initial="hidden"
+            whileInView={"enter"}
+            viewport={{ once: true, amount: 0.6 }}
+            transition={{ staggerChildren: 0.2, staggerDirection: -1 }}
+          >
             <div className="container px-5">
-              <div className="sectionp">
-                <h2 className="">Our Services</h2>
-              </div>
-              <ServiceTabs />
-              <p className="text-xl soleil max-w-[730px] font-normal mb-6">
-                Gable View Homes is a full-service real estate development firm
-                specializing in new construction residential projects.
-              </p>
-              <Link href="/services">
-                <a>
-                  <Button>WHAT WE DO</Button>
-                </a>
-              </Link>
+              <motion.div
+                variants={p1}
+                transition={{ type: "ease", duration: 1 }}
+                className="sectionp"
+              >
+                <h2 variants={p1} transition={{ type: "ease", duration: 1 }}>
+                  Our Services
+                </h2>
+
+                <ServiceTabs />
+                <p className="text-xl soleil max-w-[730px] font-normal mb-6">
+                  Gable View Homes is a full-service real estate development
+                  firm specializing in new construction residential projects.
+                </p>
+                <Link href="/services">
+                  <a>
+                    <Button>WHAT WE DO</Button>
+                  </a>
+                </Link>
+              </motion.div>
             </div>
-          </div>
+          </motion.div>
         </section>
 
         <section className=" flex flex-col gap-20">

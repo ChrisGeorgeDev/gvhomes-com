@@ -14,6 +14,25 @@ import ValuesTabs from "../components/ServiceTabs/values";
 import SeparatorRight from "../components/Separator/TextRight";
 import SeparatorLeft from "../components/Separator/TextLeft";
 import Layout from "../components/Layout";
+import { motion } from "framer-motion";
+
+const imageAnim = {
+  hidden: { opacity: 0, x: 0, y: 100 },
+  enter: { opacity: 1, x: 0, y: 0 },
+  exit: { opacity: 0, x: 0, y: -100 },
+};
+
+const p1 = {
+  hidden: { opacity: 0, x: 0, y: -25 },
+  enter: { opacity: 1, x: 0, y: 0 },
+  exit: { opacity: 0, x: 0, y: -100 },
+};
+
+const p2 = {
+  hidden: { opacity: 0, x: 0, y: 25 },
+  enter: { opacity: 1, x: 0, y: 0 },
+  exit: { opacity: 0, x: 0, y: -100 },
+};
 
 export default function Home() {
   return (
@@ -34,19 +53,25 @@ export default function Home() {
         </InteriorHero>
 
         <section>
-          <div className="container mx-auto px-5 sectionp">
+          <motion.div
+            className="container mx-auto px-5 sectionp "
+            initial="hidden"
+            whileInView={"enter"}
+            viewport={{ once: true, amount: 0.6 }}
+            transition={{ staggerChildren: 0.2, staggerDirection: -1 }}
+          >
             <h2>Who we are</h2>
-            <p>
+            <motion.p variants={p1} transition={{ type: "ease", duration: 1 }}>
               Gable View Homes creates engaging and inspiring living experiences
               by setting new standards in real estate development.
-            </p>
+            </motion.p>
 
-            <p>
+            <motion.p variants={p2} transition={{ type: "ease", duration: 1 }}>
               Grounded in diverse community engagement and integration with each
               project, we design and develop spaces to live, work and play,
               ranging from townhomes to condominiums.
-            </p>
-          </div>
+            </motion.p>
+          </motion.div>
         </section>
 
         <section className="bg-gray-50 ">
@@ -60,13 +85,19 @@ export default function Home() {
 
         <section>
           <div className="container mx-auto px-5 sectionp">
-            <p>
+            <motion.p
+              initial="hidden"
+              whileInView={"enter"}
+              viewport={{ once: true, amount: 0.25 }}
+              variants={p1}
+              transition={{ type: "ease", duration: 1 }}
+            >
               With over 25 years of experience, Gable View Homes' seasoned team
               provides the vision and execution expertise to create outstanding
               new buildings and homes in the GTA and Canada. As we continue to
               grow and expand our portfolio, we aim to create extraordinary
               designs and living environments.
-            </p>
+            </motion.p>
           </div>
         </section>
 
@@ -86,7 +117,7 @@ export default function Home() {
                     is to adhere to our core values of creating outstanding spaces through design and craftsmanship and to deliver homes with quality, innovation 
                     and customer service.              */}
             </p>
-            <div>
+            <div className="mt-20">
               <ValuesTabs />
             </div>
           </div>

@@ -26,7 +26,7 @@ export default function SeparatorRight(props) {
         <div className="flex order-2 lg:order-1 justify-end  ">
           <motion.img
             variants={imageAnim}
-            transition={{ type: "ease", duration: 2 }}
+            transition={{ type: "ease", duration: 1 }}
             className="object-cover"
             src={props.image}
           />
@@ -37,7 +37,7 @@ export default function SeparatorRight(props) {
             className="2xl:h-full hidden lg:block self-start "
             src={props.svgtext}
             variants={svgAnim}
-            transition={{ type: "ease", duration: 2 }}
+            transition={{ type: "ease", duration: 1 }}
           />
           <div className="ml-20 lg:hidden  lg:mr-0 text-left leading-none lg:leading-tight">
             <span

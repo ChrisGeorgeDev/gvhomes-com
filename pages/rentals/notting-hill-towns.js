@@ -165,7 +165,7 @@ export default function Home() {
 
             <div
               id="contact-sales"
-              className="w- 12/12 mt-[60px] lg:w-6/12 bg-white rounded-lg  flex flex-col  relative z-10 "
+              className="w- 12/12 mt-[60px] lg:w-6/12 bg-white  -lg  flex flex-col  relative z-10 "
             >
               <div className="flex flex-col text-center w-full mb-12">
                 <h1 className="sm:text-3xl text-2xl font-bold title-font mb-4 text-gray-900">
@@ -192,7 +192,7 @@ export default function Home() {
                         type="text"
                         id="name"
                         name="name"
-                        className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                        className="w-full bg-gray-100 bg-opacity-50   border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                       />
                     </div>
                   </div>
@@ -208,7 +208,7 @@ export default function Home() {
                         type="text"
                         id="phone"
                         name="phone"
-                        className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                        className="w-full bg-gray-100 bg-opacity-50   border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                       />
                     </div>
                   </div>
@@ -224,7 +224,7 @@ export default function Home() {
                         type="email"
                         id="email"
                         name="email"
-                        className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                        className="w-full bg-gray-100 bg-opacity-50   border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                       />
                     </div>
                   </div>
@@ -239,7 +239,7 @@ export default function Home() {
                       <textarea
                         id="message"
                         name="message"
-                        className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                        className="w-full bg-gray-100 bg-opacity-50   border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
                       ></textarea>
                     </div>
                   </div>

@@ -8,6 +8,25 @@ import Navbar from "../../components/MainNav";
 import InteriorHero from "../../components/Hero/InteriorHero";
 import SeparatorLeft from "../../components/Separator/TextLeft";
 import Layout from "../../components/Layout";
+import { motion } from "framer-motion";
+
+const imageAnim = {
+  hidden: { opacity: 0, x: 0, y: 100 },
+  enter: { opacity: 1, x: 0, y: 0 },
+  exit: { opacity: 0, x: 0, y: -100 },
+};
+
+const p1 = {
+  hidden: { opacity: 0, x: 0, y: -25 },
+  enter: { opacity: 1, x: 0, y: 0 },
+  exit: { opacity: 0, x: 0, y: -100 },
+};
+
+const p2 = {
+  hidden: { opacity: 0, x: 0, y: 25 },
+  enter: { opacity: 1, x: 0, y: 0 },
+  exit: { opacity: 0, x: 0, y: -100 },
+};
 
 export default function Home() {
   return (
@@ -29,23 +48,29 @@ export default function Home() {
         </InteriorHero>
 
         <section>
-          <div className="container mx-auto px-5 sectionp">
+          <motion.div
+            className="container mx-auto px-5 sectionp "
+            initial="hidden"
+            whileInView={"enter"}
+            viewport={{ once: true, amount: 0.6 }}
+            transition={{ staggerChildren: 0.2, staggerDirection: -1 }}
+          >
             <h2>Thank you for choosing&nbsp;us.</h2>
-
-            <p>
+            <motion.p variants={p1} transition={{ type: "ease", duration: 1 }}>
               As your homebuilder, our commitment is to deliver your new home
               built with the upmost quality, standards and innovation, as well
               as to ensure it is thoughtfully integrated into the fabric of your
               new community.
-            </p>
-            <p>
+            </motion.p>
+
+            <motion.p variants={p2} transition={{ type: "ease", duration: 1 }}>
               Over the various stages of the homebuilding process, our team will
               connect and work together with you to achieve your vision for your
               new Gable View home. We've worked hard to provide all of our
               customers with this streamlined process.Our goal is to create a
               home that reflects your lifestyle and personal taste
-            </p>
-          </div>
+            </motion.p>
+          </motion.div>
         </section>
 
         <section id="the-home-buying-process" className="bg-gray-50">
@@ -64,7 +89,7 @@ export default function Home() {
         </section>
 
         <section id="home-owner-guide" className="border-b">
-          <div className="container mx-auto px-5 sectionp">
+          {/* <div className="container mx-auto px-5 sectionp">
             <h2>Resources</h2>
             <p>
               Our Welcome Package will guide you step-by-step to inform you of
@@ -82,14 +107,40 @@ export default function Home() {
                 <Button>DOWNLOAD THE GUIDE</Button>
               </a>
             </Link>
-          </div>
+          </div> */}
+
+          <motion.div
+            className="container mx-auto px-5 sectionp "
+            initial="hidden"
+            whileInView={"enter"}
+            viewport={{ once: true, amount: 0.6 }}
+            transition={{ staggerChildren: 0.2, staggerDirection: -1 }}
+          >
+            <h2>Resources</h2>
+            <motion.p variants={p1} transition={{ type: "ease", duration: 1 }}>
+              Our Welcome Package will guide you step-by-step to inform you of
+              who will connect with you over the course of the build – before,
+              during and after your home have been constructed.
+            </motion.p>
+
+            <motion.p variants={p2} transition={{ type: "ease", duration: 1 }}>
+              Please save, review and refer to this package as you embark on
+              this very special Gable View Homes experience.
+            </motion.p>
+            <Link href="#">
+              <a>
+                <Button>DOWNLOAD THE GUIDE</Button>
+              </a>
+            </Link>
+          </motion.div>
+
           <div
             id="home-owner-resources"
             className="container mx-auto px-5 sectionp"
           >
             <p>Community Resources</p>
 
-            <div className="flex ">
+            <div className="flex flex-col ">
               <Link href="/customer-care/owner-resources/notting-hill-towns">
                 <a className="w-1/4 bg-[url('/img/tile-notting-hill.jpg')] bg-cover bg-center ">
                   <img
@@ -98,6 +149,7 @@ export default function Home() {
                   />
                 </a>
               </Link>
+              <p className="mt-2 soleilT">Notting Hill Towns</p>
             </div>
           </div>
 

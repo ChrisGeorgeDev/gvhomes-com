@@ -25,7 +25,9 @@ export default function LandingHero(props) {
 
       <motion.div
         className="h-[100vh] relative bg-white overflow-hidden  bg-blue-ggDark flex flex-col justify-end  "
-        transition={{ staggerChildren: 0.8, staggerDirection: -1 }}
+        initial="hidden"
+        animate={"enter"}
+        transition={{ staggerChildren: 0.5 }}
       >
         {/* IMAGE÷\ */}
         {/* <div className={`${styles.bgWrp} flex justify-center `}> */}
@@ -61,7 +63,7 @@ export default function LandingHero(props) {
           <motion.div
             className={`w-12/12 relative z-[2]  mx-auto mb-20  `}
             variants={childrenAnim}
-            transition={{ type: "easeIn", duration: 1.5 }}
+            transition={{ type: "easeIn", duration: 1.2 }}
           >
             {props.children}
           </motion.div>

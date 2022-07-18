@@ -39,7 +39,7 @@ export default function Home({ community }) {
 
   return (
     <div>
-      <Layout title=" Home" description={`Ya get me - The next level`}>
+      <Layout title="Brilliant Living">
         <LandingHero
           image="/img/hero/morning-coffee.jpg"
           imagePortrait="/img/comm/landing-portrait.jpg"

@@ -37,10 +37,7 @@ const p2 = {
 export default function Home() {
   return (
     <div>
-      <Layout
-        title="About Gable View Homes"
-        description={`Ya get me - The next level`}
-      >
+      <Layout title="About Us">
         <InteriorHero
           image="/img/hero/about-hero.jpg"
           imagePortrait="/img/hero/about-hero.jpg"

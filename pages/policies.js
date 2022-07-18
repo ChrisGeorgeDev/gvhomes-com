@@ -16,7 +16,7 @@ import Layout from "../components/Layout";
 export default function PrivacyPolicy() {
   return (
     <div>
-      <Layout title="Privacy Policy" description={`Ya get me - The next level`}>
+      <Layout title="Privacy Policy">
         <PageHero>
           <h1 className="text-left px-5 w-7/12 2xl:w-6/12 text-4xl  lg:text-6xl leading-[1.2em] font-bold block text-black">
             Privacy Policy

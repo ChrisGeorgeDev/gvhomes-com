@@ -1,11 +1,41 @@
 import { Disclosure, Transition } from "@headlessui/react";
 import { Fragment } from "react";
+import { motion } from "framer-motion";
+
+const imageAnim = {
+  hidden: { opacity: 0, x: 0, y: 100 },
+  enter: { opacity: 1, x: 0, y: 0 },
+  exit: { opacity: 0, x: 0, y: -100 },
+};
+
+const p1 = {
+  hidden: { opacity: 0, x: 0, y: -25 },
+  enter: { opacity: 1, x: 0, y: 0 },
+  exit: { opacity: 0, x: 0, y: -100 },
+};
+
+const p2 = {
+  hidden: { opacity: 0, x: 0, y: 25 },
+  enter: { opacity: 1, x: 0, y: 0 },
+  exit: { opacity: 0, x: 0, y: -100 },
+};
 
 export default function Services() {
   return (
     <div className=" lg:container  ">
-      <div className="mx-auto w-full   ">
-        <Disclosure as="div" className="mt-2 border-b border-black">
+      <motion.div
+        className=" mx-auto w-full"
+        transition={{ staggerChildren: 0.5, staggerDirection: 1 }}
+      >
+        <Disclosure
+          as={motion.div}
+          variants={p1}
+          initial="hidden"
+          whileInView={"enter"}
+          viewport={{ once: true, amount: 0.1 }}
+          transition={{ type: "ease", duration: 1 }}
+          className="mt-2 border-b border-black"
+        >
           {({ open }) => (
             <>
               <Disclosure.Button className="disclosureTitle">
@@ -39,7 +69,15 @@ export default function Services() {
           )}
         </Disclosure>
 
-        <Disclosure as="div" className="mt-2 border-b border-black">
+        <Disclosure
+          as={motion.div}
+          variants={p1}
+          initial="hidden"
+          whileInView={"enter"}
+          viewport={{ once: true, amount: 0.1 }}
+          transition={{ type: "ease", duration: 1 }}
+          className="mt-2 border-b border-black"
+        >
           {({ open }) => (
             <>
               <Disclosure.Button className="disclosureTitle">
@@ -72,7 +110,15 @@ export default function Services() {
           )}
         </Disclosure>
 
-        <Disclosure as="div" className="mt-2 border-b border-black">
+        <Disclosure
+          as={motion.div}
+          variants={p1}
+          initial="hidden"
+          whileInView={"enter"}
+          viewport={{ once: true, amount: 0.1 }}
+          transition={{ type: "ease", duration: 1 }}
+          className="mt-2 border-b border-black"
+        >
           {({ open }) => (
             <>
               <Disclosure.Button className="disclosureTitle">
@@ -105,8 +151,15 @@ export default function Services() {
             </>
           )}
         </Disclosure>
-
-        <Disclosure as="div" className="mt-2 border-b border-black">
+        <Disclosure
+          as={motion.div}
+          variants={p1}
+          initial="hidden"
+          whileInView={"enter"}
+          viewport={{ once: true, amount: 0.1 }}
+          transition={{ type: "ease", duration: 1 }}
+          className="mt-2 border-b border-black"
+        >
           {({ open }) => (
             <>
               <Disclosure.Button className="disclosureTitle">
@@ -138,8 +191,15 @@ export default function Services() {
             </>
           )}
         </Disclosure>
-
-        <Disclosure as="div" className="mt-2 border-b border-black">
+        <Disclosure
+          as={motion.div}
+          variants={p1}
+          initial="hidden"
+          whileInView={"enter"}
+          viewport={{ once: true, amount: 0.1 }}
+          transition={{ type: "ease", duration: 1 }}
+          className="mt-2 border-b border-black"
+        >
           {({ open }) => (
             <>
               <Disclosure.Button className="disclosureTitle">
@@ -173,7 +233,15 @@ export default function Services() {
           )}
         </Disclosure>
 
-        <Disclosure as="div" className="mt-2 border-b border-black">
+        <Disclosure
+          as={motion.div}
+          variants={p1}
+          initial="hidden"
+          whileInView={"enter"}
+          viewport={{ once: true, amount: 0.1 }}
+          transition={{ type: "ease", duration: 1 }}
+          className="mt-2 border-b border-black"
+        >
           {({ open }) => (
             <>
               <Disclosure.Button className="disclosureTitle">
@@ -206,7 +274,15 @@ export default function Services() {
           )}
         </Disclosure>
 
-        <Disclosure as="div" className="mt-2 border-b border-black">
+        <Disclosure
+          as={motion.div}
+          variants={p1}
+          initial="hidden"
+          whileInView={"enter"}
+          viewport={{ once: true, amount: 0.1 }}
+          transition={{ type: "ease", duration: 1 }}
+          className="mt-2 border-b border-black"
+        >
           {({ open }) => (
             <>
               <Disclosure.Button className="disclosureTitle">
@@ -246,7 +322,7 @@ export default function Services() {
             </>
           )}
         </Disclosure>
-      </div>
+      </motion.div>
     </div>
   );
 }

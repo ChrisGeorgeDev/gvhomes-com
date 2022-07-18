@@ -162,24 +162,24 @@ const Navbar = (props) => {
 
         <nav className="md:ml-auto hidden lg:flex flex-wrap items-center text-[14px] justify-center">
           <Link href="/about">
-            <a className="mr-5 font-[500] tracking-[.15em] text-black border-b-2 border-transparent hover:text-gray-600  hover:border-black">
+            <a className="mr-5 font-[500] tracking-[.15em] text-black border-b-2 border-transparent hover:text-gray-600  hover:border-black  transition-all duration-200">
               ABOUT
             </a>
           </Link>
           <Link href="/services">
-            <a className="mr-5 font-[500] tracking-[.15em] text-black border-b-2 border-transparent hover:text-gray-600  hover:border-black">
+            <a className="mr-5 font-[500] tracking-[.15em] text-black border-b-2 border-transparent hover:text-gray-600  hover:border-black transition-all duration-200">
               SERVICES
             </a>
           </Link>
 
-          <Link href="/customer-care/home-buying-process">
-            <a className="mr-5 font-[500] tracking-[.15em] text-black border-b-2 border-transparent hover:text-gray-600  hover:border-black">
-              HOME BUYING PROCESS
+          <Link href="/customer-care/home-buyers-resources">
+            <a className="mr-5 font-[500] tracking-[.15em] text-black border-b-2 border-transparent hover:text-gray-600  hover:border-black transition-all duration-200">
+              HOME BUYERS RESOURCES
             </a>
           </Link>
 
           <Link href="/contact">
-            <a className="mr-5 font-[500] tracking-[.15em] text-black border-b-2 border-transparent hover:text-gray-600  hover:border-black">
+            <a className="mr-5 font-[500] tracking-[.15em] text-black border-b-2 border-transparent hover:text-gray-600  hover:border-black transition-all duration-200">
               CONTACT
             </a>
           </Link>
@@ -218,24 +218,36 @@ const Navbar = (props) => {
                 </h2> */}
 
             <Link href="/about">
-              <a className="text-xl font-bold py-2 tracking-[.15em] text-black border-b-2 border-transparent hover:text-gray-600  ">
-                ABOUT
+              <a
+                onClick={() => setOpen(false)}
+                className="text-xl font-bold py-2 tracking-[.15em] text-black border-b-2 border-transparent hover:text-gray-600  "
+              >
+                ABOUTs
               </a>
             </Link>
             <Link href="/services">
-              <a className="text-xl font-bold py-2 tracking-[.15em] text-black border-b-2 border-transparent hover:text-gray-600  ">
+              <a
+                onClick={() => setOpen(false)}
+                className="text-xl font-bold py-2 tracking-[.15em] text-black border-b-2 border-transparent hover:text-gray-600  "
+              >
                 SERVICES
               </a>
             </Link>
 
-            <Link href="/customer-care/home-buying-process">
-              <a className="text-xl font-bold py-2 tracking-[.15em] text-black border-b-2 border-transparent hover:text-gray-600  ">
+            <Link href="/customer-care/home-buyers-resources">
+              <a
+                onClick={() => setOpen(false)}
+                className="text-xl font-bold py-2 tracking-[.15em] text-black border-b-2 border-transparent hover:text-gray-600  "
+              >
                 HOME BUYING PROCESS
               </a>
             </Link>
 
             <Link href="/contact">
-              <a className="text-xl font-bold py-2 tracking-[.15em] text-black border-b-2 border-transparent hover:text-gray-600  ">
+              <a
+                onClick={() => setOpen(false)}
+                className="text-xl font-bold py-2 tracking-[.15em] text-black border-b-2 border-transparent hover:text-gray-600  "
+              >
                 CONTACT
               </a>
             </Link>

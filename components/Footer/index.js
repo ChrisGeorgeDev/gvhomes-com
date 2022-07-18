@@ -150,7 +150,7 @@ export default function Footer(props) {
                 <nav className="list-none soleilT font-light space-y-2 mb-10">
                   <li>
                     <Link href="/about#our-values">
-                      <a className="text-white hover:text-gray-800">
+                      <a className="text-white hover:text-gray-500 transition-all duration-200">
                         Our Values
                       </a>
                     </Link>
@@ -158,7 +158,7 @@ export default function Footer(props) {
 
                   <li>
                     <Link href="/about#current-communities">
-                      <a className="text-white hover:text-gray-800">
+                      <a className="text-white hover:text-gray-500 transition-all duration-200">
                         Current Communities
                       </a>
                     </Link>
@@ -166,14 +166,14 @@ export default function Footer(props) {
 
                   <li>
                     <Link href="/about#past-communities">
-                      <a className="text-white hover:text-gray-800">
+                      <a className="text-white hover:text-gray-500 transition-all duration-200">
                         Past Communities
                       </a>
                     </Link>
                   </li>
                   <li>
                     <Link href="/rentals/notting-hill-towns">
-                      <a className="text-white hover:text-gray-800">
+                      <a className="text-white hover:text-gray-500 transition-all duration-200">
                         Residential Rentals
                       </a>
                     </Link>
@@ -187,7 +187,7 @@ export default function Footer(props) {
                 <nav className="list-none soleilT font-light space-y-2 mb-10">
                   <li>
                     <Link href="/services#real-estate-development">
-                      <a className="text-white hover:text-gray-800">
+                      <a className="text-white hover:text-gray-500 transition-all duration-200">
                         Real Estate Development
                       </a>
                     </Link>
@@ -195,14 +195,14 @@ export default function Footer(props) {
 
                   <li>
                     <Link href="/services#construction-management">
-                      <a className="text-white hover:text-gray-800">
+                      <a className="text-white hover:text-gray-500 transition-all duration-200">
                         Project Management
                       </a>
                     </Link>
                   </li>
                   <li>
                     <Link href="/services#full-service-marketing">
-                      <a className="text-white hover:text-gray-800">
+                      <a className="text-white hover:text-gray-500 transition-all duration-200">
                         Full Service Marketing
                       </a>
                     </Link>
@@ -210,7 +210,7 @@ export default function Footer(props) {
 
                   <li>
                     <Link href="/services#custom-homes">
-                      <a className="text-white hover:text-gray-800">
+                      <a className="text-white hover:text-gray-500 transition-all duration-200">
                         Custom Homes
                       </a>
                     </Link>
@@ -226,21 +226,21 @@ export default function Footer(props) {
                 <nav className="list-none soleilT font-light space-y-2 mb-10">
                   <li>
                     <Link href="/customer-care/home-buying-process">
-                      <a className="text-white hover:text-gray-800">
+                      <a className="text-white hover:text-gray-500 transition-all duration-200">
                         The Home buying process
                       </a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/customer-care/home-buying-process#home-owner-guide">
-                      <a className="text-white hover:text-gray-800">
+                    <Link href="/customer-care/home-buyers-resources#home-owner-guide">
+                      <a className="text-white hover:text-gray-500 transition-all duration-200">
                         New Homeowner Guide
                       </a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/customer-care/home-buying-process#home-owner-resources">
-                      <a className="text-white hover:text-gray-800">
+                    <Link href="/customer-care/home-buyers-resources#home-owner-resources">
+                      <a className="text-white hover:text-gray-500 transition-all duration-200">
                         Home Owner Resources
                       </a>
                     </Link>
@@ -254,26 +254,28 @@ export default function Footer(props) {
                 <nav className="list-none soleilT font-light space-y-2 mb-10">
                   <li>
                     <Link href="/contact">
-                      <a className="text-white hover:text-gray-800">Sales</a>
+                      <a className="text-white hover:text-gray-500 transition-all duration-200">
+                        Sales
+                      </a>
                     </Link>
                   </li>
                   <li>
                     <Link href="/contact">
-                      <a className="text-white hover:text-gray-800">
+                      <a className="text-white hover:text-gray-500 transition-all duration-200">
                         Design Centre
                       </a>
                     </Link>
                   </li>
                   <li>
                     <Link href="/contact">
-                      <a className="text-white hover:text-gray-800">
+                      <a className="text-white hover:text-gray-500 transition-all duration-200">
                         Customer Service
                       </a>
                     </Link>
                   </li>
                   <li>
                     <Link href="/contact">
-                      <a className="text-white hover:text-gray-800">
+                      <a className="text-white hover:text-gray-500 transition-all duration-200">
                         Warranty Office
                       </a>
                     </Link>
@@ -294,12 +296,16 @@ export default function Footer(props) {
           <nav className="list-none soleilT gap-10 text-sm inline-flex ">
             <li>
               <Link href="/terms-conditions">
-                <a className="text-white hover:text-gray-800">Terms of Use</a>
+                <a className="text-white hover:text-gray-500 transition-all duration-200">
+                  Terms of Use
+                </a>
               </Link>
             </li>
             <li>
               <Link href="/policies">
-                <a className="text-white hover:text-gray-800">Privacy Policy</a>
+                <a className="text-white hover:text-gray-500 transition-all duration-200">
+                  Privacy Policy
+                </a>
               </Link>
             </li>
           </nav>

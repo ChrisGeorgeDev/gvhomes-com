@@ -54,7 +54,7 @@ export default function SeparatorLeft(props) {
       >
         <div className=" flex flex-col justify-end w-full lg:w-4/12 ">
           <motion.img
-            className="2xl:h-full hidden lg:block self-end "
+            className=" hidden lg:block self-end "
             src={props.svgtext}
             variants={svgAnim}
             transition={{ type: "ease", duration: 1 }}

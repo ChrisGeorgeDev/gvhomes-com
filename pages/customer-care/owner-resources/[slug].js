@@ -14,7 +14,6 @@ export default function Comm({ community }) {
     <div>
       <Layout
         title={`${community.data[0].attributes.name} Community Resources `}
-        description={`Ya get me - The next level`}
       >
         <ResourcesHero>
           <span className="mb-4 block ">COMMUNITY RESOURCES</span>

@@ -14,10 +14,7 @@ import Layout from "../../components/Layout";
 export default function Home() {
   return (
     <div>
-      <Layout
-        title=" Nottinghill Hill Towns Rentals"
-        description={`Ya get me - The next level`}
-      >
+      <Layout title=" Nottinghill Hill Towns Rentals">
         <InteriorHero
           image="/img/hero/notting-hill-block-a.jpg"
           imagePortrait=""

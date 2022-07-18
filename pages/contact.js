@@ -14,7 +14,7 @@ import Layout from "../components/Layout";
 export default function Home() {
   return (
     <div>
-      <Layout title="Contact Max" description={`Ya get me - The next level`}>
+      <Layout title="Contact Us">
         <InteriorHero
           image="/img/hero/contact-hero.jpg"
           imagePortrait="/img/comm/landing-portrait.jpg"
@@ -46,7 +46,10 @@ export default function Home() {
                     <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
                   </svg>
 
-                  <a className="soleilT" href="tel:905.336.8953">
+                  <a
+                    className="soleilT border-b border-white hover:border-black transition-all duration-200"
+                    href="tel:905.336.8953"
+                  >
                     905.336.8953 x1
                   </a>
                 </span>
@@ -61,7 +64,10 @@ export default function Home() {
                     <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                     <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                   </svg>
-                  <a className="soleilT" href="mailto:sales@gableviewhomes.com">
+                  <a
+                    className="soleilT border-b border-white hover:border-black transition-all duration-200"
+                    href="mailto:sales@gableviewhomes.com"
+                  >
                     Email Sales
                   </a>
                 </span>
@@ -81,7 +87,10 @@ export default function Home() {
                     <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
                   </svg>
 
-                  <a className="soleilT" href="tel:905.336.8953">
+                  <a
+                    className="soleilT border-b border-white hover:border-black transition-all duration-200"
+                    href="tel:905.336.8953"
+                  >
                     905.336.8953 x4
                   </a>
                 </span>
@@ -96,7 +105,10 @@ export default function Home() {
                     <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                     <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                   </svg>
-                  <a className="soleilT" href="mailto:decor@gableviewhomes.com">
+                  <a
+                    className="soleilT border-b border-white hover:border-black transition-all duration-200"
+                    href="mailto:decor@gableviewhomes.com"
+                  >
                     Email Design Centre
                   </a>
                 </span>
@@ -116,7 +128,10 @@ export default function Home() {
                     <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
                   </svg>
 
-                  <a className="soleilT" href="tel:905.336.8953">
+                  <a
+                    className="soleilT border-b border-white hover:border-black transition-all duration-200"
+                    href="tel:905.336.8953"
+                  >
                     905.336.8953 x6
                   </a>
                 </span>
@@ -132,7 +147,7 @@ export default function Home() {
                     <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                   </svg>
                   <a
-                    className="soleilT"
+                    className="soleilT border-b border-white hover:border-black transition-all duration-200"
                     href="mailto:warrantyservice@gableviewhomes.com"
                   >
                     Email Warranty Department
@@ -154,7 +169,10 @@ export default function Home() {
                     <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
                   </svg>
 
-                  <a className="soleilT" href="tel:905.336.8953">
+                  <a
+                    className="soleilT border-b border-white hover:border-black transition-all duration-200"
+                    href="tel:905.336.8953"
+                  >
                     905.336.8953 x2
                   </a>
                 </span>
@@ -169,7 +187,10 @@ export default function Home() {
                     <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                     <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                   </svg>
-                  <a className="soleilT" href="mailto:info@gableviewhomes.com">
+                  <a
+                    className="soleilT border-b border-white hover:border-black transition-all duration-200"
+                    href="mailto:info@gableviewhomes.com"
+                  >
                     Email Customer Care
                   </a>
                 </span>
@@ -207,7 +228,10 @@ export default function Home() {
                     <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
                   </svg>
 
-                  <a className="soleilT" href="tel:905.336.8953">
+                  <a
+                    className="soleilT border-b border-white hover:border-black transition-all duration-200"
+                    href="tel:905.336.8953"
+                  >
                     905.336.8953
                   </a>
                 </span>
@@ -222,7 +246,12 @@ export default function Home() {
                     <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                     <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                   </svg>
-                  hello@gableviewhomes.com
+                  <a
+                    className="soleilT border-b border-white hover:border-black transition-all duration-200"
+                    href="mailto:hello@gableviewhomes.com"
+                  >
+                    hello@gableviewhomes.com
+                  </a>
                 </span>
               </div>
 

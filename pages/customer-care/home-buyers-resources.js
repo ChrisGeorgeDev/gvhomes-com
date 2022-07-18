@@ -31,10 +31,7 @@ const p2 = {
 export default function Home() {
   return (
     <div>
-      <Layout
-        title=" Home Buying Process"
-        description={`Ya get me - The next level`}
-      >
+      <Layout title=" Home Buyers Resources">
         <InteriorHero
           image="/img/hero/homebuyers-hero.jpg"
           imagePortrait=""
@@ -42,8 +39,8 @@ export default function Home() {
           style="text-blue-ggDark flex-col"
         >
           <h1 className="text-center drop-shadow-md text-5xl lg:text-8xl leading-[1.2em] font-bold block text-white">
-            Home buying
-            <br /> Process
+            Home Buyer
+            <br /> Resources
           </h1>
         </InteriorHero>
 
@@ -134,7 +131,12 @@ export default function Home() {
             </Link>
           </motion.div>
 
-          <div
+          <motion.div
+            variants={p1}
+            transition={{ type: "ease", duration: 1 }}
+            initial="hidden"
+            whileInView={"enter"}
+            viewport={{ once: true, amount: 0.6 }}
             id="home-owner-resources"
             className="container mx-auto px-5 sectionp"
           >
@@ -151,7 +153,7 @@ export default function Home() {
               </Link>
               <p className="mt-2 soleilT">Notting Hill Towns</p>
             </div>
-          </div>
+          </motion.div>
 
           <div className="container mx-auto px-5 sectionp">
             <p>

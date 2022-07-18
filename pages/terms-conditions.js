@@ -16,10 +16,7 @@ import Layout from "../components/Layout";
 export default function Home() {
   return (
     <div>
-      <Layout
-        title=" Terms & Conditions"
-        description={`Ya get me - The next level`}
-      >
+      <Layout title=" Terms & Conditions">
         <PageHero>
           <h1 className="text-left px-5 w-7/12 2xl:w-6/12 text-4xl  lg:text-6xl leading-[1.2em] font-bold block text-black">
             Terms & Conditions

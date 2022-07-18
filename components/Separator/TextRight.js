@@ -34,7 +34,7 @@ export default function SeparatorRight(props) {
 
         <div className=" flex order-1 lg:order-2 flex-col justify-items-start w-4/12 ">
           <motion.img
-            className="2xl:h-full hidden lg:block self-start "
+            className="  hidden lg:block self-start "
             src={props.svgtext}
             variants={svgAnim}
             transition={{ type: "ease", duration: 1 }}

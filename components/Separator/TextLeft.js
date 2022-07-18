@@ -52,14 +52,14 @@ export default function SeparatorLeft(props) {
         viewport={{ once: true, amount: 0.5 }}
         transition={{ staggerChildren: 0.2, staggerDirection: -1 }}
       >
-        <div className=" flex flex-col justify-end w-full lg:w-4/12 ">
+        <div className=" flex max-h-[100vh] flex-col justify-end w-full lg:w-4/12 ">
           <motion.img
-            className=" hidden lg:block self-end "
+            className=" max-h-[70vh] hidden lg:block self-end "
             src={props.svgtext}
             variants={svgAnim}
             transition={{ type: "ease", duration: 1 }}
           />
-          <div className="ml-20 lg:hidden  lg:mr-0 text-left leading-none lg:leading-tight">
+          <div className="ml-10 lg:hidden  lg:mr-0 text-left leading-none lg:leading-tight">
             <span
               className="text-4xl lg:text-8xl leading-[1.2em] text-black block font-bold"
               dangerouslySetInnerHTML={{ __html: props.bold }}
@@ -71,7 +71,7 @@ export default function SeparatorLeft(props) {
           </div>
         </div>
 
-        <div className="flex justify-items-end">
+        <div className="flex max-h-[100vh] justify-items-end">
           <motion.img
             variants={imageAnim}
             transition={{ type: "ease", duration: 1 }}

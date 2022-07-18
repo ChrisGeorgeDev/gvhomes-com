@@ -64,12 +64,7 @@ export default function Home() {
             viewport={{ once: true, amount: 0.55 }}
             transition={{ staggerChildren: 0.2, staggerDirection: -1 }}
           >
-            <motion.h2
-              variants={title}
-              transition={{ type: "ease", duration: 1 }}
-            >
-              Real Estate Development
-            </motion.h2>
+           <h2>  Real Estate Development</h2>
             <motion.p variants={p1} transition={{ type: "ease", duration: 1 }}>
               Gable View Homes is a full-service real estate development firm
               specializing in new construction residential projects.

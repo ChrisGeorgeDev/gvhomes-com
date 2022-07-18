@@ -23,7 +23,7 @@ export default function SeparatorRight(props) {
         viewport={{ once: true, amount: 0.6 }}
         transition={{ staggerChildren: 0.2, staggerDirection: -1 }}
       >
-        <div className="flex order-2 lg:order-1 justify-end  ">
+        <div className="flex max-h-[100vh] order-2 lg:order-1 justify-end  ">
           <motion.img
             variants={imageAnim}
             transition={{ type: "ease", duration: 1 }}
@@ -32,14 +32,14 @@ export default function SeparatorRight(props) {
           />
         </div>
 
-        <div className=" flex order-1 lg:order-2 flex-col justify-items-start w-4/12 ">
+        <div className=" max-h-[100vh] flex order-1 lg:order-2 flex-col justify-end w-4/12 ">
           <motion.img
-            className="  hidden lg:block self-start "
+            className=" max-h-[90vh] hidden lg:block self-start "
             src={props.svgtext}
             variants={svgAnim}
             transition={{ type: "ease", duration: 1 }}
           />
-          <div className="ml-20 lg:hidden  lg:mr-0 text-left leading-none lg:leading-tight">
+          <div className="ml-10 lg:hidden  lg:mr-0 text-left leading-none lg:leading-tight">
             <span
               className="text-4xl lg:text-8xl leading-[1.2em] text-black block font-bold"
               dangerouslySetInnerHTML={{ __html: props.bold }}

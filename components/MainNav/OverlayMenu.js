@@ -81,7 +81,7 @@ export default function OverlayMenu({ open, setOpen, title, children }) {
                   
                   
                       <Link href="/">
-                        <a className=" w-full py-6 title-font  top-0 left-[0px] font-medium items-center text-gray-900 z-50 md:mb-0">
+                        <a  onClick={() => setOpen(false)}  className=" w-full py-6 title-font  top-0 left-[0px] font-medium items-center text-gray-900 z-50 md:mb-0">
                         <svg width="29" height="33" className="h-[50px] w-auto" viewBox="0 0 29 33" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M28.221 33H0V30.101H25.2962V19.9768L14.1126 11.3325L6.10726 17.5157L6.08681 13.8544L14.1126 7.65499L28.2251 18.5617V33H28.221ZM28.221 14.5842L14.1126 3.67748L2.92478 12.3218V24.084H18.8372V18.951L21.762 21.2134V26.979H0V10.9067L14.1126 0L28.2251 10.9067V14.5842H28.221Z" fill="black"/>
 <path d="M14.1125 0V3.67748L28.221 14.5842V10.9067L14.1125 0Z" fill="black"/>

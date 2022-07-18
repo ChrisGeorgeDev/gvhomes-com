@@ -222,7 +222,7 @@ const Navbar = (props) => {
                 onClick={() => setOpen(false)}
                 className="text-xl font-bold py-2 tracking-[.15em] text-black border-b-2 border-transparent hover:text-gray-600  "
               >
-                ABOUTs
+                ABOUT
               </a>
             </Link>
             <Link href="/services">

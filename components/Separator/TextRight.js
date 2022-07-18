@@ -18,14 +18,15 @@ export default function SeparatorRight(props) {
     <>
       <motion.div
         className="flex  gap-10 flex-col lg:flex-row"
-        initial="hidden"
-        whileInView={"enter"}
-        viewport={{ once: true, amount: 0.6 }}
+
         transition={{ staggerChildren: 0.2, staggerDirection: -1 }}
       >
         <div className="flex max-h-[100vh] order-2 lg:order-1 justify-end  ">
           <motion.img
             variants={imageAnim}
+            initial="hidden"
+            whileInView={"enter"}
+            viewport={{ once: true, amount: .6 }}
             transition={{ type: "ease", duration: 1 }}
             className="object-cover"
             src={props.image}
@@ -36,6 +37,9 @@ export default function SeparatorRight(props) {
           <motion.img
             className=" max-h-[90vh] hidden lg:block self-start "
             src={props.svgtext}
+            initial="hidden"
+            whileInView={"enter"}
+            viewport={{ once: true, amount: 1 }}
             variants={svgAnim}
             transition={{ type: "ease", duration: 1 }}
           />

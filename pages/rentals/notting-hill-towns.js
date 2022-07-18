@@ -53,14 +53,17 @@ export default function Home() {
 
         <section className="bg-gray-50">
           <SeparatorLeft
-            image="/img/the-ashlar.jpg"
+            image="/img/Living_room_up.jpg"
             thin="plus Den"
             bold="2 Bed"
             svgtext="/img/svg/2bd-02.svg"
           />
 
           <div className="flex flex-col md:flex-col px-5  container mt-24 gap-6">
-            <div className="container mx-auto ">
+          
+            <div className="flex container gap-10 flex-col lg:flex-row">
+              <div className="sectionp  ">
+              <div className="container mx-auto ">
               <h2 className="text-6xl leading-[1.1] max-w-[730px] font-bold block text-black lg:mb-[10px]">
                 <span className="block font-[500] text-sm text-[#757575] mb-2">
                   {" "}
@@ -70,15 +73,13 @@ export default function Home() {
               </h2>
             </div>
 
-            <div className="flex container gap-10 flex-col lg:flex-row">
-              <div className="  ">
                 <p className="text-xl max-w-[730px] mb-[1em]">
                   These back-to-back townhomes offer the perfect fit for singles
                   and couples while still leaving room to grow.
                 </p>
               </div>
 
-              <div className="  px-5 ">
+              <div className="  px-5 sectionp">
                 <h3 className="text-[1.4rem] font-sans font-[500]">
                   FEATURES AT A GLANCE
                 </h3>
@@ -265,7 +266,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="p-2 w-full">
-                    <button className=" mx-auto w-full text-center text-white bg-black border-[1px] border-black py-6 px-8 focus:outline-none hover:bg-white hover:text-black  text-lg font-sans uppercase">
+                    <button className=" mx-auto w-full text-center text-white bg-black border-[1px] border-black py-6 px-8 transition-all duration-200 focus:outline-none hover:bg-white hover:text-black  text-lg font-sans uppercase">
                       Schedule tour
                     </button>
                   </div>

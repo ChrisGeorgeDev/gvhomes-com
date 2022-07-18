@@ -13,11 +13,11 @@ const svgAnim = {
   exit: { opacity: 0, x: 0, y: -100 },
 };
 
-// const svgAnim = {
-//   hidden: { opacity: 0, x: 100, y: 0 },
-//   enter: { opacity: 1, x: 0, y: 0 },
-//   exit: { opacity: 0, x: 0, y: -100 },
-// };
+const svgAnim2 = {
+  hidden: { opacity: 0, x: 100, y: 0 },
+  enter: { opacity: 1, x: 0, y: 0 },
+  exit: { opacity: 0, x: 0, y: -100 },
+};
 
 export default function SeparatorLeft(props) {
   return (
@@ -47,16 +47,17 @@ export default function SeparatorLeft(props) {
 
       <motion.div
         className="flex  gap-10 flex-col lg:flex-row"
-        initial="hidden"
-        whileInView={"enter"}
-        viewport={{ once: true, amount: 0.5 }}
-        transition={{ staggerChildren: 0.2, staggerDirection: -1 }}
+     
+        transition={{ staggerChildren: 1.5, staggerDirection: -1 }}
       >
         <div className=" flex max-h-[100vh] flex-col justify-end w-full lg:w-4/12 ">
           <motion.img
             className=" max-h-[70vh] hidden lg:block self-end "
             src={props.svgtext}
-            variants={svgAnim}
+            initial="hidden"
+            whileInView={"enter"}
+            viewport={{ once: true, amount: 1 }}
+            variants={svgAnim2}
             transition={{ type: "ease", duration: 1 }}
           />
           <div className="ml-10 lg:hidden  lg:mr-0 text-left leading-none lg:leading-tight">
@@ -74,6 +75,9 @@ export default function SeparatorLeft(props) {
         <div className="flex max-h-[100vh] justify-items-end">
           <motion.img
             variants={imageAnim}
+            initial="hidden"
+            whileInView={"enter"}
+            viewport={{ once: true, amount: 0.6 }}
             transition={{ type: "ease", duration: 1 }}
             className="object-cover"
             src={props.image}

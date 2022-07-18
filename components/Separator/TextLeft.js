@@ -1,11 +1,24 @@
 import Link from "next/link";
 import React from "react";
-import { motion, Variants } from "framer-motion";
-const variants = {
-  hidden: { opacity: 0, x: 0, y: 0 },
+import { motion } from "framer-motion";
+const imageAnim = {
+  hidden: { opacity: 0, x: 0, y: 100 },
   enter: { opacity: 1, x: 0, y: 0 },
   exit: { opacity: 0, x: 0, y: -100 },
 };
+
+const svgAnim = {
+  hidden: { opacity: 0, x: 0, y: -50 },
+  enter: { opacity: 1, x: 0, y: 0 },
+  exit: { opacity: 0, x: 0, y: -100 },
+};
+
+// const svgAnim = {
+//   hidden: { opacity: 0, x: 100, y: 0 },
+//   enter: { opacity: 1, x: 0, y: 0 },
+//   exit: { opacity: 0, x: 0, y: -100 },
+// };
+
 export default function SeparatorLeft(props) {
   return (
     <>
@@ -32,11 +45,19 @@ export default function SeparatorLeft(props) {
         </div>
       </div> */}
 
-      <div className="flex  gap-10 flex-col lg:flex-row ">
+      <motion.div
+        className="flex  gap-10 flex-col lg:flex-row"
+        initial="hidden"
+        whileInView={"enter"}
+        viewport={{ once: true, amount: 0.6 }}
+        transition={{ staggerChildren: 0.2, staggerDirection: -1 }}
+      >
         <div className=" flex flex-col justify-end w-full lg:w-4/12 ">
-          <img
-            className="2xl:h-full hidden lg:block self-end  "
+          <motion.img
+            className="2xl:h-full hidden lg:block self-end "
             src={props.svgtext}
+            variants={svgAnim}
+            transition={{ type: "ease", duration: 2 }}
           />
           <div className="ml-20 lg:hidden  lg:mr-0 text-left leading-none lg:leading-tight">
             <span
@@ -50,18 +71,15 @@ export default function SeparatorLeft(props) {
           </div>
         </div>
 
-        <motion.div className="flex justify-items-end">
+        <div className="flex justify-items-end">
           <motion.img
-            initial="hidden"
-            animate="enter"
-            exit="exit"
-            variants={variants}
-            transition={{ type: "linear" }}
+            variants={imageAnim}
+            transition={{ type: "ease", duration: 2 }}
             className="object-cover"
             src={props.image}
           />
-        </motion.div>
-      </div>
+        </div>
+      </motion.div>
     </>
   );
 }

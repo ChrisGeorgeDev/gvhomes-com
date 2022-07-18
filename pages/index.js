@@ -14,6 +14,25 @@ import SeparatorRight from "../components/Separator/TextRight";
 import ResourceTab from "../components/ResourceTab";
 import axios from "axios";
 import Layout from "../components/Layout";
+import { motion } from "framer-motion";
+
+const imageAnim = {
+  hidden: { opacity: 0, x: 0, y: 100 },
+  enter: { opacity: 1, x: 0, y: 0 },
+  exit: { opacity: 0, x: 0, y: -100 },
+};
+
+const p1 = {
+  hidden: { opacity: 0, x: 0, y: -25 },
+  enter: { opacity: 1, x: 0, y: 0 },
+  exit: { opacity: 0, x: 0, y: -100 },
+};
+
+const p2 = {
+  hidden: { opacity: 0, x: 0, y: 25 },
+  enter: { opacity: 1, x: 0, y: 0 },
+  exit: { opacity: 0, x: 0, y: -100 },
+};
 
 export default function Home({ community }) {
   // const questions = community.data[0].attributes.owner_resources;
@@ -41,25 +60,39 @@ export default function Home({ community }) {
           </div>
         </LandingHero>
         <section className="leadp">
-          <div className="container mx-auto px-5 sectionp ">
-            <p className="max-w-[690px]">
+          <motion.div
+            className="container mx-auto px-5 sectionp "
+            initial="hidden"
+            whileInView={"enter"}
+            viewport={{ once: true, amount: 0.6 }}
+            transition={{ staggerChildren: 0.2, staggerDirection: -1 }}
+          >
+            <motion.p
+              className="max-w-[690px]"
+              variants={p1}
+              transition={{ type: "ease", duration: 1 }}
+            >
               At Gable View Homes, we are inspired to build houses and
               communities you'll be proud to call home.
-            </p>
+            </motion.p>
 
-            <p className="max-w-[800px]">
+            <motion.p
+              className="max-w-[800px]"
+              variants={p2}
+              transition={{ type: "ease", duration: 1 }}
+            >
               As a boutique developer with 25 years of experience, our vision
               remains a home that is inviting, desirable, affordable and
               thoughtfully integrated into the fabric of the surrounding
               community.
-            </p>
+            </motion.p>
 
             <Link href="/about">
               <a>
                 <Button>WHO WE ARE</Button>
               </a>
             </Link>
-          </div>
+          </motion.div>
         </section>
 
         <section className=" bg-gray-50 flex flex-col gap-20">
@@ -96,15 +129,21 @@ export default function Home({ community }) {
             size="max-w-[75%]"
             image="/img/kc-exterior.jpg"
           />
-          <div className="container mx-auto px-5 sectionp">
-            <p>The Residences on Kennedy&nbsp;Circle</p>
-
-            <p>
+          <motion.div
+            className="container mx-auto px-5 sectionp "
+            initial="hidden"
+            whileInView={"enter"}
+            viewport={{ once: true, amount: 0.6 }}
+            transition={{ staggerChildren: 0.2, staggerDirection: -1 }}
+          >
+            <motion.p variants={p1} transition={{ type: "ease", duration: 1 }}>
+              The Residences on Kennedy&nbsp;Circle
+            </motion.p>
+            <motion.p variants={p2} transition={{ type: "ease", duration: 1 }}>
               Gable View Homes is pleased to announce our expansion into the
               Town of Milton with our newest development, The Residences on
               Kennedy Circle.
-            </p>
-
+            </motion.p>
             <a
               href="https://kennedycirclecondo.com/"
               target="_blank"
@@ -112,7 +151,7 @@ export default function Home({ community }) {
             >
               <Button>VISIT PROJECT SITE</Button>
             </a>
-          </div>
+          </motion.div>
         </section>
 
         <section className=" bg-gray-50">
@@ -123,14 +162,16 @@ export default function Home({ community }) {
             image="/img/kc-suite-e.jpg"
           />
           <div className="container mx-auto px-5 sectionp">
-            <p>We make buying a new home easy.</p>
+            <motion.p variants={p1} transition={{ type: "ease", duration: 1 }}>
+              We make buying a new home easy.
+            </motion.p>
 
-            <p>
+            <motion.p variants={p2} transition={{ type: "ease", duration: 1 }}>
               The Gable View Homes experienced team of sales agents, interior
               designers, service coordinators and tradespeople are here to make
               the process of building your home as seamless and efficient as
               possible.
-            </p>
+            </motion.p>
 
             <Link href="/customer-care/home-buying-process">
               <a>

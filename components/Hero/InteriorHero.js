@@ -1,7 +1,20 @@
 import MainNav from "../MainNav";
 import { useMediaQuery } from "../../hooks/useMediaQuery";
 import styles from "../Hero/Hero.module.css";
+import { motion } from "framer-motion";
 
+// import { getServerSideProps } from "../../pagzes/communities";
+const imageAnim = {
+  hidden: { opacity: 0, x: 0, y: 0 },
+  enter: { opacity: 1, x: 0, y: 0 },
+  exit: { opacity: 0, x: 0, y: -100 },
+};
+
+const childrenAnim = {
+  hidden: { opacity: 0.5, x: 0, y: 25 },
+  enter: { opacity: 1, x: 0, y: 0 },
+  exit: { opacity: 0, x: 0, y: -100 },
+};
 // import { getServerSideProps } from "../../pagzes/communities";
 
 export default function InteriorHero(props) {
@@ -9,49 +22,50 @@ export default function InteriorHero(props) {
   let portraitImage = props.imagePortrait;
   return (
     <>
-   <div className="h-[80vh] relative bg-black overflow-hidden  bg-blue-ggDark flex flex-col justify-center "
+      <motion.div
+        className="h-[80vh] relative bg-white overflow-hidden  bg-blue-ggDark flex flex-col justify-center "
+        transition={{ staggerChildren: 0.8, staggerDirection: -1 }}
       >
+        {isDesktop && (
+          // <picture className=" ">
 
-{isDesktop && (
-            // <picture className=" ">
-       
-
-            <img
+          <motion.img
             alt={props.alt}
             src={props.image}
-            priority="true"
-            className={`object-cover absolute z-[1]  ${props.desktopPosition} w-full h-full `}
-            />
-          )}
+            className="object-cover absolute z-[1] object-center  w-full h-full"
+            variants={imageAnim}
+            transition={{ type: "ease", duration: 1 }}
+          />
+        )}
 
-          {!isDesktop && (
-                     <img
-                alt={props.alt}
-                // src={
-                //   portraitImage == "undefined"
-                //     ? props.image
-                //     : props.imagePortrait
-                // }
-                src={props.image}
+        {!isDesktop && (
+          <motion.img
+            alt={props.alt}
+            // src={
+            //   portraitImage == "undefined"
+            //     ? props.image
+            //     : props.imagePortrait
+            // }
+            src={props.image}
+            className="object-cover absolute z-[1]  w-full h-full"
+            variants={imageAnim}
+            transition={{ type: "ease", duration: 1 }}
+          />
+        )}
 
-                className="object-cover absolute z-[1]  w-full h-full"
-              />
-          )}
-
-
-<div className={`"flex container "`}>
-          <div className={`w-12/12 relative z-[2] mx-auto mb-6  `}>{props.children}</div>
+        <div className={`"flex container "`}>
+          <motion.div
+            className={`w-12/12 relative z-[2]  mx-auto mb-6  `}
+            variants={childrenAnim}
+            transition={{ type: "easeIn", duration: 1.5 }}
+          >
+            {props.children}
+          </motion.div>
         </div>
-
-</div>
-
-
+      </motion.div>
     </>
   );
 }
-
-
-
 
 // <div className="h-[80vh] relative bg-black overflow-hidden  bg-blue-ggDark flex flex-col justify-center "
 //       >
@@ -62,17 +76,8 @@ export default function InteriorHero(props) {
 //                 className="object-cover absolute z-[1]  object-right-bottom w-full h-full"
 //               />
 
-
 // <div className={`"flex container "`}>
 //           <div className={`w-12/12 relative z-[2] mx-auto mb-6  `}>GOO</div>
 //         </div>
 
 // </div>
-
-
-
-
-
-
-
-

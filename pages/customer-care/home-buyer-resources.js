@@ -144,7 +144,7 @@ export default function Home() {
 
             <div className="flex flex-col ">
               <Link href="/customer-care/owner-resources/notting-hill-towns">
-                <a className="w-1/4 hover:opacity-60 transition-all duration-200 bg-[url('/img/tile-notting-hill.jpg')] bg-cover bg-center ">
+                <a className="w-12/12 md:w-2/4 lg:w-1/4 hover:opacity-60 transition-all duration-200 bg-[url('/img/tile-notting-hill.jpg')] bg-cover bg-center ">
                   <img
                     className="w-1/2 mx-auto py-16 invert brightness-0 "
                     src="/img/svg/NottingHill.svg"

@@ -24,7 +24,7 @@ export default function InteriorHero(props) {
     <>
       <motion.div
         className="h-[80vh] relative bg-white overflow-hidden  bg-blue-ggDark flex flex-col justify-center "
-        transition={{ staggerChildren: 0.5, staggerDirection:1 }}
+        // transition={{ staggerChildren: 0.5, staggerDirection:1 }}
         whileInView={"enter"}
         initial="hidden"
 
@@ -33,17 +33,17 @@ export default function InteriorHero(props) {
         {isDesktop && (
           // <picture className=" ">
 
-          <motion.img
+          <img
             alt={props.alt}
             src={props.image}
             className="object-cover absolute z-[1] object-center  w-full h-full"
             variants={imageAnim}
-            transition={{ type: "easeInOut", duration: .8 }}
+            transition={{ type: "easeInOut", duration: 1 }}
           />
         )}
 
         {!isDesktop && (
-          <motion.img
+          <img
             alt={props.alt}
             // src={
             //   portraitImage == "undefined"
@@ -61,6 +61,7 @@ export default function InteriorHero(props) {
           <motion.div
             className={`w-12/12 relative z-[2]  mx-auto mb-6  `}
             variants={childrenAnim}
+            whileInView={"enter"}
             transition={{ type: "easeIn", duration: 1 }}
           >
             {props.children}

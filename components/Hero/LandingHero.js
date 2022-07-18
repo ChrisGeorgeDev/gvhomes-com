@@ -26,7 +26,7 @@ export default function LandingHero(props) {
       <motion.div
         className="h-[100vh] relative bg-white overflow-hidden  bg-blue-ggDark flex flex-col justify-end  "
         initial="hidden"
-        animate={"enter"}
+        whileInView={"enter"}
         transition={{ staggerChildren: .5 }}
       >
         {/* IMAGE÷\ */}

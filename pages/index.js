@@ -186,7 +186,7 @@ export default function Home({ community }) {
               possible.
             </motion.p>
 
-            <Link href="/customer-care/home-buying-process">
+            <Link href="/customer-care/home-buyer-resources">
               <a>
                 <Button>FIND OUT HOW</Button>
               </a>

@@ -5,13 +5,13 @@ import { motion } from "framer-motion";
 
 // import { getServerSideProps } from "../../pagzes/communities";
 const imageAnim = {
-  hidden: { opacity: 0, x: 0, y: 0 },
-  enter: { opacity: 1, x: 0, y: 0 },
+  hidden: { opacity: 0},
+  enter: { opacity: 1 },
   exit: { opacity: 0, x: 0, y: -100 },
 };
 
 const childrenAnim = {
-  hidden: { opacity: 0.5, x: 0, y: 25 },
+  hidden: { opacity: 0, x: 0, y: 25 },
   enter: { opacity: 1, x: 0, y: 0 },
   exit: { opacity: 0, x: 0, y: -100 },
 };
@@ -24,8 +24,12 @@ export default function InteriorHero(props) {
     <>
       <motion.div
         className="h-[80vh] relative bg-white overflow-hidden  bg-blue-ggDark flex flex-col justify-center "
-        transition={{ staggerChildren: 0.5, staggerDirection: -1 }}
-      >
+        transition={{ staggerChildren: 0.5, staggerDirection:1 }}
+        whileInView={"enter"}
+        initial="hidden"
+
+        viewport={{ once: true, amount: 0.6 }}
+        >
         {isDesktop && (
           // <picture className=" ">
 
@@ -34,7 +38,7 @@ export default function InteriorHero(props) {
             src={props.image}
             className="object-cover absolute z-[1] object-center  w-full h-full"
             variants={imageAnim}
-            transition={{ type: "ease", duration: 1 }}
+            transition={{ type: "easeInOut", duration: .8 }}
           />
         )}
 
@@ -57,7 +61,7 @@ export default function InteriorHero(props) {
           <motion.div
             className={`w-12/12 relative z-[2]  mx-auto mb-6  `}
             variants={childrenAnim}
-            transition={{ type: "easeIn", duration: 1.5 }}
+            transition={{ type: "easeIn", duration: 1 }}
           >
             {props.children}
           </motion.div>

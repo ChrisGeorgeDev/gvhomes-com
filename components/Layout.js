@@ -4,7 +4,10 @@ import { motion } from "framer-motion";
 
 const variants = {
   hidden: { opacity: 0, x: 0, y: 0 },
-  enter: { opacity: 1, x: 0, y: 0 },
+  enter: { opacity: 1, x: 0, y: 0, transition: {
+    duration: 0.4,
+    ease: [0.61, 1, 0.88, 1],
+  }, },
   exit: { opacity: 0, x: 0, y: 0 },
 };
 
@@ -18,11 +21,11 @@ export default function Layout(props, router) {
       />
       <motion.main
         // key={router.route}
-        initial="hidden"
-        animate="enter"
-        exit="exit"
-        variants={variants}
-        transition={{ type: "ease", duration: .2 }}
+        // initial="hidden"
+        // animate="enter"
+        // exit="exit"
+        // variants={variants}
+        // transition={{ type: "easeInOut", duration: .2 }}
         className="mb-auto"
       >
         {props.children}

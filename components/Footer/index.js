@@ -225,21 +225,21 @@ export default function Footer(props) {
                 </h2>
                 <nav className="list-none soleilT font-light space-y-2 mb-10">
                   <li>
-                    <Link href="/customer-care/home-buying-process">
+                    <Link href="/customer-care/home-buyer-resources">
                       <a className="text-white hover:text-gray-500 transition-all duration-200">
-                        The Home buying process
+                       Home Buyer Resources
                       </a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/customer-care/home-buyers-resources#home-owner-guide">
+                    <Link href="/customer-care/home-buyer-resources#home-owner-guide">
                       <a className="text-white hover:text-gray-500 transition-all duration-200">
                         New Homeowner Guide
                       </a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/customer-care/home-buyers-resources#home-owner-resources">
+                    <Link href="/customer-care/home-buyer-resources#home-owner-resources">
                       <a className="text-white hover:text-gray-500 transition-all duration-200">
                         Home Owner Resources
                       </a>

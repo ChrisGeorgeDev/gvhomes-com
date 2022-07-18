@@ -149,7 +149,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="past-communities" className="bg-gray-50">
+        <section  className="bg-gray-50">
           <SeparatorLeft
             bold="Past"
             thin="Communities"
@@ -157,9 +157,9 @@ export default function Home() {
             size="max-w-[75%]"
             image="/img/livingroom.jpg"
           />
-          <div className="container mx-auto px-5 ">
+          <div id="past-communities" className="container mx-auto px-5 ">
             <div className="container px-5 pt-[40px]">
-              <h2 className="h2  ">Highlights from Our Growing Portfolio</h2>
+              <h2  className="h2   ">Highlights from Our Growing Portfolio</h2>
 
               <CommunityTabs />
             </div>

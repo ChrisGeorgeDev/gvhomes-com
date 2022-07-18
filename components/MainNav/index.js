@@ -172,7 +172,7 @@ const Navbar = (props) => {
             </a>
           </Link>
 
-          <Link href="/customer-care/home-buyers-resources">
+          <Link href="/customer-care/home-buyer-resources">
             <a className="mr-5 font-[500] tracking-[.15em] text-black border-b-2 border-transparent hover:text-gray-600  hover:border-black transition-all duration-200">
               HOME BUYERS RESOURCES
             </a>
@@ -234,12 +234,12 @@ const Navbar = (props) => {
               </a>
             </Link>
 
-            <Link href="/customer-care/home-buyers-resources">
+            <Link href="/customer-care/home-buyer-resources">
               <a
                 onClick={() => setOpen(false)}
                 className="text-xl font-bold py-2 tracking-[.15em] text-black border-b-2 border-transparent hover:text-gray-600  "
               >
-                HOME BUYING PROCESS
+                HOME BUYER RESOURCES
               </a>
             </Link>
 

@@ -342,9 +342,28 @@ p.soleil {
 }
 
 .prosep p {
-  font-weight: 300;
-  @apply text-lg max-w-prose mb-[1em];
+  font-weight: 400;
+  font-family: "Soleil Light", sans-serif;
+  @apply text-xl max-w-prose mb-[1em] text-[#414042]
 }
+
+.prosep p > strong:first-of-type {
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+  @apply text-xl max-w-prose mb-[1em] text-black;
+}
+
+.prosep p:first-of-type {
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+  @apply text-xl max-w-prose mb-[1em] text-black mb-12;
+}
+
+.prosep ul {
+  @apply list-disc mb-6 text-xl max-w-prose;
+}
+
+.prosep li {@apply my-2 }
 
 .sectionp > p {
   @apply mb-[20px];

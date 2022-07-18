@@ -26,11 +26,8 @@ export default function Home() {
         <section className="border-b pb-20">
           <div className="py-10 container px-5 gap-5 flex w-full ">
             <div className="container mx-auto  prosep">
-              <p>
-                <strong>Terms and Conditions</strong>
-              </p>
-              <p>General Site Usage</p>
-              <p>Last Revised: December 16, 2013</p>
+       
+              <span className="text-lg mb-4 block">Last Revised: December 16, 2013</span>
               <p>
                 This site is provided as a service to our visitors and may be
                 used for informational purposes only. Because the Terms and
@@ -96,7 +93,7 @@ export default function Home() {
                   5. DISCLAIMER OF WARRANTIES AND LIMITATION OF LIABILITY
                 </strong>
               </p>
-              <p>
+              <p className="!text-lg !leading-[1.2em]">
                 A. THIS SITE MAY CONTAIN INACCURACIES AND TYPOGRAPHICAL ERRORS.
                 WE DOES NOT WARRANT THE ACCURACY OR COMPLETENESS OF THE
                 MATERIALS OR THE RELIABILITY OF ANY ADVICE, OPINION, STATEMENT
@@ -118,7 +115,7 @@ export default function Home() {
                 YOUR COMPUTER SYSTEM OR FOR ANY LOSS OF DATA THAT RESULTS FROM
                 THE DOWNLOAD OF ANY SUCH MATERIAL.
               </p>
-              <p>
+              <p className="!text-lg !leading-[1.2em]">
                 B. YOU UNDERSTAND AND AGREE THAT UNDER NO CIRCUMSTANCES,
                 INCLUDING, BUT NOT LIMITED TO, NEGLIGENCE, SHALL WE BE LIABLE
                 FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, PUNITIVE OR
@@ -132,7 +129,7 @@ export default function Home() {
               <p>
                 <strong>6. EXCLUSIONS AND LIMITATIONS</strong>
               </p>
-              <p>
+              <p className="!text-lg !leading-[1.2em]">
                 SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OF CERTAIN
                 WARRANTIES OR THE LIMITATION OR EXCLUSION OF LIABILITY FOR
                 INCIDENTAL OR CONSEQUENTIAL DAMAGES. ACCORDINGLY, OUR LIABILITY

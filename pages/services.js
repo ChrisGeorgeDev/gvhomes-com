@@ -62,7 +62,7 @@ export default function Home() {
             initial="hidden"
             whileInView={"enter"}
             viewport={{ once: true, amount: 0.55 }}
-            transition={{ staggerChildren: 0.2, staggerDirection: -1 }}
+            transition={{ staggerChildren: 0.2, staggerDirection: 1 }}
           >
            <h2>  Real Estate Development</h2>
             <motion.p variants={p1} transition={{ type: "ease", duration: 1 }}>
@@ -137,7 +137,7 @@ export default function Home() {
             initial="hidden"
             whileInView={"enter"}
             viewport={{ once: true, amount: 0.55 }}
-            transition={{ staggerChildren: 0.2, staggerDirection: -1 }}
+            transition={{ staggerChildren: 0.2, staggerDirection: 1 }}
           >
             <motion.h2
               variants={title}
@@ -216,7 +216,7 @@ export default function Home() {
             initial="hidden"
             whileInView={"enter"}
             viewport={{ once: true, amount: 0.55 }}
-            transition={{ staggerChildren: 0.2, staggerDirection: -1 }}
+            transition={{ staggerChildren: 0.2, staggerDirection: 1 }}
           >
             <motion.h2
               variants={title}
@@ -297,7 +297,7 @@ export default function Home() {
             initial="hidden"
             whileInView={"enter"}
             viewport={{ once: true, amount: 0.55 }}
-            transition={{ staggerChildren: 0.2, staggerDirection: -1 }}
+            transition={{ staggerChildren: 0.2, staggerDirection: 1 }}
           >
             <motion.h2
               variants={title}

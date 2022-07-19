@@ -5,6 +5,27 @@ import ResourceTab from "../../../components/ResourceTab";
 import Layout from "../../../components/Layout";
 import PageHero from "../../../components/Hero/pageHero";
 import { DateTime } from "luxon";
+import { motion } from "framer-motion";
+
+const imageAnim = {
+  hidden: { opacity: 0, x: 0, y: 100 },
+  enter: { opacity: 1, x: 0, y: 0 },
+  exit: { opacity: 0, x: 0, y: -100 },
+};
+
+const p1 = {
+  hidden: { opacity: 0, x: 0, y: -25 },
+  enter: { opacity: 1, x: 0, y: 0 },
+  exit: { opacity: 0, x: 0, y: -100 },
+};
+
+const p2 = {
+  hidden: { opacity: 0, x: 0, y: 25 },
+  enter: { opacity: 1, x: 0, y: 0 },
+  exit: { opacity: 0, x: 0, y: -100 },
+};
+
+
 
 export default function Comm({ community }) {
   const questions = community.data[0].attributes.owner_resources;
@@ -22,9 +43,15 @@ export default function Comm({ community }) {
           </h1>
         </ResourcesHero>
 
-        <div className="min-h-[50vh]">
+        <motion.div
+              variants={p1} transition={{ type: "ease", duration:.5 }}
+              initial="hidden"
+              whileInView={"enter"}
+              viewport={{ once: true, amount: 0.6 }}
+        
+        className="min-h-[50vh] ">
           <ResourceTab className="center mb-auto" com={questions} />
-        </div>
+        </motion.div>
       </Layout>
     </div>
   );

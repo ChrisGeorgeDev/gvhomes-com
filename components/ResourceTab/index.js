@@ -25,7 +25,7 @@ export default function ResourceTab(props) {
       <Tab.Group defaultIndex={0}>
         <div className=" relative border-[#010101]  border-b mb-6 ">
           <div className="w-full max-w-[100%] overflow-y-hidden overflow-x-scroll md:overflow-visible  flex  md:container md:mx-auto">
-            <Tab.List className="flex relative resources top-[1px]  text-left   md:container ">
+            <Tab.List className="flex resources-tab relative resources top-[1px]  text-left   md:container ">
               {data.map((x) => (
                 <Tab as={Fragment}>
                   {({ selected }) => (
@@ -59,7 +59,7 @@ export default function ResourceTab(props) {
                 {props.com
                   .filter((element) => element.category == x.category)
                   .map((x) => (
-                    <div className="py-10 container gap-5 flex w-full border-b">
+                    <div className="py-10 container gap-5 flex w-full  border-b">
                       <div className="hidden lg:block">
                         <a
                           href={x.download.data.attributes.url}

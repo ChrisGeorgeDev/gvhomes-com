@@ -35,8 +35,6 @@ const p2 = {
 };
 
 export default function Home({ community }) {
-  // const questions = community.data[0].attributes.owner_resources;
-
   return (
     <div>
       <Layout title="Brilliant Living">
@@ -197,18 +195,3 @@ export default function Home({ community }) {
     </div>
   );
 }
-
-// Home.getInitialProps = async (ctx) => {
-//   try {
-//     const res = await axios.get(
-// "https://strapi-production-2269.up.railway.app/api/communities?populate[owner_resources][populate]=*&filters[name][$eq]=Notting%20Hill"    );
-//     const community = res.data;
-//     return { community };
-//   } catch (error) {
-//     return { error };
-//   }
-// };
-
-// https://strapi-production-2269.up.railway.app/api/communities?populate[owner_resources][populate]=*&filters[name][$eq]=Notting%20Hill
-
-// "https://strapi-production-2269.up.railway.app/api/communities?populate=home_owner_resources&populate[1]=home_owner_resources.resource.download&populate[2]=home_owner_resources.resource.download.media&filters[name][$eq]=Notting%20Hill"

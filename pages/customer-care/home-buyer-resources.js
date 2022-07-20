@@ -124,7 +124,7 @@ export default function Home() {
               Please save, review and refer to this package as you embark on
               this very special Gable View Homes experience.
             </motion.p>
-            <Link href="#">
+            <Link href="https://res.cloudinary.com/ddi66icj4/image/upload/v1658275818/GVH_NEWHOMEWELCOMEGUIDE_031822_cc6ab3d9c3.pdf?updated_at=2022-07-20T00:10:18.532Z">
               <a>
                 <Button>DOWNLOAD THE GUIDE</Button>
               </a>

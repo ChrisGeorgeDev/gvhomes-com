@@ -69,8 +69,8 @@ const Navbar = (props) => {
 
   return (
     <header
-      className={`${lastScrollY == 0 ? "fadeHov nav" : " nav"}  ${
-        show ? "" : "navScroll"
+      className={`${lastScrollY == 0 ? "fadeHov absolute !z-[100] nav" : " !z-[100] nav"}  ${
+        show ? "" : "navScroll !z-[100] absolute"
       }`}
     >
       <div className="px-[24px] py-[14px] lg:px-[48px] lg:py-[24px] xl:px-[96px] mx-auto flex flex-wrap p-5 flex-row justify-between items-center">
@@ -160,7 +160,7 @@ const Navbar = (props) => {
           </button>
         </div>
 
-        <nav className="md:ml-auto hidden lg:flex flex-wrap items-center text-[14px] justify-center">
+        <nav className="md:ml-auto z-[90] hidden lg:flex flex-wrap items-center text-[14px] justify-center">
           <Link href="/about">
             <a className="mr-5 font-[500] tracking-[.15em] text-black border-b-2 border-transparent hover:text-gray-600  hover:border-black  transition-all duration-200">
               ABOUT

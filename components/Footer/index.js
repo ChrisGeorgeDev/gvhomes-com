@@ -312,7 +312,7 @@ export default function Footer(props) {
         </div>
       </div>
 
-      {/* <div className="fixed bottom-0 right-0 p-6 w-8 h-8 bg-white border flex justify-center items-center opacity-75">
+      {/* <div className="fixed bottom-0 z-[99999] right-0 p-6 w-8 h-8  bg-yellow-600 border flex justify-center items-center opacity-75">
         <div className="xs:block sm:hidden md:hidden lg:hidden xl:hidden 2xl:hidden">
           XS
         </div>

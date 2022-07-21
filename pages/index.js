@@ -15,6 +15,7 @@ import ResourceTab from "../components/ResourceTab";
 import axios from "axios";
 import Layout from "../components/Layout";
 import { motion } from "framer-motion";
+import LifestyleGallery from "../components/Hero/LifestyleGallery";
 
 const imageAnim = {
   hidden: { opacity: 0, x: 0, y: 100 },
@@ -38,7 +39,7 @@ export default function Home({ community }) {
   return (
     <div>
       <Layout title="Brilliant Living">
-        <LandingHero
+        {/* <LandingHero
           image="/img/hero/morning-coffee.jpg"
           imagePortrait="/img/comm/landing-portrait.jpg"
           style="text-blue-ggDark flex-col "
@@ -57,6 +58,19 @@ export default function Home({ community }) {
             </div>
           </div>
         </LandingHero>
+         */}
+        <LifestyleGallery>
+        <h1 className="drop-shadow-lg ">
+                <span className="text-5xl lg:text-8xl leading-[1.2em] font-bold block text-white">
+                  Spaces
+                </span>
+                <span className="text-5xl lg:text-8xl leading-[1.2em] font-thin text-white">
+                  DESIGNED <br></br>FOR&nbsp;LIFE
+                </span>
+              </h1>
+
+        </LifestyleGallery>
+
         <section className="leadp">
           <motion.div
             className="container mx-auto px-5 sectionp "

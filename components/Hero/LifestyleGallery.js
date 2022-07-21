@@ -47,10 +47,10 @@ export default function LifestyleGallery(props) {
             effect={"fade"}
             fadeEffect={{ crossFade: true }}
             speed={1500}
-            // autoplay={{
-            //   delay: 3500,
-            //   disableOnInteraction: false,
-            // }}
+            autoplay={{
+              delay: 3500,
+              disableOnInteraction: false,
+            }}
             // mousewheel={{releaseOnEdges:true}}
             // pagination={{
             //   clickable: true,

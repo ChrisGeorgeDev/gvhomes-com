@@ -12,13 +12,13 @@ import { useRouter } from 'next/router'
 import { GTM_ID, pageview } from '../lib/gtm'
 
 function MyApp({ Component, pageProps, router }) {
-  const router = useRouter()
+  const prouter = useRouter()
   useEffect(() => {
-    router.events.on('routeChangeComplete', pageview)
+    prouter.events.on('routeChangeComplete', pageview)
     return () => {
-      router.events.off('routeChangeComplete', pageview)
+      prouter.events.off('routeChangeComplete', pageview)
     }
-  }, [router.events])
+  }, [prouter.events])
 
   return (
     <>

@@ -61,10 +61,10 @@ export default function Home({ community }) {
          */}
         <LifestyleGallery>
         <h1 className="drop-shadow-lg ">
-                <span className="text-5xl lg:text-8xl leading-[1.2em] font-bold block text-white">
+                <span className="text-4xl sm:text-5xl lg:text-8xl leading-[1.2em] md:leading-[1.2em] font-bold block text-white">
                   Spaces
                 </span>
-                <span className="text-5xl lg:text-8xl leading-[1.2em] font-thin text-white">
+                <span className=" text-4xl sm:text-5xl lg:text-8xl leading-[1.2em]  md:leading-[1.2em]  font-thin text-white">
                   DESIGNED <br></br>FOR&nbsp;LIFE
                 </span>
               </h1>

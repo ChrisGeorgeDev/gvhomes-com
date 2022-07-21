@@ -67,7 +67,7 @@ export const getStaticPaths = async () => {
 
   const communities = await res.json();
   // const articles = JSON.parse(JSON.stringify(content))
-console.log(communities.data)
+// console.log(communities.data)
   return {
     paths: communities.map((community) => ({
       params: {
@@ -86,7 +86,7 @@ export const getStaticProps = async () => {
   
     const community = await res.json();
     // const articles = JSON.parse(JSON.stringify(content))
-  console.log(community)
+  // console.log(community)
     return {
       props: {
         community,

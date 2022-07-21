@@ -4,7 +4,7 @@ export default function ResourceTab(props) {
   let data = props.com.filter((obj, pos, arr) => {
     return arr.map((mapObj) => mapObj.Category).indexOf(obj.Category) == pos;
   });
-  console.log(data);
+  // console.log(data);
   return (
     <div className="w-full  px-2 py-16 sm:px-0  m-auto">
       {/* {props.com

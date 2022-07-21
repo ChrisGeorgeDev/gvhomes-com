@@ -57,8 +57,8 @@ export default function LifestyleGallery(props) {
             // }}
             modules={[EffectFade, Autoplay, Navigation, Pagination]}
             // Some sample events you can experiment with
-            onSlideChange={() => console.log("Slide changed!")}
-            onSwiper={(swiper) => console.log("my swiper details", swiper)}
+            // onSlideChange={() => console.log("Slide changed!")}
+            // onSwiper={(swiper) => console.log("my swiper details", swiper)}
           >
             <SwiperSlide>
               <div className="!bg-[url('/img/hero/lf-1.jpg')] h-screen w-screen bg-[top_right_-350px] md:bg-center bg-cover"></div>

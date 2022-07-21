@@ -7,18 +7,18 @@ export default function ResourceTab(props) {
   let data = props.com.filter((obj, pos, arr) => {
     return arr.map((mapObj) => mapObj.category).indexOf(obj.category) == pos;
   });
-  console.log(data);
+  // console.log(data);
 
   function filetype(extension) {
     let str = extension;
 
     str = str.substring(1);
-    console.log(str);
+    // console.log(str);
     return str;
   }
 
   return (
-    <div className="w-full  px-2 pb-16 sm:px-0  m-auto">
+    <div className="w-full  px-5 pb-16 sm:px-0  m-auto">
       {/* {props.com
         .filter((element) => element.category == "category_one")
         .map((x) => console.log(x))} */}

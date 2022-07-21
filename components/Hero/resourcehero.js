@@ -35,7 +35,7 @@ export default function ResourcesHero(props) {
         transition={{ type: "easeIn", duration: .8 }}
       >
         <div className={`"flex container mb-10 "`}>
-          <div className={`w-12/12  relative z-[2] mx-auto  `}>
+          <div className={`w-12/12 px-5  relative z-[2] mx-auto  `}>
             {props.children}
           </div>
         </div>

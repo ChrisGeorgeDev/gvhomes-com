@@ -9,7 +9,7 @@ export default function OverlayMenu({ open, setOpen, title, children }) {
       <Dialog
         as="div"
         static
-        className="fixed inset-0 z-50 overflow-hidden"
+        className="fixed inset-0 z-[999] overflow-hidden"
         open={open}
         onClose={setOpen}
       >
@@ -48,7 +48,7 @@ export default function OverlayMenu({ open, setOpen, title, children }) {
                 >
                   <div className="absolute   z-30 closeMe top-0 right-0 mr-8 pt-4 pl-2 flex sm:-ml-10 sm:pr-4"></div>
                 </Transition.Child>
-                <div className="h-full flex flex-col dur bg-white shadow-xl overflow-y-auto">
+                <div className="h-full flex flex-col dur bg-white shadow-xl ">
                   <div className=" relative flex-col flex-wrap  flex-1  pt-[14px] px-[24px]">
                     {/* Replace with your content */}
                     

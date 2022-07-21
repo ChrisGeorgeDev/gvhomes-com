@@ -47,7 +47,7 @@ export default function Comm({ community }) {
               variants={p1} transition={{ type: "ease", duration:.5 }}
               initial="hidden"
               whileInView={"enter"}
-              viewport={{ once: true, amount: 0.6 }}
+              viewport={{ once: true, amount: 0.2 }}
         
         className="min-h-[50vh] ">
           <ResourceTab className="center mb-auto" com={questions} />

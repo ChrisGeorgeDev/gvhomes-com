@@ -171,13 +171,13 @@ export default function Footer(props) {
                       </a>
                     </Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link href="/rentals/notting-hill-towns">
                       <a className="text-white hover:text-gray-500 transition-all duration-200">
                         Residential Rentals
                       </a>
                     </Link>
-                  </li>
+                  </li> */}
                 </nav>
               </div>
               <div className=" w-full ">

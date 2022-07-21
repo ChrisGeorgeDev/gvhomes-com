@@ -10,6 +10,7 @@ import Navbar from "../../components/MainNav";
 import InteriorHero from "../../components/Hero/InteriorHero";
 import SeparatorLeft from "../../components/Separator/TextLeft";
 import Layout from "../../components/Layout";
+import MailchimpForm from "../../components/CustomForm";
 
 export default function Home() {
   return (
@@ -184,12 +185,28 @@ export default function Home() {
                         for="name"
                         className="leading-7 text-sm text-gray-600"
                       >
-                        Name
+                      First Name
                       </label>
                       <input
                         type="text"
                         id="name"
                         name="name"
+                        className="w-full bg-gray-100 bg-opacity-50   border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                      />
+                    </div>
+                  </div>
+                  <div className="p-2 w-1/2">
+                    <div className="relative">
+                      <label
+                        for="name"
+                        className="leading-7 text-sm text-gray-600"
+                      >
+                      Last Name
+                      </label>
+                      <input
+                        type="text"
+                        id="lastname"
+                        name="lastname"
                         className="w-full bg-gray-100 bg-opacity-50   border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                       />
                     </div>
@@ -210,7 +227,8 @@ export default function Home() {
                       />
                     </div>
                   </div>
-                  <div className="p-2 w-full">
+
+                  <div className="p-2 w-1/2">
                     <div className="relative">
                       <label
                         for="email"
@@ -275,6 +293,9 @@ export default function Home() {
             </div>
           </div>
         </section>
+        {/* <section>
+<MailchimpForm></MailchimpForm>
+        </section> */}
       </Layout>
     </div>
   );

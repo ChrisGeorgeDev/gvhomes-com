@@ -49,8 +49,8 @@ export default function Comm({ community }) {
               whileInView={"enter"}
               viewport={{ once: true, amount: 0.2 }}
         
-        className="min-h-[50vh] ">
-          <ResourceTab className="center mb-auto" com={questions} />
+        className="min-h-[50vh] mt-[50px] ">
+          <ResourceTab className="center  mb-auto" com={questions} />
         </motion.div>
       </Layout>
     </div>

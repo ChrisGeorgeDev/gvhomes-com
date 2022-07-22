@@ -159,7 +159,7 @@ export default function Home() {
           />
           <div id="past-communities" className="container mx-auto px-5 ">
             <div className="container px-5 pt-[40px]">
-              <h2  className="h2   ">Highlights from Our Growing Portfolio</h2>
+              <h2  className="h2 pb-[40px]  ">Highlights from Our Growing Portfolio</h2>
 
               <CommunityTabs />
             </div>

@@ -30,7 +30,7 @@ export default function LifestyleGallery(props) {
         transition={{ staggerChildren: 0.5 }}
       >
         <img
-          className="absolute hidden pointer-events-all z-[50] right-0 bottom-0 h-screen"
+          className="absolute opacity-70 pointer-events-all z-[49] right-0 bottom-0 h-screen"
           src="/img/svg/gv-watermark.svg"
         ></img>
         <motion.div
@@ -73,10 +73,10 @@ export default function LifestyleGallery(props) {
         </motion.div>
 
         <div
-          className={`"  bottom-0  flex flex-col justify-end top-0 right-0 left-0  absolute  z-[2]  "`}
+          className={`"  bottom-0  flex flex-col justify-end top-0 right-0 left-0  absolute  z-[51]  "`}
         >
           <motion.div
-            className={`w-12/12 relative z-[2]  font-bold ml-[20px] mb-[50px] lg:ml-[100px] lg:mb-[100px]  `}
+            className={`w-12/12 relative z-[60]  font-bold ml-[20px] mb-[50px] lg:ml-[100px] lg:mb-[100px]  `}
             variants={childrenAnim}
             // initial="hidden"
             // whileInView={"enter"}

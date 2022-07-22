@@ -396,6 +396,7 @@ p.soleil {
 
 .tabhover {
   position: relative;
+  border-top: 1px solid;
 }
 .tabhover:before {
   top: 100%;
@@ -436,7 +437,9 @@ p.soleil {
   border-right: solid 30px transparent;
 }
 
-
+.restabs { 
+  @apply min-w-[120px] text-center;
+}
 .resources-tab .tabhover:after {
   top: 100%;
   border-top: solid 0px #FFF;

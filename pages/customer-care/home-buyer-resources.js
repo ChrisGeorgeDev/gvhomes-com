@@ -44,7 +44,11 @@ export default function Home() {
           </h1>
         </InteriorHero>
 
-        <section>
+        <section className="relative overflow-hidden">
+        <img
+          className="absolute opacity-30 pointer-events-all z-[49] right-0 bottom-0 h-screen"
+          src="/img/svg/gv-watermark.svg"
+        ></img>
           <motion.div
             className="container mx-auto px-5 sectionp "
             initial="hidden"

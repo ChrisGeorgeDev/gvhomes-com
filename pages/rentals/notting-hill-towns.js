@@ -11,7 +11,7 @@ import InteriorHero from "../../components/Hero/InteriorHero";
 import SeparatorLeft from "../../components/Separator/TextLeft";
 import Layout from "../../components/Layout";
 import MailchimpForm from "../../components/CustomForm";
-
+ 
 export default function Home() {
   return (
     <div>
@@ -92,11 +92,11 @@ export default function Home() {
                   <li>1400 sq.ft</li>
                 </ul>
 
-                <Link href="/#placeholder">
-                  <a>
+     
+                  <a href="https://res.cloudinary.com/ddi66icj4/image/upload/v1658456570/Notting_Hill_The_Ashlar_2fc7201af4.pdf" target="_blank" rel="noreferrer">
                     <Button>DOWNLOAD FLOORPLAN</Button>
                   </a>
-                </Link>
+            
               </div>
             </div>
           </div>
@@ -145,10 +145,10 @@ export default function Home() {
                     <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                     <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                   </svg>
-                  sales@gableviewhomes.com
+                  info@gableviewhomes.com
                 </span>
               </p>
-
+{/* 
               <span className="text-lg ">
                 Notting Hill Towns <br />
                 123 Full Address Lane <br />
@@ -159,7 +159,7 @@ export default function Home() {
                 >
                   Get Driving Directions
                 </a>
-              </span>
+              </span> */}
             </div>
 
             <div
@@ -167,9 +167,7 @@ export default function Home() {
               className="w- 12/12 mt-[60px] lg:w-6/12 bg-white  -lg  flex flex-col  relative z-10 "
             >
               <div className="flex flex-col text-center w-full mb-12">
-                <h1 className="sm:text-3xl text-2xl font-bold title-font mb-4 text-gray-900">
-                  Rental Inquiry
-                </h1>
+
                 {/* <p className="w-full mx-auto leading-relaxed text-base">
                   Please provide your information below and one of our team
                   members will follow up with you to coordinate an appointment
@@ -177,125 +175,14 @@ export default function Home() {
                 </p> */}
               </div>
 
-              <div className="w-full mx-auto">
-                <div className="flex flex-wrap -m-2">
-                  <div className="p-2 w-1/2">
-                    <div className="relative">
-                      <label
-                        for="name"
-                        className="leading-7 text-sm text-gray-600"
-                      >
-                      First Name
-                      </label>
-                      <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        className="w-full bg-gray-100 bg-opacity-50   border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                      />
-                    </div>
-                  </div>
-                  <div className="p-2 w-1/2">
-                    <div className="relative">
-                      <label
-                        for="name"
-                        className="leading-7 text-sm text-gray-600"
-                      >
-                      Last Name
-                      </label>
-                      <input
-                        type="text"
-                        id="lastname"
-                        name="lastname"
-                        className="w-full bg-gray-100 bg-opacity-50   border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                      />
-                    </div>
-                  </div>
-                  <div className="p-2 w-1/2">
-                    <div className="relative">
-                      <label
-                        for="phone"
-                        className="leading-7 text-sm text-gray-600"
-                      >
-                        Phone
-                      </label>
-                      <input
-                        type="text"
-                        id="phone"
-                        name="phone"
-                        className="w-full bg-gray-100 bg-opacity-50   border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                      />
-                    </div>
-                  </div>
+      
+{/* 
+              <MailchimpForm
+              ></MailchimpForm> */}
 
-                  <div className="p-2 w-1/2">
-                    <div className="relative">
-                      <label
-                        for="email"
-                        className="leading-7 text-sm text-gray-600"
-                      >
-                        Email
-                      </label>
-                      <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        className="w-full bg-gray-100 bg-opacity-50   border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                      />
-                    </div>
-                  </div>
-                  <div className="p-2 w-full">
-                    <div className="relative">
-                      <label
-                        for="message"
-                        className="leading-7 text-sm text-gray-600"
-                      >
-                        Message
-                      </label>
-                      <textarea
-                        id="message"
-                        name="message"
-                        className="w-full bg-gray-100 bg-opacity-50   border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
-                      ></textarea>
-                    </div>
-                  </div>
-
-                  <div class=" hidden">
-                    <div class="mt-2 p-2">
-                      <div>
-                        <label class="inline-flex items-center">
-                          <input
-                            type="checkbox"
-                            className="
-                          border-gray-300
-                          text-black
-                          shadow-sm
-                          focus:border-indigo-300
-                          focus:ring
-                          focus:ring-offset-0
-                          focus:ring-indigo-200
-                          focus:ring-opacity-50"
-                          />
-                          <span class="ml-2">
-                            Email me news and special offers
-                          </span>
-                        </label>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="p-2 w-full">
-                    <button className=" mx-auto w-full text-center text-white bg-black border-[1px] border-black py-6 px-8 transition-all duration-200 focus:outline-none hover:bg-white hover:text-black  text-lg font-sans uppercase">
-                      Schedule tour
-                    </button>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </section>
-        {/* <section>
-<MailchimpForm></MailchimpForm>
-        </section> */}
       </Layout>
     </div>
   );

@@ -40,8 +40,8 @@ export default function CommunityTabs() {
                 <button
                   className={
                     selected
-                      ? " w-full is-active tabhover border-b border-r border-[#010101] outline-none py-6  text-black text-center font-semibold"
-                      : " text-black text-center outline-none tabhover border-b border-r border-[#010101]  py-6 font-semibold  w-full"
+                      ? " w-full is-active tabhover !border-t-0 md:!border-t border-b border-r border-[#010101] outline-none py-6  text-black text-center font-semibold"
+                      : " text-black text-center !border-t-0 md:!border-t outline-none tabhover border-b border-r border-[#010101]  py-6 font-semibold  w-full"
                   }
                 >
                   <img className={ selected ? "max-h-[120px] lg:max-h-[186px]  mx-auto " : "max-h-[120px] lg:max-h-[186px] mx-auto ease-in-out duration-300 opacity-40 hover:opacity-100 "} src="/img/riverbendestates-logo.png"/>
@@ -54,8 +54,8 @@ export default function CommunityTabs() {
                 <button
                   className={
                     selected
-                      ? " w-full is-active tabhover border-b  border-[#010101] outline-none py-6  text-black text-center font-semibold"
-                      : " text-black text-center outline-none tabhover border-b border-[#010101]  py-6 font-semibold  w-full"
+                      ? " w-full is-active tabhover !border-t-0 md:!border-t border-b  border-[#010101] outline-none py-6  text-black text-center font-semibold"
+                      : " text-black text-center !border-t-0 md:!border-t outline-none tabhover border-b border-[#010101]  py-6 font-semibold  w-full"
                   }
                 >
                   <img className={ selected ? "max-h-[120px] lg:max-h-[186px]  mx-auto " : "max-h-[120px] lg:max-h-[186px] mx-auto ease-in-out duration-300 opacity-40 hover:opacity-100 "} src="/img/watersideplace-logo.png"/>

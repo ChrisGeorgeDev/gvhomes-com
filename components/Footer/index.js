@@ -4,7 +4,7 @@ import React from "react";
 export default function Footer(props) {
   return (
     <footer className="text-white bg-black body-font">
-      {/* <hr></hr> */}
+
       <div className=" py-12 px-5 mx-auto container ">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="w-64 flex-shrink-0  text-left">
@@ -79,9 +79,9 @@ export default function Footer(props) {
               >
                 <svg
                   fill="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
                   className="w-5 h-5"
                   viewBox="0 0 24 24"
                 >
@@ -95,9 +95,9 @@ export default function Footer(props) {
               >
                 <svg
                   fill="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                 strokeLinejoin="round"
+                  strokeWidth="2"
                   className="w-5 h-5"
                   viewBox="0 0 24 24"
                 >
@@ -106,15 +106,15 @@ export default function Footer(props) {
               </a>
               <a
                 className="text-white"
-                href="https://www.facebook.com/Gableviewhomes/"
+                href="https://www.instagram.com/gableviewhomes/"
                 target="_blank"
               >
                 <svg
                   fill="none"
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                 strokeLinejoin="round"
+                  strokeWidth="2"
                   className="w-5 h-5"
                   viewBox="0 0 24 24"
                 >
@@ -122,13 +122,13 @@ export default function Footer(props) {
                   <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
                 </svg>
               </a>
-              <a className="text-white" href="#placeholder" target="_blank">
+              {/* <a className="text-white" href="#placeholder" target="_blank">
                 <svg
                   fill="currentColor"
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="0"
+                  strokeLinecap="round"
+                 strokeLinejoin="round"
+                  strokeWidth="0"
                   className="w-5 h-5"
                   viewBox="0 0 24 24"
                 >
@@ -138,7 +138,7 @@ export default function Footer(props) {
                   ></path>
                   <circle cx="4" cy="4" r="2" stroke="none"></circle>
                 </svg>
-              </a>
+              </a> */}
             </span>
           </div>
           <div className="grid grid-cols-2 gap-8 mt-12 xl:mt-0 xl:col-span-2">
@@ -149,35 +149,35 @@ export default function Footer(props) {
                 </h2>
                 <nav className="list-none soleilT font-light space-y-2 mb-10">
                   <li>
-                    <Link href="/about#our-values">
-                      <a className="text-white hover:text-gray-500 transition-all duration-200">
+                
+                      <a href="/about#our-values"  className="text-white hover:text-gray-500 transition-all duration-200">
                         Our Values
                       </a>
-                    </Link>
+          
                   </li>
 
                   <li>
-                    <Link href="/about#current-communities">
-                      <a className="text-white hover:text-gray-500 transition-all duration-200">
+                 
+                      <a href="/about#current-communities" className="text-white hover:text-gray-500 transition-all duration-200">
                         Current Communities
                       </a>
-                    </Link>
+                  
                   </li>
 
                   <li>
-                    <Link href="/about#past-communities">
-                      <a className="text-white hover:text-gray-500 transition-all duration-200">
+                  
+                      <a href="/about#past-communities" className="text-white hover:text-gray-500 transition-all duration-200">
                         Past Communities
                       </a>
-                    </Link>
+                  
                   </li>
-                  {/* <li>
+                  <li>
                     <Link href="/rentals/notting-hill-towns">
                       <a className="text-white hover:text-gray-500 transition-all duration-200">
                         Residential Rentals
                       </a>
                     </Link>
-                  </li> */}
+                  </li>
                 </nav>
               </div>
               <div className=" w-full ">
@@ -186,34 +186,27 @@ export default function Footer(props) {
                 </h2>
                 <nav className="list-none soleilT font-light space-y-2 mb-10">
                   <li>
-                    <Link href="/services#real-estate-development">
-                      <a className="text-white hover:text-gray-500 transition-all duration-200">
+                      <a  href="/services#real-estate-development" className="text-white hover:text-gray-500 transition-all duration-200">
                         Real Estate Development
                       </a>
-                    </Link>
                   </li>
 
                   <li>
-                    <Link href="/services#construction-management">
-                      <a className="text-white hover:text-gray-500 transition-all duration-200">
+                      <a href="/services#construction-management" className="text-white hover:text-gray-500 transition-all duration-200">
                         Project Management
                       </a>
-                    </Link>
                   </li>
                   <li>
-                    <Link href="/services#full-service-marketing">
-                      <a className="text-white hover:text-gray-500 transition-all duration-200">
+                      <a href="/services#full-service-marketing" className="text-white hover:text-gray-500 transition-all duration-200">
                         Full Service Marketing
                       </a>
-                    </Link>
                   </li>
 
                   <li>
-                    <Link href="/services#custom-homes">
-                      <a className="text-white hover:text-gray-500 transition-all duration-200">
+                      <a href="/services#custom-homes" className="text-white hover:text-gray-500 transition-all duration-200">
                         Custom Homes
                       </a>
-                    </Link>
+                 
                   </li>
                 </nav>
               </div>
@@ -232,18 +225,14 @@ export default function Footer(props) {
                     </Link>
                   </li>
                   <li>
-                    <Link href="/customer-care/home-buyer-resources#home-owner-guide">
-                      <a className="text-white hover:text-gray-500 transition-all duration-200">
+                      <a href="/customer-care/home-buyer-resources#home-owner-guide" className="text-white hover:text-gray-500 transition-all duration-200">
                         New Homeowner Guide
                       </a>
-                    </Link>
                   </li>
                   <li>
-                    <Link href="/customer-care/home-buyer-resources#home-owner-resources">
-                      <a className="text-white hover:text-gray-500 transition-all duration-200">
+                      <a href="/customer-care/home-buyer-resources#home-owner-resources" className="text-white hover:text-gray-500 transition-all duration-200">
                         Home Owner Resources
                       </a>
-                    </Link>
                   </li>
                 </nav>
               </div>

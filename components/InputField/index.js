@@ -48,7 +48,7 @@ const InputField = props => {
                     placeholder={props.placeholder}
                     value={props.value}
                     required={props.isRequired}
-                    className="form-input appearance-none mt-1 block w-full"
+                    className={`form-input appearance-none mt-1 block w-full ${props.visi}`}
                     name={props.name}
                 />
             </label>

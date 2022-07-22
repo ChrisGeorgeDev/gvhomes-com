@@ -7,7 +7,7 @@ import InputField from '../InputField';
 // import InputField from "../../ui/InputField/InputField";
 // import PrimaryCTAButton from '../PrimaryButton';
 
-const CustomForm = ({ status, message, onValidated }) => {
+const CustomForm = ({ status, message, onValidated, props }) => {
 
     // const {modalOpen, setModalOpen} = useGHStContext();
 

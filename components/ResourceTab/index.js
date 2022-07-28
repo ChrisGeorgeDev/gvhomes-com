@@ -1,9 +1,47 @@
-import { useState, Fragment } from "react";
+import { useState, useEffect, Fragment } from "react";
 import { Tab } from "@headlessui/react";
 import { DateTime } from "luxon";
 import prettyBytes from "pretty-bytes";
+import { useRouter } from "next/router";
 
 export default function ResourceTab(props) {
+  const [selectedIndex, setSelectedIndex] = useState(0);
+
+  // const queryParams = new URLSearchParams(window.location.search);
+  // const term = queryParams.get("c");
+  // console.log(term);
+
+  useEffect(() => {
+    const queryParams = new URLSearchParams(window.location.search);
+    const term = queryParams.get("c");
+    let page = 0;
+    if (term === "hvac") {
+      page = 0;
+    } else if (term === "detectors") {
+      page = 1;
+    } else if (term === "kitchen") {
+      page = 2;
+    } else if (term === "laundry") {
+      page = 3;
+    } else if (term === "flooring") {
+      page = 4;
+    } else {
+      page = 0;
+    }
+
+    setSelectedIndex(page);
+  }, []);
+
+  // useEffect(() => {
+  //   if (query.c === "hvac") {
+  //     setSelectedIndex(4);
+  //   } else if (query.c === "about") {
+  //     handleClick(4);
+  //   } else {
+  //     handleClick(2);
+  //   }
+  // }, []);
+
   let data = props.com.filter((obj, pos, arr) => {
     return arr.map((mapObj) => mapObj.category).indexOf(obj.category) == pos;
   });
@@ -17,12 +55,16 @@ export default function ResourceTab(props) {
     return str;
   }
 
+  function handleClick(tab) {
+    setSelectedIndex(tab);
+  }
+
   return (
     <div className="w-full  px-5 pb-16 sm:px-0  m-auto">
       {/* {props.com
         .filter((element) => element.category == "category_one")
         .map((x) => console.log(x))} */}
-      <Tab.Group defaultIndex={0}>
+      <Tab.Group selectedIndex={selectedIndex} onChange={setSelectedIndex}>
         <div className=" relative border-[#010101]  border-b mb-6 ">
           <div className="w-full max-w-[100%] overflow-y-hidden overflow-x-scroll md:overflow-visible  flex  md:container md:mx-auto">
             <Tab.List className="flex resources-tab relative resources top-[1px]  text-left   md:container ">

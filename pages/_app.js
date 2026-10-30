@@ -1,7 +1,7 @@
 import "../styles/globals.css";
 import "swiper/css/bundle";
 import { DefaultSeo } from "next-seo";
-import SEO from "../next-seo.config";
+import SEO, { SITE_URL } from "../next-seo.config";
 import Head from "next/head";
 import Navbar from "../components/MainNav";
 import Footer from "../components/Footer";
@@ -20,9 +20,12 @@ function MyApp({ Component, pageProps, router }) {
     }
   }, [prouter.events])
 
+  const path = prouter.asPath.split(/[?#]/)[0].replace(/\/+$/, '')
+  const canonical = SITE_URL + path
+
   return (
     <>
-      <DefaultSeo {...SEO} />
+      <DefaultSeo {...SEO} canonical={canonical} />
       <Head>
         <link rel="icon" type="image/svg+xml" href="/img/assets/favicon.svg" />
         <link rel="icon" type="image/png" href="/img/assets/favicon.png" />

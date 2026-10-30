@@ -16,7 +16,6 @@ export default function Login() {
       <NextSeo
         title="Contact Us"
         description="Please don’t hesitate to contact us about our properties, their location or what we do. Simply fill out the form and we’ll get right back to you."
-        canonical="https://www.gableviewhomes.com/about"
         openGraph={{
           images: [
             {
